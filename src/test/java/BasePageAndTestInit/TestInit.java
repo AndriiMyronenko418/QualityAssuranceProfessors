@@ -14,6 +14,14 @@ public class TestInit {
         driver.get(site);
     }
 
+    public void sleep(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000L);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
     @BeforeMethod
     public void setUp() {
         WebDriverManager.chromedriver().setup();

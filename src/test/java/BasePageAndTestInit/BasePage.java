@@ -17,14 +17,6 @@ public class BasePage {
         this.driver = driver;
     }
 
-    public void sleep(int seconds) {
-        try {
-            Thread.sleep(seconds * 1000L);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-
     private final int BASIC_TIME = 15;
 
     //to make less code we will use $ method - to get element & $$ - to get elements (List<WebElements>)
