@@ -40,7 +40,7 @@ public class BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
         return driver.findElements(By.xpath(locator));
     }
-    public WebElement moveTo$(String locator){
+    public WebElement moveTo(String locator){
         Actions actions = new Actions(driver);
         actions.moveToElement($(locator)).perform();
         return driver.findElement(By.xpath(locator));

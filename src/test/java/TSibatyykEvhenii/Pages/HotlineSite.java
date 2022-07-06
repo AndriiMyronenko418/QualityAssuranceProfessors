@@ -1,7 +1,6 @@
 package TSibatyykEvhenii.Pages;
 
 import BasePageAndTestInit.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -9,10 +8,10 @@ import java.util.List;
 
 public class HotlineSite extends BasePage {
 
-
     public HotlineSite(WebDriver driver) {
         super(driver);
     }
+
     public static final String HOTLINE_ADRESS = "https://hotline.ua/";
     public static final String LEFT_MENU_LIST = "//i[@class='icon-menu icon-menu-musical_instruments']";
     public static final String GITARS_BTN = "//span[contains(text(), 'Гітари')]";
@@ -25,17 +24,22 @@ public class HotlineSite extends BasePage {
 
 
     public void goToHotline(){ driver.get(HOTLINE_ADRESS);    }
-    public WebElement muzInstrument(){return moveTo$(LEFT_MENU_LIST);}
+
+    public WebElement muzInstrument(){return moveTo(LEFT_MENU_LIST);}
+
     public WebElement gitarsSectionSelect(){
         return $(GITARS_BTN);
     }
+
     public List<WebElement> getBowedInstrument(){ return $$(INSTRUMENT_LIST); }
+
     public WebElement violinSection(){return $(BOWED_INSTRUMENTS_SECTION);}
+
     public List<WebElement> chooseCheckbox(){return $$(CHECKBOX_VIOLIN_FILTER);}
+
     public WebElement openFullBrandList(){return $(TO_REVEAL_ALL_BRAND);}
+
     public WebElement openFullStoreList(){return $(TO_REVEAL_ALL_STORES);}
+
     public WebElement choosenElementBtn(){return $(CHOOSEN_BTN);}
-
-
-
 }
