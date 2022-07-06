@@ -23,7 +23,7 @@ public class TestInit {
     }
 
     @BeforeMethod
-    public void setUp() {
+    public void setUp(String s) {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
