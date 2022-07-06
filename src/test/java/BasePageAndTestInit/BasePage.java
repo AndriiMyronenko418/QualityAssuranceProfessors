@@ -3,6 +3,7 @@ package BasePageAndTestInit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -30,5 +31,10 @@ public class BasePage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(BASIC_TIME));
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
         return driver.findElements(By.xpath(locator));
+    }
+    public WebElement moveTo(String locator){
+        Actions actions = new Actions(driver);
+        actions.moveToElement($(locator)).perform();
+        return driver.findElement(By.xpath(locator));
     }
 }
