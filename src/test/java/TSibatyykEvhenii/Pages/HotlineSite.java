@@ -12,15 +12,15 @@ public class HotlineSite extends BasePage {
         super(driver);
     }
 
-    public static final String HOTLINE_ADRESS = "https://hotline.ua/";
-    public static final String LEFT_MENU_LIST = "//i[@class='icon-menu icon-menu-musical_instruments']";
-    public static final String GITARS_BTN = "//span[contains(text(), 'Гітари')]";
-    public static final String INSTRUMENT_LIST = "//li[@class='category-navigation__item hidden-below-lg']";
-    public static final String BOWED_INSTRUMENTS_SECTION = "(//div[@class='section-navigation__item content'])[1]";
-    public static final String CHECKBOX_VIOLIN_FILTER = "//div[contains(@class,'checkbox__checkmark-plus')]";
-    public static final String TO_REVEAL_ALL_BRAND = "//div[@class='sidebar-filter__bottom-button']";
-    public static final String TO_REVEAL_ALL_STORES = "//div[@class='sidebar-filter__search-button']";
-    public static final String CHOOSEN_BTN = "//div[contains(@class,'active')]/b";
+    private static final String HOTLINE_ADRESS = "https://hotline.ua/";
+    private static final String LEFT_MENU_LIST = "//i[@class='icon-menu icon-menu-musical_instruments']";
+    private static final String GITARS_BTN = "//span[contains(text(), 'Гітари')]";
+    private static final String INSTRUMENT_LIST = "//li[@class='category-navigation__item hidden-below-lg']";
+    private static final String BOWED_INSTRUMENTS_SECTION = "(//div[@class='section-navigation__item content'])[1]";
+    private static final String CHECKBOX_VIOLIN_FILTER = "//div[contains(@class,'checkbox__checkmark-plus')]";
+    private static final String TO_REVEAL_ALL_BRAND = "//div[@class='sidebar-filter__bottom-button']";
+    private static final String TO_REVEAL_ALL_STORES = "//div[@class='sidebar-filter__search-button']";
+    private static final String CHOOSEN_BTN = "//div[contains(@class,'active')]/b";
 
 
     public void goToHotline(){ driver.get(HOTLINE_ADRESS);    }
