@@ -15,6 +15,10 @@ public class TestInit {
         driver.get(site);
     }
 
+    public String getCurrentUrl() {
+        return driver.getCurrentUrl();
+    }
+
     public void sleep(int seconds) {
         try {
             Thread.sleep(seconds * 1000L);
