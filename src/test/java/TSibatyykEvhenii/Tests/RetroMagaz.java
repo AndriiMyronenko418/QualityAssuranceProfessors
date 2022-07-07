@@ -12,7 +12,7 @@ public class RetroMagaz extends TestInit {
         RetromagazMainPage retroMag = new RetromagazMainPage(driver);
         RetroMagazRegistrationPage regPage = new RetroMagazRegistrationPage(driver);
         retroMag.goToRetroMagaz();
-        retroMag.goToSearchField().sendKeys("Xbox series x\n");
+        retroMag.goToSearchField().sendKeys("Xbox series x");
         retroMag.listSearchFieldFrom().get(2).click();
         retroMag.listOfSearchResult().get(1).click();
         retroMag.getBuyBtn().click();
