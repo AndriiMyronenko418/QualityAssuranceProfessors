@@ -22,7 +22,7 @@ public class DeliveryDetailsPage extends BasePage {
     private static final String TERMS_AND_CONDITIONS_CHECKBOX = "//input[contains(@id, 'TermsAndConditions')]";
     private static final String PROCEED_TO_PAYMENT_BTN = "//a[@title='Proceed to Payment']";
 
-    // LevchenkoAlinka.Test User
+    //Test User
     public static final String FIRST_NAME = "Andrii";
     public static final String LAST_NAME = "Brown";
     public static final String ADDRESS_1 = "Javelin street";

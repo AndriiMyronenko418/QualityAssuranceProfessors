@@ -11,11 +11,9 @@ public class TestInteriorDesign extends TestInit {
         HomePageInteriorDesign homePageInteriorDesign = new HomePageInteriorDesign(driver);
         openUrl("https://polyakova.biz/ua");
         homePageInteriorDesign.portfolioBtn().click();
-        homePageInteriorDesign.smartRoomsopen().click();
+        homePageInteriorDesign.smartRoomsOpen().click();
         homePageInteriorDesign.roomInCampus().click();
 
         Assert.assertTrue(homePageInteriorDesign.photoDesignFlatCampus().isDisplayed());
     }
 }
-
-
