@@ -1,5 +1,4 @@
 package Safron.Tests;
-
 import BasePageAndTestInit.TestInit;
 import Safron.Pages.HotlineHeaderViewElements;
 import Safron.Pages.HotlineHeaderViewHelper;
@@ -14,6 +13,9 @@ public class ChangeLocationTestPositive extends TestInit {
     public void test1() {
         openUrl("https://hotline.ua/");
 
+        HotlineHeaderViewHelper hotlineHeaderViewHelper = new HotlineHeaderViewHelper(driver);
+        hotlineHeaderViewHelper.closePopUp();
+
         HotlineHeaderViewElements hotlineHeaderViewElements = new HotlineHeaderViewElements(driver);
         hotlineHeaderViewElements.locationBtn().click();
 
@@ -23,7 +25,6 @@ public class ChangeLocationTestPositive extends TestInit {
         HotlineLocationViewElements hotlineLocationViewElements = new HotlineLocationViewElements(driver);
         hotlineLocationViewElements.locationKyiv().click();
 
-        HotlineHeaderViewHelper hotlineHeaderViewHelper = new HotlineHeaderViewHelper(driver);
         hotlineHeaderViewHelper.getLocationText();
 
         Assert.assertEquals(hotlineHeaderViewHelper.getLocation(), "Київ");
