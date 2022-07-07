@@ -8,8 +8,8 @@ public class TestInteriorDesign extends TestInit {
 
     @Test
     public void designApartmentInSmartRoom() {
-        HomePageInteriorDesign homePageInteriorDesign =  new HomePageInteriorDesign(driver);
-        setUp("https://polyakova.biz/ua");
+        HomePageInteriorDesign homePageInteriorDesign = new HomePageInteriorDesign(driver);
+        openUrl("https://polyakova.biz/ua");
         homePageInteriorDesign.portfolioBtn().click();
         homePageInteriorDesign.smartRoomsopen().click();
         homePageInteriorDesign.roomInCampus().click();

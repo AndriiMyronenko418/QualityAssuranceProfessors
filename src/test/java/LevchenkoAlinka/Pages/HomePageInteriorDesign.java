@@ -39,7 +39,6 @@ public class HomePageInteriorDesign extends BasePage {
     public List<WebElement> imgPriceOpen() {
         return driver.findElements(By.xpath("//a[@href='/ua/design-interior-price-kiev-ukr.html']"));
     }
-
 }
 
 
