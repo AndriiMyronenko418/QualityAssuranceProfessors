@@ -1,8 +1,7 @@
-package Safron.Tests;
-
+package Safron.Hotline.Tests;
 import BasePageAndTestInit.TestInit;
-import Safron.Pages.HotlineHeaderViewElements;
-import Safron.Pages.HotlineHeaderViewHelper;
+import Safron.Hotline.Pages.HotlineHeaderViewElements;
+import Safron.Hotline.Pages.HotlineHeaderViewHelper;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
