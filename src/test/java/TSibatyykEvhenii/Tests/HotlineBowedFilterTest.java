@@ -1,4 +1,4 @@
-package TSibatyykEvhenii;
+package TSibatyykEvhenii.Tests;
 
 import BasePageAndTestInit.TestInit;
 import TSibatyykEvhenii.Asserts.AssertForHotline;
