@@ -15,7 +15,7 @@ public class ProductDetailsPage extends BasePage {
     private static final String SELECT_A_SIZE = "//select[@id='attr-size']";
     private static final String PRODUCT_SIZE_OPTION = "//option[@value='%s']";
     private static final String ADD_TO_CART = "//button[@data-add-to-cart-text='add to cart']";
-    private static final String PROCEED_TO_CHECKOUT_BTN = "//*[@class='mini-cart-actions cart-actions']//a[contains(text(), 'Proceed to checkout')]";
+    private static final String PROCEED_TO_CHECKOUT_BTN = "//div[contains(@class, 'mini-cart-item')]//div[@id='checkout']/a";
 
     //constant
     private String testedName;

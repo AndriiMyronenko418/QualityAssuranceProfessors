@@ -1,6 +1,7 @@
 package BasePageAndTestInit;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -14,12 +15,21 @@ public class TestInit {
         driver.get(site);
     }
 
+    public String getCurrentUrl() {
+        return driver.getCurrentUrl();
+    }
+
     public void sleep(int seconds) {
         try {
             Thread.sleep(seconds * 1000L);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    public void scroll(int pixels) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0," + pixels + ")", "");
     }
 
     @BeforeMethod

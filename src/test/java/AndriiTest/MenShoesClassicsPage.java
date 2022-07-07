@@ -14,4 +14,5 @@ public class MenShoesClassicsPage extends BasePage {
     public WebElement getSk8HiBlackWhiteShoes() {
         return $(SK8_HI_BLACK_WHITE_SHOES);
     }
+
 }

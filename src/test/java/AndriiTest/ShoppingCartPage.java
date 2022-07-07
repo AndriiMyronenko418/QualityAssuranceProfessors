@@ -37,7 +37,7 @@ public class ShoppingCartPage extends BasePage {
     }
 
     public void getProductColorText() {
-        testedColor = $(PRODUCT_COLOR).getText();
+        testedColor = $(PRODUCT_COLOR).getText().split("/")[0];
     }
 
     public String getTestedPriceS() {
