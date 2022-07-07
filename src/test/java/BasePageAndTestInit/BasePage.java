@@ -38,4 +38,9 @@ public class BasePage {
         actions.moveToElement($(locator)).perform();
         return driver.findElement(By.xpath(locator));
     }
+
+    public void moveCursor(String locator){
+        Actions actions = new Actions(driver);
+        actions.moveToElement($(locator)).perform();
+    }
 }
