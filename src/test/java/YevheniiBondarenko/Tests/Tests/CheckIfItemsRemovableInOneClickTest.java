@@ -1,6 +1,6 @@
 package YevheniiBondarenko.Tests.Tests;
 import BasePageAndTestInit.TestInit;
-import YevheniiBondarenko.Tests.Pages.DanceShopperHelper;
+import YevheniiBondarenko.Tests.Pages.*;
 import YevheniiBondarenko.Tests.Pages.HomePageWebElements;
 import org.testng.Assert;
 import org.testng.annotations.Test;
