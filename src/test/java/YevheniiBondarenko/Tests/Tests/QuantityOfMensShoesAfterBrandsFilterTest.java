@@ -25,6 +25,6 @@ public class QuantityOfMensShoesAfterBrandsFilterTest extends TestInit {
         homePageWebElements.brandsButton().click();
         homePageWebElements.shoesBrandList().get(4).click();
 
-        Assert.assertTrue(homePageWebElements.itemQuantityDisplay().size()>21);
+        Assert.assertTrue(homePageWebElements.itemQuantityDisplay().size()>20);
     }
 }
