@@ -22,11 +22,8 @@ public class NewBalance1E2EByingRunningShoes extends TestInit {
         newBalanceWebElement.myChoice().click();
         newBalanceWebElement.sizeBeforeCart().click();
         newBalanceWebElement.addToCart().click();
+
         sleep(1);
         Assert.assertTrue(newBalanceWebElement.itemInsideTheCartVisible().isDisplayed());
-
-
-
-
     }
 }

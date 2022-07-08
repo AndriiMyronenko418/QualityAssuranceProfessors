@@ -1,15 +1,14 @@
 package YevheniiBondarenko.Tests.Pages;
-
 import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import java.util.List;
 
 public class NewBalanceWebElement extends BasePage {
     public NewBalanceWebElement(WebDriver driver) {
         super(driver);
     }
+
     private static final String SEARCH_FIELD = "//input[@name='s']";
     private static final String SEARCH_BTN = "//button[@type='submit'][@class='search-form__btn icon-search']";
     private static final String SHOES = "//a[@class='category-list__link'][contains(text(),'Взуття')]";
@@ -22,8 +21,6 @@ public class NewBalanceWebElement extends BasePage {
     private static final String ADD_TO_CART = "//button[contains(text(),'Додати у кошик')]";
     private static final String ITEM_INSIDE_CART = "//a[@data-shoping='1']";
 
-
-
     public WebElement searchField(){return $(SEARCH_FIELD);}
     public WebElement searchButton(){return $(SEARCH_BTN);}
     public WebElement shoes(){return $(SHOES);}
@@ -34,11 +31,6 @@ public class NewBalanceWebElement extends BasePage {
     public WebElement addToCart(){return $(ADD_TO_CART);}
     public WebElement itemInsideTheCartVisible(){return $(ITEM_INSIDE_CART);}
 
-
-
     public List<WebElement> listOfSize(){return $$(LIST_OF_SIZE);}
     public List<WebElement> kindOfShoes(){return $$(KIND_OF_SHOES);}
-
-
-
 }
