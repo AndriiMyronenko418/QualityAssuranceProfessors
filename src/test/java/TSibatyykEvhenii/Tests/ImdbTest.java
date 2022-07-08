@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class ImdbTest extends TestInit {
 
     @Test
-    public void searchMoviewTest(){
+    public void searchMovieTest(){
         ImdbMainPage imdb = new ImdbMainPage(driver);
         ImdbAssert imdbAssert = new ImdbAssert(driver);
         imdb.goToImdb();
