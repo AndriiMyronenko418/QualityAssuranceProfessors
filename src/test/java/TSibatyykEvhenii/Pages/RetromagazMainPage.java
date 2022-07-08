@@ -8,9 +8,13 @@ import java.util.List;
 
 public class RetromagazMainPage extends BasePage {
 
-    public RetromagazMainPage(WebDriver driver) { super(driver);    }
+    public RetromagazMainPage(WebDriver driver) {
+        super(driver);
+    }
 
-    public void goToRetroMagaz(){driver.get("https://retromagaz.com/");}
+    public void goToRetroMagaz() {
+        driver.get("https://retromagaz.com/");
+    }
 
     private static final String SEARCH_FIELD = "//input[@id='search']";
     private static final String SEARCH_BTN = "//button[@class='search-icon']";
@@ -20,14 +24,27 @@ public class RetromagazMainPage extends BasePage {
     private static final String TO_ORDER_BTN = "//a[contains(@class,'with-shadow')]";
 
 
-    public WebElement goToSearchField(){return $(SEARCH_FIELD);}
+    public WebElement goToSearchField() {
+        return $(SEARCH_FIELD);
+    }
 
-    public WebElement searchBtn(){return $(SEARCH_BTN);}
-    public List<WebElement> listSearchFieldFrom(){return $$(SEARCH_LIST);}
+    public WebElement searchBtn() {
+        return $(SEARCH_BTN);
+    }
 
-    public List<WebElement> listOfSearchResult(){return $$(CONSOLE_CARDS);}
+    public List<WebElement> listSearchFieldFrom() {
+        return $$(SEARCH_LIST);
+    }
 
-    public WebElement getBuyBtn(){return $(BTN_BUY);}
+    public List<WebElement> listOfSearchResult() {
+        return $$(CONSOLE_CARDS);
+    }
 
-    public List<WebElement> getToOrderBtn(){return $$(TO_ORDER_BTN);}
+    public WebElement getBuyBtn() {
+        return $(BTN_BUY);
+    }
+
+    public List<WebElement> getToOrderBtn() {
+        return $$(TO_ORDER_BTN);
+    }
 }
