@@ -12,7 +12,7 @@ public class ImdbMainPage extends BasePage {
     }
 
     private static final String HEADER_SEARCH = "//input[contains(@id,'suggestion-search')]";
-    private static final String SEARCH_REAZULT = "//div[contains(@class,'searchResult__constTitle')]";
+    private static final String SEARCH_RESULT = "//div[contains(@class,'searchResult__constTitle')]";
     private static final String DIRECTOR_STRING = "//a[contains(@class,'ipc-metadata-list-item__list-content-item--link')]";
 
     public void goToImdb() {
@@ -24,7 +24,7 @@ public class ImdbMainPage extends BasePage {
     }
 
     public List<WebElement> getJawsFromSearch() {
-        return $$(SEARCH_REAZULT);
+        return $$(SEARCH_RESULT);
     }
 
     public List<WebElement> getDirectorName() {
