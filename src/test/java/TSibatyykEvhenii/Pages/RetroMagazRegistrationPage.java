@@ -22,7 +22,7 @@ public class RetroMagazRegistrationPage extends BasePage {
 
     public List<WebElement> setNameRegistration(){return $$(INPUT_FIELD_NAME);}
 
-    public List<WebElement> setSurenameRegistration(){return $$(INPUT_FIELD_SURENAME);}
+    public List<WebElement> setSurnameRegistration(){return $$(INPUT_FIELD_SURENAME);}
 
     public List<WebElement> setTelNumberRegistration(){return $$(INPUT_FIELD_TEL_NUMBER);}
 

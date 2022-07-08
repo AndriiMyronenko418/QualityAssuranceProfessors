@@ -10,6 +10,7 @@ public class AssertForHotline extends BasePage {
     public AssertForHotline(WebDriver driver) {
         super(driver);
     }
+
     public void assertBowedInstruments(){
         String actualString = driver.findElement(By.xpath("//b[text()='Вибрані']/..")).getText();
         String expectedString = "2";

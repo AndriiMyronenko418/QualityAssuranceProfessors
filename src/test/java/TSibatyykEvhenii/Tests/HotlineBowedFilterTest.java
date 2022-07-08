@@ -13,7 +13,7 @@ public class HotlineBowedFilterTest extends TestInit {
         AssertForHotline assertForHotline = new AssertForHotline(driver);
         hotline.goToHotline();
         hotline.muzInstrument();
-        hotline.gitarsSectionSelect().click();
+        hotline.guitarsSectionSelect().click();
         hotline.getBowedInstrument().get(2).click();
         sleep(4);
         hotline.violinSection().click();
@@ -41,11 +41,7 @@ public class HotlineBowedFilterTest extends TestInit {
         hotline.openFullStoreList().click();
         hotline.chooseCheckbox().get(46).click();
         hotline.chooseCheckbox().get(61).click();
-        hotline.choosenElementBtn().click();
+        hotline.chosenElementBtn().click();
         assertForHotline.assertBowedInstruments();
     }
 }
-
-
-
-
