@@ -9,8 +9,6 @@ public class NewBalanceManShoesPageHelper extends NewBalanceManShoesPageElements
     public NewBalanceManShoesPageHelper(WebDriver driver) {
         super(driver);
     }
-
-
     ArrayList<String> usSizeList;
 
     public void setUsSizeList() {

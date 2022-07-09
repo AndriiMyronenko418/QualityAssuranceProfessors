@@ -1,4 +1,5 @@
 package Safron.NewBalanceUa.Tests;
+
 import BasePageAndTestInit.TestInit;
 import Safron.NewBalanceUa.Pages.NewBalanceHeaderViewElements;
 import Safron.NewBalanceUa.Pages.NewBalanceHeaderViewHelper;
@@ -6,9 +7,10 @@ import Safron.NewBalanceUa.Pages.NewBalanceManShoesPageElements;
 import Safron.NewBalanceUa.Pages.NewBalanceManShoesPageHelper;
 import org.testng.annotations.Test;
 
-public class TestFilter extends TestInit {
+public class TestSizeBoard extends TestInit {
+
     @Test
-    public void testFilterManShoes(){
+    public void testManShoesSize() {
         openUrl("https://newbalance.ua/");
 
         NewBalanceHeaderViewElements newBalanceHeaderViewElements = new NewBalanceHeaderViewElements(driver);

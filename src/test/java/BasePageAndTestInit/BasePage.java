@@ -44,10 +44,8 @@ public class BasePage {
         actions.moveToElement($(locator)).perform();
     }
 
-    public void doMoveCursor(WebElement element){
+    public void moveCursor(WebElement element){
         Actions actions = new Actions(driver);
         actions.moveToElement(element).perform();
     }
-
-
 }

@@ -8,6 +8,7 @@ public class DisneyBackToSchoolPageElements extends BasePage {
     public DisneyBackToSchoolPageElements(WebDriver driver) {
         super(driver);
     }
+
     private static final String FIRST_PRODUCT_NAME = "//div[@data-pid='464022334657']//a[@class='product__tile_link']";
     private static final String FIRST_PRODUCT_PRICE = "//div[@data-pid='464022334657']//div[@class='price']";
     private static final String PRODUCT_QUICK_SHOP = "//div[@data-pid='464022334657']//a[@data-toggle='modal']";
@@ -16,26 +17,31 @@ public class DisneyBackToSchoolPageElements extends BasePage {
     private static final String ADD_BAG_PRODUCT_BTN = "//div[@class='row cart-and-ipay']//button[@data-pid='464022334657']";
     private static final String ADD_WISH_BTN = "//span[@class='button--secondary ']";
 
-    public WebElement firstProductName(){
+    public WebElement firstProductName() {
         return $(FIRST_PRODUCT_NAME);
     }
-    public WebElement firstProductPrice(){
+
+    public WebElement firstProductPrice() {
         return $(FIRST_PRODUCT_PRICE);
     }
-    public WebElement productQuickShopBtn(){
+
+    public WebElement productQuickShopBtn() {
         return $(PRODUCT_QUICK_SHOP);
     }
-    public WebElement productPriceCart(){
+
+    public WebElement productPriceCart() {
         return $(PRODUCT_PRICE_CART);
     }
-    public WebElement productNameCart(){
+
+    public WebElement productNameCart() {
         return $(PRODUCT_NAME_CART);
     }
-    public WebElement addBagProductBtn(){
+
+    public WebElement addBagProductBtn() {
         return $(ADD_BAG_PRODUCT_BTN);
     }
-    public WebElement addWishBtn(){
+
+    public WebElement addWishBtn() {
         return $(ADD_WISH_BTN);
     }
-
 }

@@ -16,20 +16,19 @@ public class NewBalanceManShoesPageElements extends BasePage {
     private static final String EU_SIZE_BTN = "//span[@data-size='EU']";
     private static final String UA_SIZE_BTN = "//span[@data-size='UA']";
 
-
-    public List<WebElement> sizeBoard(){
+    public List<WebElement> sizeBoard() {
         return $$(SIZE_BOARD_ELEMENTS);
     }
 
-    public WebElement ukSizeBtn(){
+    public WebElement ukSizeBtn() {
         return $(UK_SIZE_BTN);
     }
 
-    public WebElement euSizeBtn(){
+    public WebElement euSizeBtn() {
         return $(EU_SIZE_BTN);
     }
 
-    public WebElement uaSizeBtn(){
+    public WebElement uaSizeBtn() {
         return $(UA_SIZE_BTN);
     }
 }

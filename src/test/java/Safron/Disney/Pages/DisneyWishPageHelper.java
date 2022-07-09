@@ -1,6 +1,5 @@
 package Safron.Disney.Pages;
 
-import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 
 public class DisneyWishPageHelper extends DisneyWishPageElements {
@@ -27,5 +26,4 @@ public class DisneyWishPageHelper extends DisneyWishPageElements {
     public String getTextProductPriceWish() {
         return this.textProductPriceWish;
     }
-
 }
