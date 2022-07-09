@@ -1,4 +1,5 @@
 package YevheniiBondarenko.Tests.Pages;
+
 import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,7 +21,7 @@ public class NewBalanceWebElement extends BasePage {
     private static final String SIZE_BEFORE_CART = "//button[@value='63170']";
     private static final String ADD_TO_CART = "//button[contains(text(),'Додати у кошик')]";
     private static final String ITEM_INSIDE_CART = "//a[@data-shoping='1']";
-
+    //WebElements
     public WebElement searchField(){return $(SEARCH_FIELD);}
     public WebElement searchButton(){return $(SEARCH_BTN);}
     public WebElement shoes(){return $(SHOES);}
@@ -30,7 +31,7 @@ public class NewBalanceWebElement extends BasePage {
     public WebElement sizeBeforeCart(){return $(SIZE_BEFORE_CART);}
     public WebElement addToCart(){return $(ADD_TO_CART);}
     public WebElement itemInsideTheCartVisible(){return $(ITEM_INSIDE_CART);}
-
+    //Lists
     public List<WebElement> listOfSize(){return $$(LIST_OF_SIZE);}
     public List<WebElement> kindOfShoes(){return $$(KIND_OF_SHOES);}
 }
