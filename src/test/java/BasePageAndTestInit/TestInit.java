@@ -4,6 +4,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -42,5 +44,10 @@ public class TestInit {
     @AfterMethod
     public void after() {
         driver.quit();
+    }
+
+    public void doubleClickm(){
+        Actions actions = new Actions(driver);
+        actions.doubleClick().perform();
     }
 }
