@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 public class NewBalance1E2EByingRunningShoes extends TestInit {
     @Test
     public void newBalanceE2EByingShoes(){
+
         NewBalanceWebElement newBalanceWebElement = new NewBalanceWebElement(driver);
         NewBalanceHelper newBalanceHelper = new NewBalanceHelper(driver);
 

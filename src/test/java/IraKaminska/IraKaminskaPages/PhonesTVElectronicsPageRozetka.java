@@ -6,20 +6,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class PhonesTVElectronicsPageRozetka extends BasePage {
+
     public PhonesTVElectronicsPageRozetka(WebDriver driver) {
         super(driver);
     }
 
     public WebElement clickCellphonesRozetkaBtn() {
-        return driver.findElement(By.xpath("//a[@class='tile-cats__heading tile-cats__heading_type_center ng-star-inserted' and @title='Мобильные телефоны']"));
+        return $("//a[@class='tile-cats__heading tile-cats__heading_type_center ng-star-inserted' and @title='Мобильные телефоны']");
     }
 
     public WebElement clickAppleIPhonesRozetkaBtn() {
-        return driver.findElement(By.xpath("//a[@data-id='Apple']"));
+        return $("//a[@data-id='Apple']");
     }
 
     public WebElement clickAppleIPhones13ProMaxRozetkaBtn() {
-        return driver.findElement(By.xpath("//a[@data-id='iPhone 13 Pro Max']"));
+        return $("//a[@data-id='iPhone 13 Pro Max']");
     }
 
     public boolean checkURLAppleIPhones13ProMaxRozetka() {

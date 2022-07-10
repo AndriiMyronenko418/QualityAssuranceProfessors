@@ -11,7 +11,9 @@ public class CheckRozetkaAppleIphones13ProMaxList extends TestInit {
 
     @Test
     public void checkRozetkaAppleIPhones13ProMaxList() {
+
         HomePageRozetka homePageRozetka = new HomePageRozetka(driver);
+
         openUrl("https://rozetka.com.ua/");
         sleep(4);
         if (driver.findElements(By.xpath("//span[@class='exponea-close-cross']")).size()>0) {

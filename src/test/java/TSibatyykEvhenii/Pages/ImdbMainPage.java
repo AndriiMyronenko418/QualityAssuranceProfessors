@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public class ImdbMainPage extends BasePage {
+
     public ImdbMainPage(WebDriver driver) {
         super(driver);
     }
