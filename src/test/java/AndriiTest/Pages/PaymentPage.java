@@ -1,4 +1,4 @@
-package AndriiTest;
+package AndriiTest.Pages;
 
 import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;
@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Objects;
 
 public class PaymentPage extends BasePage {
+
     public PaymentPage(WebDriver driver) {
         super(driver);
     }
@@ -21,7 +22,6 @@ public class PaymentPage extends BasePage {
         for (WebElement billingAddressInfoWebElement : billingAddressInfoWebElements) {
             billingAddressInfo.add(billingAddressInfoWebElement.getText());
         }
-
         billingAddressInfo.removeIf(Objects::isNull);
         billingAddressInfo.removeIf(String::isEmpty);
         return billingAddressInfo;

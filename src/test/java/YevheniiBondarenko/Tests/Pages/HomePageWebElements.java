@@ -84,4 +84,3 @@ public class HomePageWebElements extends BasePage {
         return $(CURRENCY_BUTTON);
     }
 }
-

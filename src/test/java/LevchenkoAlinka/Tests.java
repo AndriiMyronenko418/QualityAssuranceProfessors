@@ -8,7 +8,9 @@ public class Tests extends TestInit {
 
     @Test
     public void designApartmentInSmartRoom() {
+
         HomePage homePage = new HomePage(driver);
+
         openUrl("https://polyakova.biz/ua");
         homePage.portfolioBtn().click();
         homePage.smartRoomsOpen().click();
@@ -17,5 +19,3 @@ public class Tests extends TestInit {
         Assert.assertTrue(homePage.photoDesignFlatCampus().isDisplayed());
     }
 }
-
-

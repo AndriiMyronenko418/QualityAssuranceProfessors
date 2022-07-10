@@ -9,8 +9,10 @@ public class RetroMagaz extends TestInit {
 
     @Test
     public void buyXboxSeriesX() {
+
         RetromagazMainPage retroMag = new RetromagazMainPage(driver);
         RetroMagazRegistrationPage regPage = new RetroMagazRegistrationPage(driver);
+
         retroMag.goToRetroMagaz();
         retroMag.goToSearchField().sendKeys("Xbox series x");
         retroMag.listSearchFieldFrom().get(2).click();

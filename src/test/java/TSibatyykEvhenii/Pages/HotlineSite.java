@@ -28,7 +28,7 @@ public class HotlineSite extends BasePage {
     }
 
     public void muzInstrument() {
-         moveTo(LEFT_MENU_LIST);
+        moveTo(LEFT_MENU_LIST);
     }
 
     public WebElement guitarsSectionSelect() {
