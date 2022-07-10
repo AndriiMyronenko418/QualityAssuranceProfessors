@@ -7,7 +7,7 @@ public class DanceShopperHelper extends HomePageWebElements {
         super(driver);
     }
 
-    public void goToDanceShopper(){ driver.get("https://www.danceshopper.com/Default");
-
+    public void goToDanceShopper() {
+        driver.get("https://www.danceshopper.com/Default");
     }
 }
