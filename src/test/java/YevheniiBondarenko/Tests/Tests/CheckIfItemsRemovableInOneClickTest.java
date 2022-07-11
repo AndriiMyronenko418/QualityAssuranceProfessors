@@ -11,7 +11,7 @@ public class CheckIfItemsRemovableInOneClickTest extends TestInit {
     public void checkIfItemsARemovable(){
         HomePageWebElements homePageWebElements = new HomePageWebElements(driver);
 
-        openUrl("https://www.danceshopper.com/Default");                                         //open Dance Shopper web-product
+        openUrl("https://www.danceshopper.com/Default");                           //open Dance Shopper web-product
         homePageWebElements.searchSelectorMenu().click();                              // Step 1: click on Selection Menu button
         homePageWebElements.CategoryMusicFromSearchSelectorMenu().click();             // Step 2: click on Music category
         homePageWebElements.searchField().get(0).sendKeys("latin\n");      // Step 3: type searching element name in search field(press enter)
