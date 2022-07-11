@@ -1,4 +1,4 @@
-package Safron.Pages;
+package Safron.Hotline.Pages;
 
 import BasePageAndTestInit.TestInit;
 import org.openqa.selenium.JavascriptExecutor;
@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 public class HotlineHeaderViewHelper extends HotlineHeaderViewElements {
-
     public HotlineHeaderViewHelper(WebDriver driver) {
         super(driver);
     }
@@ -18,7 +17,7 @@ public class HotlineHeaderViewHelper extends HotlineHeaderViewElements {
         return this.location;
     }
 
-    public void getLocationText() {
+    public void setLocationText() {
         location = locationBtnKyiv().getText();
     }
 
@@ -43,5 +42,4 @@ public class HotlineHeaderViewHelper extends HotlineHeaderViewElements {
     public String getColorAfter(WebElement element) {
         return element.getCssValue("color");
     }
-
 }
