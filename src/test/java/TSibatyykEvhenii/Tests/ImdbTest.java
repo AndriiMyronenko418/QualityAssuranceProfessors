@@ -9,6 +9,7 @@ public class ImdbTest extends TestInit {
 
     @Test
     public void searchMovieTest(){
+
         ImdbMainPage imdb = new ImdbMainPage(driver);
         ImdbAssert imdbAssert = new ImdbAssert(driver);
 

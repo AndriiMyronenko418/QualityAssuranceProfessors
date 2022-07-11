@@ -9,6 +9,7 @@ public class HotlineBowedFilterTest extends TestInit {
 
     @Test
     public void hotlineTest(){
+
         HotlineSite hotline = new HotlineSite(driver);
         AssertForHotline assertForHotline = new AssertForHotline(driver);
 
@@ -43,6 +44,7 @@ public class HotlineBowedFilterTest extends TestInit {
         hotline.chooseCheckbox().get(46).click();
         hotline.chooseCheckbox().get(61).click();
         hotline.chosenElementBtn().click();
+
         assertForHotline.assertBowedInstruments();
     }
 }

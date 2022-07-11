@@ -1,5 +1,6 @@
-package AndriiTest;
+package AndriiTest.Tests;
 
+import AndriiTest.Pages.*;
 import BasePageAndTestInit.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;

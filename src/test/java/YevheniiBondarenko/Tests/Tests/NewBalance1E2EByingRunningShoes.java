@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 public class NewBalance1E2EByingRunningShoes extends TestInit {
     @Test
     public void newBalanceE2EByingShoes(){
+
         NewBalanceWebElement newBalanceWebElement = new NewBalanceWebElement(driver);
         NewBalanceHelper newBalanceHelper = new NewBalanceHelper(driver);
 
@@ -23,7 +24,7 @@ public class NewBalance1E2EByingRunningShoes extends TestInit {
         newBalanceWebElement.sizeBeforeCart().click();
         newBalanceWebElement.addToCart().click();
 
-        sleep(1);
+        sleep(1); // without a 'sleep' it's falling, but you can try to change if you want
         Assert.assertTrue(newBalanceWebElement.itemInsideTheCartVisible().isDisplayed());
     }
 }

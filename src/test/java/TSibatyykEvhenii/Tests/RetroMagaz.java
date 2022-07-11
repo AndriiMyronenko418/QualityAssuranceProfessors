@@ -9,6 +9,7 @@ public class RetroMagaz extends TestInit {
 
     @Test
     public void buyXboxSeriesX() {
+
         RetromagazMainPage retroMag = new RetromagazMainPage(driver);
         RetroMagazRegistrationPage regPage = new RetroMagazRegistrationPage(driver);
 

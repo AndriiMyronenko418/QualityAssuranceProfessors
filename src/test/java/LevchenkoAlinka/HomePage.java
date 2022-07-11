@@ -25,8 +25,3 @@ public class HomePage extends BasePage {
         return $("//*[@class='portfolio-room']");
     }
 }
-
-
-
-
-
