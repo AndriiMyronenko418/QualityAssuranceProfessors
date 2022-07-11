@@ -1,8 +1,8 @@
 package TSibatyykEvhenii.Tests;
 
 import BasePageAndTestInit.TestInit;
-import TSibatyykEvhenii.Pages.RetroMagazRegistrationPage;
-import TSibatyykEvhenii.Pages.RetromagazMainPage;
+import TSibatyykEvhenii.Pages.RetroMagaz.RetroMagazRegistrationPage;
+import TSibatyykEvhenii.Pages.RetroMagaz.RetromagazMainPage;
 import org.testng.annotations.Test;
 
 public class RetroMagaz extends TestInit {
@@ -11,7 +11,8 @@ public class RetroMagaz extends TestInit {
     public void buyXboxSeriesX() {
         RetromagazMainPage retroMag = new RetromagazMainPage(driver);
         RetroMagazRegistrationPage regPage = new RetroMagazRegistrationPage(driver);
-        retroMag.goToRetroMagaz();
+
+        openUrl("https://retromagaz.com/");
         retroMag.goToSearchField().sendKeys("Xbox series x");
         retroMag.listSearchFieldFrom().get(2).click();
         retroMag.listOfSearchResult().get(1).click();

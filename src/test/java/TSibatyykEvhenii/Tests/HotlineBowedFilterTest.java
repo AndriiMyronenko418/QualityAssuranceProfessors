@@ -2,7 +2,7 @@ package TSibatyykEvhenii.Tests;
 
 import BasePageAndTestInit.TestInit;
 import TSibatyykEvhenii.Asserts.AssertForHotline;
-import TSibatyykEvhenii.Pages.HotlineSite;
+import TSibatyykEvhenii.Pages.Hotline.HotlineSite;
 import org.testng.annotations.Test;
 
 public class HotlineBowedFilterTest extends TestInit {
@@ -11,7 +11,8 @@ public class HotlineBowedFilterTest extends TestInit {
     public void hotlineTest(){
         HotlineSite hotline = new HotlineSite(driver);
         AssertForHotline assertForHotline = new AssertForHotline(driver);
-        hotline.goToHotline();
+
+        openUrl("https://hotline.ua/");
         hotline.muzInstrument();
         hotline.guitarsSectionSelect().click();
         hotline.getBowedInstrument().get(2).click();

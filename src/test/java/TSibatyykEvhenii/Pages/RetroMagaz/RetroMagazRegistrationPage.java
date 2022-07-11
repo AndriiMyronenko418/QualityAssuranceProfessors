@@ -1,4 +1,4 @@
-package TSibatyykEvhenii.Pages;
+package TSibatyykEvhenii.Pages.RetroMagaz;
 
 import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;
