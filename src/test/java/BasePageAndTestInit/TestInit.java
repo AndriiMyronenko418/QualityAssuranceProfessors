@@ -14,7 +14,7 @@ import org.testng.annotations.BeforeMethod;
 public class TestInit {
 
     //type name of the browser you're using in this variable (chrome or firefox)
-    private static final String BROWSER_NAME = "chrome";
+    private static final String BROWSER_NAME = "firefox";
 
     //put false here if you want to see browser or true to headless mode
     private final boolean headless = false;
