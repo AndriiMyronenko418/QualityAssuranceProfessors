@@ -2,6 +2,7 @@ package TSibatyykEvhenii.Pages.Epicentr;
 
 import BasePageAndTestInit.BasePage;
 import io.netty.handler.codec.http.multipart.AbstractDiskHttpData;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -25,7 +26,7 @@ public class SearchResult extends BasePage {
     }
 
     public void moveToFirstElementCable(){
-         moveCursor(SEARCH_RESULTS_CARDS);
+        moveCursor(driver.findElement(By.xpath(("(//div[contains(@class,'card ')])[1]"))));
     }
 
 
