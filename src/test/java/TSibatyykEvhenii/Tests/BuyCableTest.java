@@ -9,7 +9,7 @@ import TSibatyykEvhenii.Pages.Epicentr.PurchasePage;
 import TSibatyykEvhenii.Pages.Epicentr.SearchResult;
 import org.testng.annotations.Test;
 
-public class BuyCabelTest extends TestInit {
+public class BuyCableTest extends TestInit {
 
     @Test
     public void CabelBuy() {
@@ -25,10 +25,11 @@ public class BuyCabelTest extends TestInit {
         emp.searchField().get(0).sendKeys("кабель");
         emp.searchBtn().click();
         sleep(2);
-        searchResult.chooseComputerCabel().get(2).click();
-        searchResult.moveToFirstElementCabel();
+        searchResult.chooseComputerCable().get(2).click();
+        sleep(3);
+        searchResult.moveToFirstElementCable();
         searchResult.addToCart().get(0).click();
         cartPage.getPurchaseBtn().click();
-        epicentr.epicentrEnding();
+        epicentr.assertEnding();
     }
 }

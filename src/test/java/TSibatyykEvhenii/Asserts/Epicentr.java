@@ -20,12 +20,12 @@ public class Epicentr extends BasePage {
         Assert.assertEquals(expectet, actual);
         System.out.println("Assert acepted");
     }
-    public void epicentrEnding(){
+    public void assertEnding(){
         PurchasePage purchasePage = new PurchasePage(driver);
 
-        String expect = "30204426";
+        String expected = "30204426";
         String actual = purchasePage.getNumberBuyingElement().getText();
-        Assert.assertEquals(expect, actual);
+        Assert.assertEquals(expected, actual);
         System.out.println("We choose right cabel");
 
     }
