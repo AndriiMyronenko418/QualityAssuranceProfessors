@@ -17,10 +17,11 @@ public class SignIn extends TestInit {
 
     @Test(dataProvider = "user info")
     public void signIn(String email, String password) {
-        openUrl("https://newbalance.ua/");
 
         NewBalanceHeaderViewElements newBalanceHeaderViewElements = new NewBalanceHeaderViewElements(driver);
         NewBalanceSignInViewElements newBalanceSignInViewElements = new NewBalanceSignInViewElements(driver);
+
+        openUrl("https://newbalance.ua/");
 
         newBalanceHeaderViewElements.signInBtn().click();
         newBalanceSignInViewElements.emailField().sendKeys(email);
