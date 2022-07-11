@@ -1,6 +1,6 @@
 package YevheniiBondarenko.Tests.Tests;
 import BasePageAndTestInit.TestInit;
-import YevheniiBondarenko.Tests.Pages.DanceShopperHelper;
+import YevheniiBondarenko.Tests.Pages.*;
 import YevheniiBondarenko.Tests.Pages.HomePageWebElements;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -10,6 +10,7 @@ public class CheckIfItemsRemovableInOneClickTest extends TestInit {
     @Test
 
     public void checkIfItemsARemovable(){
+
         DanceShopperHelper danceShopperHelper = new DanceShopperHelper(driver);
         HomePageWebElements homePageWebElements = new HomePageWebElements(driver);
 
@@ -22,8 +23,5 @@ public class CheckIfItemsRemovableInOneClickTest extends TestInit {
         homePageWebElements.removeInOneClick().click();                                // Step 6: delete product in one click
 
         Assert.assertTrue(homePageWebElements.itemsInsideBasket().isEnabled());        // check if cart is empty if true - test passed!
-
-
     }
-
 }

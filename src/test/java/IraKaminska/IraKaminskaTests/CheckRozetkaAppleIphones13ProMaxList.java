@@ -3,7 +3,6 @@ package IraKaminska.IraKaminskaTests;
 import BasePageAndTestInit.TestInit;
 import IraKaminska.IraKaminskaPages.HomePageRozetka;
 import IraKaminska.IraKaminskaPages.PhonesTvElectronicsPageRozetka;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

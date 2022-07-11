@@ -10,10 +10,12 @@ public class AssertForHotline extends BasePage {
     public AssertForHotline(WebDriver driver) {
         super(driver);
     }
-    public void assertBowedInstruments(){
+
+    public void assertBowedInstruments() {
         String actualString = driver.findElement(By.xpath("//b[text()='Вибрані']/..")).getText();
         String expectedString = "2";
-        Assert.assertTrue(actualString.contains(expectedString));{
+        Assert.assertTrue(actualString.contains(expectedString));
+        {
             System.out.println("Assert pass");
         }
     }

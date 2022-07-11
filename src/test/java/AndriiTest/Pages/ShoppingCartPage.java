@@ -1,10 +1,11 @@
-package AndriiTest;
+package AndriiTest.Pages;
 
 import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class ShoppingCartPage extends BasePage {
+
     public ShoppingCartPage(WebDriver driver) {
         super(driver);
     }
@@ -37,7 +38,7 @@ public class ShoppingCartPage extends BasePage {
     }
 
     public void getProductColorText() {
-        testedColor = $(PRODUCT_COLOR).getText();
+        testedColor = $(PRODUCT_COLOR).getText().split("/")[0];
     }
 
     public String getTestedPriceS() {

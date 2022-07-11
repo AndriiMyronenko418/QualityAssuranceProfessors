@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class PhonesTvElectronicsPageRozetka extends BasePage {
+
     public PhonesTvElectronicsPageRozetka(WebDriver driver) {
         super(driver);
     }

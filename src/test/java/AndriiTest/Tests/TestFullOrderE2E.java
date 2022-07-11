@@ -1,11 +1,9 @@
-package AndriiTest;
+package AndriiTest.Tests;
 
+import AndriiTest.Pages.*;
 import BasePageAndTestInit.TestInit;
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import static AndriiTest.HomePage.MEN_DROPDOWN_BTN;
 
 public class TestFullOrderE2E extends TestInit {
 
@@ -21,16 +19,10 @@ public class TestFullOrderE2E extends TestInit {
 
         openUrl("https://www.vans.co.uk/");
         homePage.getAllowAllCookieBtn().click();
-        sleep(2);
-        homePage.moveCursor(MEN_DROPDOWN_BTN);
+        homePage.moveCursor(homePage.getManDropdownBtn());
         homePage.getManClassicsBtn().click();
-
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,350)", "");
-
+        scroll(400);
         menShoesClassicsPage.getSk8HiBlackWhiteShoes().click();
-        homePage.getPopUpCloseTryCatch();
-
         productDetailsPage.getSizeSelector().click();
         productDetailsPage.getSize("10.5").click();
         productDetailsPage.getProductNameText();
