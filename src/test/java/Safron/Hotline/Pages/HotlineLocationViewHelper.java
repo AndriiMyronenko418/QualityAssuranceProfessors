@@ -1,9 +1,5 @@
-<<<<<<< HEAD:src/test/java/Safron/Hotline/Pages/HotlineLocationViewHelper.java
 package Safron.Hotline.Pages;
-=======
-package Safron.Pages;
 
->>>>>>> master:src/test/java/Safron/Pages/HotlineLocationViewHelper.java
 import org.openqa.selenium.WebDriver;
 
 public class HotlineLocationViewHelper extends HotlineLocationViewElements {

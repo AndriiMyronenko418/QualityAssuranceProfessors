@@ -15,20 +15,23 @@ public class DisneyHeaderViewElements extends BasePage {
     private static final String BAG_BTN = "//span[@class='minicart-quantity-label']";
     private static final String VIEW_WISH_POP_UP_BTN = "//a[@aria-label='View Wish List']";
 
-    public WebElement headerSearch(){
+    public WebElement headerSearch() {
         return $(HEADER_SEARCH);
     }
-    public WebElement searchField(){
+
+    public WebElement searchField() {
         return $(SEARCH_FIELD);
     }
-    public WebElement backToSchoolCategoryBtn(){
+
+    public WebElement backToSchoolCategoryBtn() {
         return $(BACK_TO_SCHOOL_CATEGORY_BTN);
     }
-    public WebElement bagBtn(){
+
+    public WebElement bagBtn() {
         return $(BAG_BTN);
     }
-    public WebElement viewWishPopUpBtn(){
+
+    public WebElement viewWishPopUpBtn() {
         return $(VIEW_WISH_POP_UP_BTN);
     }
-
 }

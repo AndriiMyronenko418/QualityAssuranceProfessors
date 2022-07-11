@@ -1,9 +1,5 @@
-<<<<<<< HEAD:src/test/java/Safron/Hotline/Pages/HotlineHeaderViewElements.java
 package Safron.Hotline.Pages;
-=======
-package Safron.Pages;
 
->>>>>>> master:src/test/java/Safron/Pages/HotlineHeaderViewElements.java
 import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -42,3 +38,6 @@ public class HotlineHeaderViewElements extends BasePage {
         return $$(RIGHT_HEADER_BTNS);
     }
 }
+
+
+

@@ -1,9 +1,3 @@
-<<<<<<< HEAD:src/test/java/Safron/Hotline/Pages/HotlineLocationViewElements.java
-package Safron.Hotline.Pages;
-=======
-package Safron.Pages;
-
->>>>>>> master:src/test/java/Safron/Pages/HotlineLocationViewElements.java
 import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

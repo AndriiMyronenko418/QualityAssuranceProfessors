@@ -19,8 +19,8 @@ public class TestFullOrderE2E extends TestInit {
 
         openUrl("https://www.vans.co.uk/");
         homePage.getAllowAllCookieBtn().click();
-        homePage.moveCursor(homePage.getManDropdownBtn());
-        homePage.getManClassicsBtn().click();
+        homePage.moveCursor(homePage.getHeaderOption("/men"));
+        homePage.getDropdownWindowOption("men-shoes-classics").click();
         scroll(400);
         menShoesClassicsPage.getSk8HiBlackWhiteShoes().click();
         productDetailsPage.getSizeSelector().click();
