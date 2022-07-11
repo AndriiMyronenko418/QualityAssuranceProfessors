@@ -1,4 +1,4 @@
-package Safron.Pages;
+package Safron.Hotline.Pages;
 
 import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;

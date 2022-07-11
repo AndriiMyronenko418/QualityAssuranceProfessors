@@ -1,8 +1,8 @@
-package Safron.Tests;
+package Safron.Hotline.Tests;
 
 import BasePageAndTestInit.TestInit;
-import Safron.Pages.HotlineHeaderViewElements;
-import Safron.Pages.HotlineHeaderViewHelper;
+import Safron.Hotline.Pages.HotlineHeaderViewElements;
+import Safron.Hotline.Pages.HotlineHeaderViewHelper;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -10,14 +10,14 @@ import org.testng.annotations.Test;
 public class ButtonsChangeColorTest extends TestInit {
 
     @Test
-    public void test4() {
+    public void testColorChanged() {
+
+        HotlineHeaderViewHelper hotlineHeaderViewHelper = new HotlineHeaderViewHelper(driver);
+        HotlineHeaderViewElements hotlineHeaderViewElements = new HotlineHeaderViewElements(driver);
 
         openUrl("https://hotline.ua/");
 
-        HotlineHeaderViewHelper hotlineHeaderViewHelper = new HotlineHeaderViewHelper(driver);
         hotlineHeaderViewHelper.closePopUp();
-
-        HotlineHeaderViewElements hotlineHeaderViewElements = new HotlineHeaderViewElements(driver);
 
         for (WebElement element : hotlineHeaderViewElements.rightSideHeaderButtons()) {
             hotlineHeaderViewHelper.moveCursor(element);
