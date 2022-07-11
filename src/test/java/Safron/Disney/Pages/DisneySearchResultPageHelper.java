@@ -17,7 +17,7 @@ public class DisneySearchResultPageHelper extends DisneySearchResultPageElements
         textCategory = spiderManCategory().getText();
     }
 
-    String textTitle;
+    private String textTitle;
 
     public String getTextTitle() {
         return this.textTitle;
@@ -27,7 +27,7 @@ public class DisneySearchResultPageHelper extends DisneySearchResultPageElements
         textTitle = titleText().getText();
     }
 
-    String oneOfProductText;
+    private String oneOfProductText;
 
     public void setOneOfProductText() {
         oneOfProductText = oneOfProduct().getText().substring(26, 30);

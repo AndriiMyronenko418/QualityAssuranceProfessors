@@ -12,12 +12,13 @@ public class TestCartAndWish extends TestInit {
 
     @Test
     public void testCartAndWishList() {
-        openUrl("https://www.shopdisney.com/");
 
         DisneyHeaderViewElements disneyHeaderViewElements = new DisneyHeaderViewElements(driver);
         DisneyBackToSchoolPageHelper disneyBackToSchoolPageHelper = new DisneyBackToSchoolPageHelper(driver);
         DisneyBackToSchoolPageElements disneyBackToSchoolPageElements = new DisneyBackToSchoolPageElements(driver);
         DisneyWishPageHelper disneyWishPageHelper = new DisneyWishPageHelper(driver);
+
+        openUrl("https://www.shopdisney.com/");
 
         disneyHeaderViewElements.backToSchoolCategoryBtn().click();
         disneyBackToSchoolPageHelper.setTextNameProduct();

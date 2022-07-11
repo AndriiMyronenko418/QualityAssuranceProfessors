@@ -18,7 +18,9 @@ public class ChangeLocationTestNegative extends TestInit {
         HotlineLocationViewHelper hotlineLocationViewHelper = new HotlineLocationViewHelper(driver);
         HotlineLocationViewElements hotlineLocationViewElements = new HotlineLocationViewElements(driver);
 
+
         openUrl("https://hotline.ua/");
+
 
         hotlineHeaderViewHelper.closePopUp();
         hotlineHeaderViewElements.locationBtn().click();

@@ -11,11 +11,12 @@ public class TestSearchAndFilter extends TestInit {
 
     @Test
     public void testSearchAndFilter() {
-        openUrl("https://www.shopdisney.com/");
 
         DisneyHeaderViewHelper disneyHeaderViewHelper = new DisneyHeaderViewHelper(driver);
         DisneySearchResultPageHelper disneySearchResultPageHelper = new DisneySearchResultPageHelper(driver);
         DisneySearchResultPageElements disneySearchResultPageElements = new DisneySearchResultPageElements(driver);
+
+        openUrl("https://www.shopdisney.com/");
 
         disneyHeaderViewHelper.search("Spider-Man");
         disneySearchResultPageHelper.setTextCategory();

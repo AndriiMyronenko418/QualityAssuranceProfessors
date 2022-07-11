@@ -8,7 +8,7 @@ public class DisneyBackToSchoolPageHelper extends DisneyBackToSchoolPageElements
         super(driver);
     }
 
-    String textNameProduct;
+    private String textNameProduct;
 
     public void setTextNameProduct() {
         textNameProduct = firstProductName().getText();
@@ -18,7 +18,7 @@ public class DisneyBackToSchoolPageHelper extends DisneyBackToSchoolPageElements
         return this.textNameProduct;
     }
 
-    String textPriceProduct;
+    private String textPriceProduct;
 
     public void setTextPriceProduct() {
         textPriceProduct = firstProductPrice().getText();
@@ -28,7 +28,7 @@ public class DisneyBackToSchoolPageHelper extends DisneyBackToSchoolPageElements
         return this.textPriceProduct;
     }
 
-    String textNameProductCart;
+    private String textNameProductCart;
 
     public void setTextNameProductCart() {
         textNameProductCart = productNameCart().getText();
@@ -38,7 +38,7 @@ public class DisneyBackToSchoolPageHelper extends DisneyBackToSchoolPageElements
         return this.textNameProductCart;
     }
 
-    String textPriceProductCart;
+    private String textPriceProductCart;
 
     public void setTextPriceProductCart() {
         textPriceProductCart = productPriceCart().getText();

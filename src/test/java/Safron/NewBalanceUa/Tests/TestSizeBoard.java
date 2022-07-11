@@ -11,12 +11,13 @@ public class TestSizeBoard extends TestInit {
 
     @Test
     public void testManShoesSize() {
-        openUrl("https://newbalance.ua/");
 
         NewBalanceHeaderViewElements newBalanceHeaderViewElements = new NewBalanceHeaderViewElements(driver);
         NewBalanceHeaderViewHelper newBalanceHeaderViewHelper = new NewBalanceHeaderViewHelper(driver);
         NewBalanceManShoesPageElements newBalanceManShoesPageElements = new NewBalanceManShoesPageElements(driver);
         NewBalanceManShoesPageHelper newBalanceManShoesPageHelper = new NewBalanceManShoesPageHelper(driver);
+
+        openUrl("https://newbalance.ua/");
 
         newBalanceHeaderViewHelper.moveToManCatalogBtn();
         newBalanceHeaderViewElements.manAllShoesBtn().click();
