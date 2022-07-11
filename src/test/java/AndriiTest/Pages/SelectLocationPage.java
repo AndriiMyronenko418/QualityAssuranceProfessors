@@ -1,10 +1,11 @@
-package AndriiTest;
+package AndriiTest.Pages;
 
 import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class SelectLocationPage extends BasePage {
+
     public SelectLocationPage(WebDriver driver) {
         super(driver);
     }

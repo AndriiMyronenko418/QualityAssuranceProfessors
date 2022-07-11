@@ -11,7 +11,12 @@ import org.testng.annotations.Test;
 public class ChangeLocationTestPositive extends TestInit {
 
     @Test
+<<<<<<< HEAD:src/test/java/Safron/Hotline/Tests/ChangeLocationTestPositive.java
     public void testWithCorrectLocation() {
+=======
+    public void test1() {
+
+>>>>>>> master:src/test/java/Safron/Tests/ChangeLocationTestPositive.java
         openUrl("https://hotline.ua/");
 
         HotlineHeaderViewHelper hotlineHeaderViewHelper = new HotlineHeaderViewHelper(driver);

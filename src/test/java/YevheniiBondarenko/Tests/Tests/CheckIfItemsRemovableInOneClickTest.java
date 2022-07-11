@@ -10,6 +10,7 @@ public class CheckIfItemsRemovableInOneClickTest extends TestInit {
     @Test
 
     public void checkIfItemsARemovable(){
+
         DanceShopperHelper danceShopperHelper = new DanceShopperHelper(driver);
         HomePageWebElements homePageWebElements = new HomePageWebElements(driver);
 
@@ -22,8 +23,5 @@ public class CheckIfItemsRemovableInOneClickTest extends TestInit {
         homePageWebElements.removeInOneClick().click();                                // Step 6: delete product in one click
 
         Assert.assertTrue(homePageWebElements.itemsInsideBasket().isEnabled());        // check if cart is empty if true - test passed!
-
-
     }
-
 }
