@@ -9,16 +9,12 @@ import org.testng.annotations.Test;
 public class ChangeLanguageTest extends TestInit {
 
     @Test
-<<<<<<< HEAD:src/test/java/Safron/Hotline/Tests/ChangeLanguageTest.java
     public void testLanguageChanged() {
-=======
-    public void test3(){
-
->>>>>>> master:src/test/java/Safron/Tests/ChangeLanguageTest.java
-        openUrl("https://hotline.ua/");
 
         HotlineHeaderViewHelper hotlineHeaderViewHelper = new HotlineHeaderViewHelper(driver);
         HotlineHeaderViewElements hotlineHeaderViewElements = new HotlineHeaderViewElements(driver);
+
+        openUrl("https://hotline.ua/");
 
         hotlineHeaderViewHelper.closePopUp();
         hotlineHeaderViewElements.languageHeaderBtnRu().click();

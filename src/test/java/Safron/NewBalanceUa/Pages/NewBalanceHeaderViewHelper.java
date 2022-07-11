@@ -1,7 +1,6 @@
 package Safron.NewBalanceUa.Pages;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 
 public class NewBalanceHeaderViewHelper extends NewBalanceHeaderViewElements {
     public NewBalanceHeaderViewHelper(WebDriver driver) {
@@ -10,5 +9,10 @@ public class NewBalanceHeaderViewHelper extends NewBalanceHeaderViewElements {
 
     public void moveToManCatalogBtn() {
         moveCursor(manCatalogBtn());
+    }
+
+    public void search(String text) {
+        searchField().sendKeys(text);
+        searchBtn().click();
     }
 }

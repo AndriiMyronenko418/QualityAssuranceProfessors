@@ -44,4 +44,3 @@ public class BasePage {
         action.moveToElement(element).perform();
     }
 }
-
