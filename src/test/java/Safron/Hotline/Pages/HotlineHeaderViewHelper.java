@@ -42,5 +42,4 @@ public class HotlineHeaderViewHelper extends HotlineHeaderViewElements {
     public String getColorAfter(WebElement element) {
         return element.getCssValue("color");
     }
-
 }

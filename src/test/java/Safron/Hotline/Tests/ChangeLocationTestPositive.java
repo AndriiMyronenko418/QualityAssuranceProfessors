@@ -12,12 +12,13 @@ public class ChangeLocationTestPositive extends TestInit {
 
     @Test
     public void testWithCorrectLocation() {
-        openUrl("https://hotline.ua/");
 
         HotlineHeaderViewHelper hotlineHeaderViewHelper = new HotlineHeaderViewHelper(driver);
         HotlineHeaderViewElements hotlineHeaderViewElements = new HotlineHeaderViewElements(driver);
         HotlineLocationViewHelper hotlineLocationViewHelper = new HotlineLocationViewHelper(driver);
         HotlineLocationViewElements hotlineLocationViewElements = new HotlineLocationViewElements(driver);
+
+        openUrl("https://hotline.ua/");
 
         hotlineHeaderViewHelper.closePopUp();
         hotlineHeaderViewElements.locationBtn().click();

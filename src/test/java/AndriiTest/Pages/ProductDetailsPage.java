@@ -1,10 +1,11 @@
-package AndriiTest;
+package AndriiTest.Pages;
 
 import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class ProductDetailsPage extends BasePage {
+
     public ProductDetailsPage(WebDriver driver) {
         super(driver);
     }
@@ -17,7 +18,6 @@ public class ProductDetailsPage extends BasePage {
     private static final String ADD_TO_CART = "//button[@data-add-to-cart-text='add to cart']";
     private static final String PROCEED_TO_CHECKOUT_BTN = "//div[contains(@class, 'mini-cart-item')]//div[@id='checkout']/a";
 
-    //constant
     private String testedName;
     private String testedColor;
     private String testedPrice;

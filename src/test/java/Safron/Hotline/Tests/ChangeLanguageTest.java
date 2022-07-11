@@ -10,10 +10,11 @@ public class ChangeLanguageTest extends TestInit {
 
     @Test
     public void testLanguageChanged() {
-        openUrl("https://hotline.ua/");
 
         HotlineHeaderViewHelper hotlineHeaderViewHelper = new HotlineHeaderViewHelper(driver);
         HotlineHeaderViewElements hotlineHeaderViewElements = new HotlineHeaderViewElements(driver);
+
+        openUrl("https://hotline.ua/");
 
         hotlineHeaderViewHelper.closePopUp();
         hotlineHeaderViewElements.languageHeaderBtnRu().click();

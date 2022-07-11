@@ -3,9 +3,11 @@ package Safron.Hotline.Pages;
 import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
 import java.util.List;
 
 public class HotlineHeaderViewElements extends BasePage {
+
     public HotlineHeaderViewElements(WebDriver driver) {
         super(driver);
     }
@@ -15,7 +17,6 @@ public class HotlineHeaderViewElements extends BasePage {
     private static final String LANGUAGE_BTN_RU = "//header//span[@data-language='ru']";
     private static final String LANGUAGE_BTN_UK = "//header//span[@data-language='uk']";
     private static final String RIGHT_HEADER_BTNS = "//div[@class='dropdown dropdown-pull-right']";
-
 
     public WebElement locationBtn() {
         return $(LOCATION_BTN);

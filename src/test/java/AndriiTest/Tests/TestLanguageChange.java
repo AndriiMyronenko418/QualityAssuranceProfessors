@@ -1,5 +1,7 @@
-package AndriiTest;
+package AndriiTest.Tests;
 
+import AndriiTest.Pages.HomePage;
+import AndriiTest.Pages.SelectLocationPage;
 import BasePageAndTestInit.TestInit;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
