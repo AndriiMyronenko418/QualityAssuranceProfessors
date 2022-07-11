@@ -31,6 +31,8 @@ public class DeliveryDetailsPage extends BasePage {
     public static final String POST_CODE = "CF40 1NN";
     public static final String PHONE = "380660001111";
     public static final String EMAIL = "testVans@gmail.com";
+    public static final String PASSWORD = "Testv4ns";
+    public static final String BIRTH_DATE = "08/07/2004";
 
     ArrayList<String> testUserInfo = new ArrayList<>();
 
