@@ -1,12 +1,18 @@
+<<<<<<< HEAD:src/test/java/Safron/Hotline/Pages/HotlineLocationViewHelper.java
 package Safron.Hotline.Pages;
+=======
+package Safron.Pages;
+
+>>>>>>> master:src/test/java/Safron/Pages/HotlineLocationViewHelper.java
 import org.openqa.selenium.WebDriver;
 
-public class HotlineLocationViewHelper extends HotlineLocationViewElements{
+public class HotlineLocationViewHelper extends HotlineLocationViewElements {
+
     public HotlineLocationViewHelper(WebDriver driver) {
         super(driver);
     }
 
-    public void search(String location){
+    public void search(String location) {
         searchLocationField().click();
         searchLocationField().sendKeys(location);
     }

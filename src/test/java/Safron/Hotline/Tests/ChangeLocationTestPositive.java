@@ -8,9 +8,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class ChangeLocationTestPositive extends TestInit {
-    //enter the correct location
+
     @Test
     public void test1() {
+
         openUrl("https://hotline.ua/");
 
         HotlineHeaderViewHelper hotlineHeaderViewHelper = new HotlineHeaderViewHelper(driver);

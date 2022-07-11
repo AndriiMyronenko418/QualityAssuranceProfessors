@@ -33,21 +33,19 @@ public class BasePage {
         return driver.findElements(By.xpath(locator));
     }
 
-    public WebElement moveTo(String locator){
+    public WebElement moveTo(String locator) {
         Actions actions = new Actions(driver);
         actions.moveToElement($(locator)).perform();
         return driver.findElement(By.xpath(locator));
     }
 
-    public void moveCursor(String locator){
-        Actions actions = new Actions(driver);
-        actions.moveToElement($(locator)).perform();
+    public void moveCursor(WebElement element) {
+        Actions action = new Actions(driver);
+        action.moveToElement(element).perform();
     }
 
     public void doMoveCursor(WebElement element){
         Actions actions = new Actions(driver);
         actions.moveToElement(element).perform();
     }
-
-
 }

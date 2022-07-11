@@ -1,4 +1,4 @@
-package AndriiTest;
+package AndriiTest.Pages;
 
 import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;
@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DeliveryDetailsPage extends BasePage {
+
     public DeliveryDetailsPage(WebDriver driver) {
         super(driver);
     }

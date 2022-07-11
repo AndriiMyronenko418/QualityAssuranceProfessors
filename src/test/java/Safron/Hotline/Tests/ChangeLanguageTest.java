@@ -6,8 +6,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class ChangeLanguageTest extends TestInit {
+
     @Test
     public void test3(){
+
         openUrl("https://hotline.ua/");
 
         HotlineHeaderViewHelper hotlineHeaderViewHelper = new HotlineHeaderViewHelper(driver);
