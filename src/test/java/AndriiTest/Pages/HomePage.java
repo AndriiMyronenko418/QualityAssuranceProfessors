@@ -18,6 +18,13 @@ public class HomePage extends BasePage {
     private static final String DROPDOWN_WINDOW_OPTION = "//ul[@id='topnav-dropdown-1342722']//a[contains(@href,'%s')]";
     private static final String FLAG_BTN = "//a/span[contains(@class,'country')]";
     private static final String FAVOURITES_BTN = "//a[@id='btn_wishlist']";
+    private static final String SIGN_IN_BTN = "//a[@id='btn-myaccount']";
+    private static final String SIGN_IN_CREATE_AN_ACCOUNT = "//a[@id='loyaltyEnrollmentLink']";
+    private static final String SIGN_IN_INPUT = "//form[@name='registrationform']//input[@name='%s']";
+    private static final String SIGN_IN_SELECT_GENDER = "//form[@name='registrationform']//select[@name='gender']";
+    private static final String SIGN_IN_PRIVACY_POLICY_CHECKBOX = "//input[@name='privacyPolicyRequirement']";
+    private static final String SIGN_IN_NEXT_BTN = "//button[contains(@class,'next button expand ')]";
+    private static final String SIGN_IN_ERROR = "//p[@class='error_ERR_GENERIC']";
     //body
     private static final String PRICES = "//span[@class='pr-price']";
     private static final String SHOP_BY_OPTION = "//div[@class='shopby--container row']//a[contains(@href,'%s')]";
@@ -28,6 +35,14 @@ public class HomePage extends BasePage {
 
     public WebElement getFlag() {
         return $(FLAG_BTN);
+    }
+
+    public WebElement getSignInBtn() {
+        return $(SIGN_IN_BTN);
+    }
+
+    public WebElement getSignInCreateAnAccountBtn() {
+        return $(SIGN_IN_CREATE_AN_ACCOUNT);
     }
 
     public WebElement getFavourites() {
@@ -48,5 +63,25 @@ public class HomePage extends BasePage {
 
     public WebElement getShopByOption(String option) {
         return $(String.format(SHOP_BY_OPTION, option));
+    }
+
+    public WebElement getSignInInput(String option) {
+        return $(String.format(SIGN_IN_INPUT, option));
+    }
+
+    public WebElement getSignInSelectGender() {
+        return $(SIGN_IN_SELECT_GENDER);
+    }
+
+    public WebElement getSignInPrivacyPolicyCheckbox() {
+        return $(SIGN_IN_PRIVACY_POLICY_CHECKBOX);
+    }
+
+    public WebElement getSignInNextBtn() {
+        return $(SIGN_IN_NEXT_BTN);
+    }
+
+    public WebElement getSignInError() {
+        return $(SIGN_IN_ERROR);
     }
 }
