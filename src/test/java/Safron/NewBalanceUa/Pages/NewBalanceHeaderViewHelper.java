@@ -10,4 +10,9 @@ public class NewBalanceHeaderViewHelper extends NewBalanceHeaderViewElements {
     public void moveToManCatalogBtn() {
         moveCursor(manCatalogBtn());
     }
+
+    public void search(String text){
+        searchField().sendKeys(text);
+        searchBtn().click();
+    }
 }
