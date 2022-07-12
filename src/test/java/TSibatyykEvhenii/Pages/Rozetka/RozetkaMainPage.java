@@ -25,6 +25,7 @@ public class RozetkaMainPage extends BasePage {
     public WebElement searchBtn(){
         return $(SEARCH_BTN);
     }
+
     public WebElement cartBtn(){
         return $(CART_BTN);
     }
