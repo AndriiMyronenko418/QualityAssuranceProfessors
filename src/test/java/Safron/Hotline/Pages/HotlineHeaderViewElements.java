@@ -38,4 +38,3 @@ public class HotlineHeaderViewElements extends BasePage {
         return $$(RIGHT_HEADER_BTNS);
     }
 }
-

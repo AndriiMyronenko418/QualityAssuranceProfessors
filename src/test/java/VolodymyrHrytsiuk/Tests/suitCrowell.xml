@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="suitCrowell" verbose="1" >
+    <test name="UITests">
+        <classes>
+            <class name="VolodymyrHrytsiuk.Tests.CrowellProfessionals" />
+            <class name="VolodymyrHrytsiuk.Tests.CrowellUkraineCrisis" />
+            <class name="VolodymyrHrytsiuk.Tests.CrowellExperiencePractise" />
+        </classes>
+    </test>
+</suite>
