@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD:src/test/java/Safron/Hotline/Tests/ButtonsChangeColorTest.java
-package Safron.Hotline.Tests;
-=======
-package Safron.Tests;
-
->>>>>>> master:src/test/java/Safron/Tests/ButtonsChangeColorTest.java
-=======
-package Safron.Hotline.Tests;
-
->>>>>>> master
 import BasePageAndTestInit.TestInit;
 import Safron.Hotline.Pages.HotlineHeaderViewElements;
 import Safron.Hotline.Pages.HotlineHeaderViewHelper;
