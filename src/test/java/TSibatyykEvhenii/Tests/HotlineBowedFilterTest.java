@@ -2,16 +2,18 @@ package TSibatyykEvhenii.Tests;
 
 import BasePageAndTestInit.TestInit;
 import TSibatyykEvhenii.Asserts.AssertForHotline;
-import TSibatyykEvhenii.Pages.HotlineSite;
+import TSibatyykEvhenii.Pages.Hotline.HotlineSite;
 import org.testng.annotations.Test;
 
 public class HotlineBowedFilterTest extends TestInit {
 
     @Test
     public void hotlineTest(){
+
         HotlineSite hotline = new HotlineSite(driver);
         AssertForHotline assertForHotline = new AssertForHotline(driver);
-        hotline.goToHotline();
+
+        openUrl("https://hotline.ua/");
         hotline.muzInstrument();
         hotline.guitarsSectionSelect().click();
         hotline.getBowedInstrument().get(2).click();
@@ -42,6 +44,7 @@ public class HotlineBowedFilterTest extends TestInit {
         hotline.chooseCheckbox().get(46).click();
         hotline.chooseCheckbox().get(61).click();
         hotline.chosenElementBtn().click();
+
         assertForHotline.assertBowedInstruments();
     }
 }
