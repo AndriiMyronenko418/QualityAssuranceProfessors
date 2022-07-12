@@ -21,4 +21,14 @@ public class TryCatch extends BasePage {
             System.out.println("Language was piggy-dog");
         }
     }
+
+    public void tryRozetkaLanguage() {
+        RozetkaMainPage rozetkaMainPage = new RozetkaMainPage(driver);
+
+        try{
+            rozetkaMainPage.ukrLanguage().click();
+        }catch(Exception e){
+            System.out.println("Language already Ukraine");
+        }
+    }
 }
