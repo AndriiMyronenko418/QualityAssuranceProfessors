@@ -39,3 +39,8 @@ public class HotlineHeaderViewElements extends BasePage {
     }
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
