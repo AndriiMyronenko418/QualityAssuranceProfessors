@@ -1,3 +1,5 @@
+package Safron.Hotline.Tests;
+
 import BasePageAndTestInit.TestInit;
 import Safron.Hotline.Pages.HotlineHeaderViewElements;
 import Safron.Hotline.Pages.HotlineHeaderViewHelper;
