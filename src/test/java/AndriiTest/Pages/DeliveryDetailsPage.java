@@ -33,6 +33,7 @@ public class DeliveryDetailsPage extends BasePage {
     public static final String EMAIL = "testVans@gmail.com";
     public static final String PASSWORD = "Testv4ns";
     public static final String BIRTH_DATE = "08/07/2004";
+    public static final String ORDER_NUMBER = "08072004";
 
     ArrayList<String> testUserInfo = new ArrayList<>();
 
