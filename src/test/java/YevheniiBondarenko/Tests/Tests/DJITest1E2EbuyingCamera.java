@@ -22,5 +22,6 @@ public class DJITest1E2EbuyingCamera extends TestInit {
         djiWebElement.closedPopUp().click();
 
         Assert.assertTrue(djiWebElement.cardItemNumber().isDisplayed());
+
     }
 }

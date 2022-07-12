@@ -22,5 +22,6 @@ public class TripAdvisor1CheckFilterByMap extends TestInit {
             tripAdvisorWebElement.arrowNext().get(0).click();
         }
         tripAdvisorWebElement.cityTourBtn().click(); //end of the working day! Gonna finish tomoorow.
+
     }
 }

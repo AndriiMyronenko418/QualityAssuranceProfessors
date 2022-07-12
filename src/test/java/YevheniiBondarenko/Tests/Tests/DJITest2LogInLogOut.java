@@ -21,5 +21,6 @@ public class DJITest2LogInLogOut extends TestInit {
 
         action.moveToElement(djiWebElement.userName()).perform();
         djiWebElement.exitUserAccount().click();
+
     }
 }
