@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class NewBalanceHeaderViewElements extends BasePage {
+
     public NewBalanceHeaderViewElements(WebDriver driver) {
         super(driver);
     }
@@ -52,6 +53,5 @@ public class NewBalanceHeaderViewElements extends BasePage {
         } catch (ElementClickInterceptedException e) {
             e.printStackTrace();
         }
-
     }
 }
