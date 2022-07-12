@@ -9,7 +9,7 @@ public class TripAdvisor1CheckFilterByMap extends TestInit {
 
     @Test
 
-    public void tripAdvisorCheckFilterByMap(){
+    public void tripAdvisorCheckFilterByMap() {
         TripAdvisorWebElement tripAdvisorWebElement = new TripAdvisorWebElement(driver);
         Actions action = new Actions(driver);
 
@@ -18,8 +18,9 @@ public class TripAdvisor1CheckFilterByMap extends TestInit {
         tripAdvisorWebElement.searchingField().sendKeys("Bali");
         tripAdvisorWebElement.baliLocation().click();
         tripAdvisorWebElement.thingsToDoBtn().click();
-        for (int i = 0; i < 3; i++)
-        {tripAdvisorWebElement.arrowNext().get(0).click();}
+        for (int i = 0; i < 3; i++) {
+            tripAdvisorWebElement.arrowNext().get(0).click();
+        }
         tripAdvisorWebElement.cityTourBtn().click(); //end of the working day! Gonna finish tomoorow.
     }
 }
