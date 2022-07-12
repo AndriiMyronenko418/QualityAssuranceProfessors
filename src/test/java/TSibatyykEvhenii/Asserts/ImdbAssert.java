@@ -1,7 +1,7 @@
 package TSibatyykEvhenii.Asserts;
 
 import BasePageAndTestInit.BasePage;
-import TSibatyykEvhenii.Pages.ImdbMainPage;
+import TSibatyykEvhenii.Pages.Imdb.ImdbMainPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
