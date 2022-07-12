@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD:src/test/java/Safron/Hotline/Pages/HotlineHeaderViewElements.java
 package Safron.Hotline.Pages;
-=======
-package Safron.Pages;
->>>>>>> master:src/test/java/Safron/Pages/HotlineHeaderViewElements.java
-=======
-package Safron.Hotline.Pages;
->>>>>>> master
 
 import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;
@@ -26,13 +18,6 @@ public class HotlineHeaderViewElements extends BasePage {
     private static final String LANGUAGE_BTN_UK = "//header//span[@data-language='uk']";
     private static final String RIGHT_HEADER_BTNS = "//div[@class='dropdown dropdown-pull-right']";
 
-<<<<<<< HEAD
-<<<<<<< HEAD:src/test/java/Safron/Hotline/Pages/HotlineHeaderViewElements.java
-
-=======
->>>>>>> master:src/test/java/Safron/Pages/HotlineHeaderViewElements.java
-=======
->>>>>>> master
     public WebElement locationBtn() {
         return $(LOCATION_BTN);
     }
@@ -52,12 +37,7 @@ public class HotlineHeaderViewElements extends BasePage {
     public List<WebElement> rightSideHeaderButtons() {
         return $$(RIGHT_HEADER_BTNS);
     }
-<<<<<<< HEAD
-<<<<<<< HEAD:src/test/java/Safron/Hotline/Pages/HotlineHeaderViewElements.java
 }
-=======
-}
->>>>>>> master:src/test/java/Safron/Pages/HotlineHeaderViewElements.java
-=======
-}
->>>>>>> master
+
+
+
