@@ -1,6 +1,5 @@
 package YevheniiBondarenko.Tests.Tests;
 import BasePageAndTestInit.TestInit;
-import YevheniiBondarenko.Tests.Pages.*;
 import YevheniiBondarenko.Tests.Pages.HomePageWebElements;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -10,11 +9,9 @@ public class CheckIfItemsRemovableInOneClickTest extends TestInit {
     @Test
 
     public void checkIfItemsARemovable(){
-
-        DanceShopperHelper danceShopperHelper = new DanceShopperHelper(driver);
         HomePageWebElements homePageWebElements = new HomePageWebElements(driver);
 
-        danceShopperHelper.goToDanceShopper();                                         //open Dance Shopper web-product
+        openUrl("https://www.danceshopper.com/Default");                           //open Dance Shopper web-product
         homePageWebElements.searchSelectorMenu().click();                              // Step 1: click on Selection Menu button
         homePageWebElements.CategoryMusicFromSearchSelectorMenu().click();             // Step 2: click on Music category
         homePageWebElements.searchField().get(0).sendKeys("latin\n");      // Step 3: type searching element name in search field(press enter)

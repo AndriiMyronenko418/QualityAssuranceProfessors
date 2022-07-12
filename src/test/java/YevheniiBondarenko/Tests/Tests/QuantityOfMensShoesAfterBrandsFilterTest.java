@@ -1,7 +1,6 @@
 package YevheniiBondarenko.Tests.Tests;
 
 import BasePageAndTestInit.TestInit;
-import YevheniiBondarenko.Tests.Pages.DanceShopperHelper;
 import YevheniiBondarenko.Tests.Pages.HomePageWebElements;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,11 +10,9 @@ public class QuantityOfMensShoesAfterBrandsFilterTest extends TestInit {
     @Test
 
     public void quantityOfShoesAfterBrandsFilter() {
-
-        DanceShopperHelper danceShopperHelper = new DanceShopperHelper(driver);
         HomePageWebElements homePageWebElements = new HomePageWebElements(driver);
 
-        danceShopperHelper.goToDanceShopper();
+        openUrl("https://www.danceshopper.com/Default");
         homePageWebElements.headerMenu().get(1).click();
         homePageWebElements.mensItemList().get(6).click();
 

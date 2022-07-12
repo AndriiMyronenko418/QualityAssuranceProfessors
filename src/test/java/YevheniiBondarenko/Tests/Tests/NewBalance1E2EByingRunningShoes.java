@@ -1,6 +1,5 @@
 package YevheniiBondarenko.Tests.Tests;
 import BasePageAndTestInit.TestInit;
-import YevheniiBondarenko.Tests.Pages.NewBalanceHelper;
 import YevheniiBondarenko.Tests.Pages.NewBalanceWebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -10,9 +9,8 @@ public class NewBalance1E2EByingRunningShoes extends TestInit {
     public void newBalanceE2EByingShoes(){
 
         NewBalanceWebElement newBalanceWebElement = new NewBalanceWebElement(driver);
-        NewBalanceHelper newBalanceHelper = new NewBalanceHelper(driver);
 
-        newBalanceHelper.navigateNewBalance();
+        openUrl("https://newbalance.ua/");
         newBalanceWebElement.searchField().sendKeys("взуття для бігу");
         newBalanceWebElement.searchButton().click();
         newBalanceWebElement.shoes().click();
