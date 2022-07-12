@@ -24,4 +24,8 @@ public class HomePage extends BasePage {
     public WebElement photoDesignFlatCampus() {
         return $("//*[@class='portfolio-room']");
     }
+
+    public WebElement fieldkeywordsBtn() { return $("//input[@id='twotabsearchtextbox']");
+
+    }
 }
