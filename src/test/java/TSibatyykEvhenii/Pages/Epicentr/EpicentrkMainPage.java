@@ -17,7 +17,6 @@ public class EpicentrkMainPage extends BasePage {
     private static final String SEARCH_FIELD = "//input[contains(@type,'text')]";
     private static final String SEARCH_BTN = "//div[contains(@data-is,'Search')]/button";
 
-
     public WebElement informationBtn(){
         return $(INFORMATOIN_BTN);
     }
@@ -33,7 +32,4 @@ public class EpicentrkMainPage extends BasePage {
     public WebElement searchBtn(){
         return $(SEARCH_BTN);
     }
-
-
-
 }

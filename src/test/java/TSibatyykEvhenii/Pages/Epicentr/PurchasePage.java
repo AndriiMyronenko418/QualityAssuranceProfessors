@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public class PurchasePage extends BasePage {
+
     public PurchasePage(WebDriver driver) {
         super(driver);
     }
@@ -22,5 +23,4 @@ public class PurchasePage extends BasePage {
     public WebElement getNumberBuyingElement(){
         return $(NUMBER_OF_ELEMENT);
     }
-
 }
