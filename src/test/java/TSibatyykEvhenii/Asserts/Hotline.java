@@ -13,7 +13,6 @@ public class Hotline extends BasePage {
     }
 
     public void assertHotlinePrice(){
-        ConditionareSectionPage conditionareSectionPage = new ConditionareSectionPage(driver);
 
         String expected = "28";
         String actual = priceForAssert().getText();
@@ -26,6 +25,4 @@ public class Hotline extends BasePage {
     public WebElement priceForAssert(){
         return $(PRICE_FOR_ASSERT);
     }
-
-
 }
