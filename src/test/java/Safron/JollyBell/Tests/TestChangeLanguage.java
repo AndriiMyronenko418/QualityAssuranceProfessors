@@ -17,11 +17,11 @@ public class TestChangeLanguage extends TestInit {
         jollyHeaderViewHelper.setRuTextHeader();
         jollyHeaderViewHelper.language().click();
         jollyHeaderViewHelper.engRuUk().get(2).click();
-        sleep(3); //need help with waiter handle
+        jollyHeaderViewHelper.waitTo("Нова");
         jollyHeaderViewHelper.setUkTextHeader();
         jollyHeaderViewHelper.language().click();
         jollyHeaderViewHelper.engRuUk().get(0).click();
-        sleep(3);//need help with waiter handle
+        jollyHeaderViewHelper.waitTo("New");
         jollyHeaderViewHelper.setEngTextHeader();
 
         Assert.assertNotEquals(jollyHeaderViewHelper.getRuTextHeader(), jollyHeaderViewHelper.getUkTextHeader());

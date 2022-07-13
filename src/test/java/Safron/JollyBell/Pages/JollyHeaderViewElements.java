@@ -26,4 +26,8 @@ public class JollyHeaderViewElements extends BasePage {
     public WebElement language(){
         return $(LANGUAGE);
     }
+
+    public WebElement waitTo(String text){
+        return $("//*[contains(text(),'" + text + "')]");
+    }
 }
