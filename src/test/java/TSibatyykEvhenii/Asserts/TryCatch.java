@@ -4,6 +4,7 @@ import BasePageAndTestInit.BasePage;
 import TSibatyykEvhenii.Pages.Epicentr.EpicentrkMainPage;
 import TSibatyykEvhenii.Pages.Rozetka.RozetkaMainPage;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class TryCatch extends BasePage {
 
@@ -30,5 +31,19 @@ public class TryCatch extends BasePage {
         }catch(Exception e){
             System.out.println("Language already Ukraine");
         }
+    }
+
+    public void hotlineLanguage() {
+
+        try{
+            ukrLanguage().click();
+        }catch(Exception e){
+            System.out.println("Language already Ukraine");
+        }
+    }
+
+    private static final String UKR_LANGUAGE_BTN = "(//span[contains(@data-eventlabel,'uk')])[1]";
+    public WebElement ukrLanguage(){
+        return $(UKR_LANGUAGE_BTN);
     }
 }

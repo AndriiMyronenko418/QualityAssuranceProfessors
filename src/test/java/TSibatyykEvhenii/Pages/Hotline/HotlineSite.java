@@ -13,6 +13,8 @@ public class HotlineSite extends BasePage {
     }
 
     private static final String HOTLINE_ADDRESS = "https://hotline.ua/";
+    private static final String CATALOG_BTN = "//div[contains(@class,'button-menu-main')]";
+    private static final String HOUSEHOLD_SECTION = "//li[contains(@data-menu-main-item,'Побутова техніка')]";
     private static final String LEFT_MENU_LIST = "//i[@class='icon-menu icon-menu-musical_instruments']";
     private static final String GUITARS_BTN = "//span[contains(text(), 'Гітари')]";
     private static final String INSTRUMENT_LIST = "//li[@class='category-navigation__item hidden-below-lg']";
@@ -29,6 +31,14 @@ public class HotlineSite extends BasePage {
 
     public void muzInstrument() {
         moveTo(LEFT_MENU_LIST);
+    }
+
+    public WebElement houseHoldSection(){
+        return $(HOUSEHOLD_SECTION);
+    }
+
+    public WebElement catalogBtn(){
+        return $(CATALOG_BTN);
     }
 
     public WebElement guitarsSectionSelect() {
