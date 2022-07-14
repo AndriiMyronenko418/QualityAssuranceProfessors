@@ -1,4 +1,4 @@
-package IraKaminska.IraKaminskaPages;
+package IraKaminska.PagesRozetka;
 
 import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;
