@@ -3,7 +3,6 @@ package IraKaminska.Amazon.PagesAmazon;
 import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.w3c.dom.html.HTMLInputElement;
 
 public class HomePageAmazon extends BasePage {
 
