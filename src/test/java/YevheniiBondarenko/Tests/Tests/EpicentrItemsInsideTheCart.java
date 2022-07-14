@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 public class EpicentrItemsInsideTheCart extends TestInit {
 
     @Test
+
     public void epicentrItemsInCart(){
 
         ChoseNewLocation itemsFromEpicentr = new ChoseNewLocation(driver);

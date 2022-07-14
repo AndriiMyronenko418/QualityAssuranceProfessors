@@ -51,4 +51,5 @@ public class ChoseNewLocation extends BasePage {
     public WebElement yellowNumberOnACart() {
         return $(YELLOW_NUMBER_ON_THE_CART);
     }
+
 }
