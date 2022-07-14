@@ -37,14 +37,4 @@ public class HotlineHeaderViewElements extends BasePage {
     public List<WebElement> rightSideHeaderButtons() {
         return $$(RIGHT_HEADER_BTNS);
     }
-<<<<<<< HEAD
 }
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> master
-=======
-}
->>>>>>> 10b6de52bbace95655b96db6e06d257466b70802
