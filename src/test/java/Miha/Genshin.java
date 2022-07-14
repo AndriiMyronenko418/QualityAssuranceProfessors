@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class Genshin extends BasePage {
+
     public Genshin(WebDriver driver) {
 
         super(driver);
