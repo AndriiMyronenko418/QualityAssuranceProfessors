@@ -54,5 +54,4 @@ public class ItemsInsideTheWebElement extends BasePage {
     public WebElement cityNameInHeader() {
         return $(CITY_IN_HEADER);
     }
-
 }
