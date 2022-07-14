@@ -3,6 +3,7 @@ package IraKaminska.Amazon.PagesAmazon;
 import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.w3c.dom.html.HTMLInputElement;
 
 public class HomePageAmazon extends BasePage {
 
@@ -14,6 +15,7 @@ public class HomePageAmazon extends BasePage {
     private static final String SEE_ALL_BUTTON = "//a[@class='hmenu-item hmenu-compressed-btn']";
     private static final String PET_SUPPLIES = "//a[@data-menu-id='21']";
     private static final String DOGS_PET_SUPPLIES = "//a[text()= 'Dogs']";
+    private static final String SIGN_IN_BUTTON = "//span[@id='nav-link-accountList-nav-line-1']";
 
     public WebElement getAllMenuButton() {
         return $(ALL_MENU_BUTTON);
@@ -29,5 +31,9 @@ public class HomePageAmazon extends BasePage {
 
     public WebElement getDogsPetSuppliesButton() {
         return $(DOGS_PET_SUPPLIES);
+    }
+
+    public WebElement getSignInButton() {
+        return $(SIGN_IN_BUTTON);
     }
 }
