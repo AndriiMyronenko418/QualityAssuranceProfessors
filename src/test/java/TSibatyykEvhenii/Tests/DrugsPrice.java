@@ -18,7 +18,7 @@ public class DrugsPrice extends TestInit {
 
         openUrl("https://alteia.ua/");
         alteyaMAinPage.ukrainianLanguageBtn().click();
-        sleep(3);
+        sleep(3);                                          //use sleep for waiting to load all objects on page
         alteyaMAinPage.pharmacyBtn().click();
         alteyaMAinPage.internetPharmacyBtn().click();
         alteyaPharmacy.priceBtn().get(0).click();
