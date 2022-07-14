@@ -4,6 +4,8 @@ import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class HomePageCrowell extends BasePage {
     public HomePageCrowell(WebDriver driver) {
         super(driver);
@@ -43,6 +45,20 @@ public class HomePageCrowell extends BasePage {
     private static final String STATE_ATTORNEYS_GENERAL_BTN = "//a[text()='State Attorneys General']";
     private static final String STATE_ATTORNEYS_MAP = "//img[contains(@src,'US-mapCMStateAG')]";
 
+    private static final String HOMEPAGE_LOCATIONS_BTN = "//a[@id='mnb_locations']";
+    private static final String LOCATION_BRUSSELS_BTN = "//a[contains(@href,'Brussels')and contains(@class,'caps')]";
+    private static final String LOCATION_CHICAGO_BTN = "//a[contains(@href,'Chicago')and contains(@class,'caps')]";
+    private static final String LOCATION_DENVER_BTN = "//a[contains(@href,'Denver')and contains(@class,'caps')]";
+    private static final String LOCATION_DOHA_BTN = "//a[contains(@href,'Doha')and contains(@class,'caps')]";
+    private static final String LOCATION_INDIANAPOLIS_BTN = "//a[contains(@href,'Indianapolis')and contains(@class,'caps')]";
+    private static final String LOCATION_LONDON_BTN = "//a[contains(@href,'London')and contains(@class,'caps')]";
+    private static final String LOCATION_LOS_ANGELES_BTN = "//a[contains(@href,'Los-Angeles')and contains(@class,'caps')]";
+    private static final String LOCATION_NEW_YORK_BTN = "//a[contains(@href,'New-York')and contains(@class,'caps')]";
+    private static final String LOCATION_ORANGE_COUNTY_BTN = "//a[contains(@href,'Orange-County')and contains(@class,'caps')]";
+    private static final String LOCATION_SAN_FRANCISCO_BTN = "//a[contains(@href,'San-Francisco')and contains(@class,'caps')]";
+    private static final String LOCATION_SHANGHAI_BTN = "//a[contains(@href,'Shanghai')and contains(@class,'caps')]";
+    private static final String LOCATION_WASHINGTON_DC_BTN = "//a[contains(@href,'Washington-DC')and contains(@class,'caps')]";
+    private static final String LOCATION_SINGAPORE_BTN = "//a[contains(@href,'Singapore')and contains(@class,'caps')]";
 
     public WebElement selectProfessionalsTitle() {
         return $(PROFESSIONALS_TITLE_BTN);
@@ -166,5 +182,62 @@ public class HomePageCrowell extends BasePage {
 
     public WebElement stateAttroneyMap() {
         return $(STATE_ATTORNEYS_MAP);
+    }
+
+    //locations
+    public WebElement getHomepageLocations() {
+        return $(HOMEPAGE_LOCATIONS_BTN);
+    }
+
+    public WebElement getLocationBrussels() {
+        return $(LOCATION_BRUSSELS_BTN);
+    }
+
+    public WebElement getLocationChicago() {
+        return $(LOCATION_CHICAGO_BTN);
+    }
+
+    public WebElement getLocationDenver() {
+        return $(LOCATION_DENVER_BTN);
+    }
+
+    public WebElement getLocationDoha() {
+        return $(LOCATION_DOHA_BTN);
+    }
+
+    public WebElement getLocationIndianapolis() {
+        return $(LOCATION_INDIANAPOLIS_BTN);
+    }
+
+    public WebElement getLocationLondon() {
+        return $(LOCATION_LONDON_BTN);
+    }
+
+    public WebElement getLocationLosAngeles() {
+        return $(LOCATION_LOS_ANGELES_BTN);
+    }
+
+    public WebElement getLocationNewYork() {
+        return $(LOCATION_NEW_YORK_BTN);
+    }
+
+    public WebElement getLocationOrangeCounty() {
+        return $(LOCATION_ORANGE_COUNTY_BTN);
+    }
+
+    public WebElement getLocationSanFrancisco() {
+        return $(LOCATION_SAN_FRANCISCO_BTN);
+    }
+
+    public WebElement getLocationShanghai() {
+        return $(LOCATION_SHANGHAI_BTN);
+    }
+
+    public List<WebElement> getLocationWashingtonDC() {
+        return $$(LOCATION_WASHINGTON_DC_BTN);
+    }
+
+    public WebElement getLocationSingapore() {
+        return $(LOCATION_SINGAPORE_BTN);
     }
 }
