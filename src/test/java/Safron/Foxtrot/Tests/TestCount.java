@@ -12,6 +12,7 @@ public class TestCount extends TestInit {
 
     @Test
     public void testCount() {
+
         FoxtrotHomePageHelper foxtrotHomePageHelper = new FoxtrotHomePageHelper(driver);
         FoxtrotSearchResultPageHelper foxtrotSearchResultPageHelper = new FoxtrotSearchResultPageHelper(driver);
         CatalogViewElements catalogView = new CatalogViewElements(driver);
