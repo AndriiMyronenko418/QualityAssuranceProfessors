@@ -10,7 +10,6 @@ public class Citrus extends BasePage {
         super(driver);
     }
 
-
     public WebElement phoneCategoryOpen() {
         return $("//div[contains(text(),'Смартфоны')]");
     }
