@@ -11,6 +11,7 @@ public class EldoradoE2EBuyingMobilePhone extends TestInit {
 
     @Test
     public void eldoradoE2EAddAndRemoveFromCart(){
+
         EldoradoWebElementsPage eldoradoWebElementsPage = new EldoradoWebElementsPage(driver);
         Actions act = new Actions(driver);
 
@@ -28,12 +29,5 @@ public class EldoradoE2EBuyingMobilePhone extends TestInit {
         eldoradoWebElementsPage.deleteItemsFromCart().get(0).click();
 
         Assert.assertTrue(eldoradoWebElementsPage.cartItemsNumber().isEnabled());
-
-
-
-
-
-
-
     }
 }

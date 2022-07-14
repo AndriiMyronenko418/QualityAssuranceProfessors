@@ -10,6 +10,7 @@ public class ChoseNewLocationEpicentr extends TestInit {
 
     @Test
     public void choseNewLocation(){
+
         ItemsInsideTheWebElement choseNewlocation = new ItemsInsideTheWebElement(driver);
 
         openUrl("https://epicentrk.ua/personal/cart/");

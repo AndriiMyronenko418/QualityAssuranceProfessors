@@ -9,6 +9,7 @@ public class EpicentrItemsInsideTheCart extends TestInit {
 
     @Test
     public void epicentrItemsInCart(){
+
         ChoseNewLocation itemsFromEpicentr = new ChoseNewLocation(driver);
 
         openUrl("https://epicentrk.ua/");
