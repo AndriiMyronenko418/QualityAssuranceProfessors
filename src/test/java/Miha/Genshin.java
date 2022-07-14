@@ -38,21 +38,17 @@ public class Genshin extends BasePage {
         return $("//div[@class='character__cv__name']//p[contains(text(),'ISHIDA Akira')]");
     }
 
-
     public WebElement informationOpen() {
         return $("//*[contains(text(),'Информация')]");
     }
-
 
     public WebElement mangaOpen() {
         return $("//a[contains(@href,'/ru/manga')]");
     }
 
-
     public WebElement choosenMangaOpen() {
         return $("//li[@class='chapters__item']//a[contains(@href,'/ru/manga/detail/727?mute=1')]");
     }
-
 
     public WebElement newsOpen() {
         return $("//div[@class='header__navbar']//a[contains(@href,'/ru/news')]");
