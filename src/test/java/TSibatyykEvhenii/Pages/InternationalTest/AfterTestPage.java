@@ -9,6 +9,7 @@ public class AfterTestPage extends BasePage {
     public AfterTestPage(WebDriver driver) {
         super(driver);
     }
+
     private static final String TEXT_FIELD = "//input[contains(@type,'text')]";
     private static final String EMAIL_FIELD = "//input[contains(@type,'email')]";
     private static final String VALIDATE_BTN = "//button[contains(@type,'submit')]";
@@ -21,7 +22,6 @@ public class AfterTestPage extends BasePage {
     private static final String STUDY_LEVEL = "//option[contains(@value,'none')]";
     private static final String CHOOSE_BIRTHDAY = "//option[contains(@value,'1987')]";
     private static final String CHOOSE_STUDY = "//option[contains(@value,'highschool')]";
-
 
     public WebElement firstNameField(){
         return $(TEXT_FIELD);

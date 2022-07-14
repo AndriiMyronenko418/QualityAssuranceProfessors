@@ -70,7 +70,6 @@ public class TryCatch extends BasePage {
     private static final String UKRAINIAN_LANGUAGE = "//a[contains(@href,'/uk/')]";
     private static final String CHOOSE_UKRAINE = "//option[contains(@value,'UA')]";
 
-
     public WebElement ukrLanguage() {
         return $(UKR_LANGUAGE_BTN);
     }
