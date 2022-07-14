@@ -28,12 +28,5 @@ public class EldoradoE2EBuyingMobilePhone extends TestInit {
         eldoradoWebElementsPage.deleteItemsFromCart().get(0).click();
 
         Assert.assertTrue(eldoradoWebElementsPage.cartItemsNumber().isEnabled());
-
-
-
-
-
-
-
     }
 }
