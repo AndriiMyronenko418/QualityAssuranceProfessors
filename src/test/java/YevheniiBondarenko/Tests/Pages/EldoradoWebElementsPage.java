@@ -26,6 +26,4 @@ public class EldoradoWebElementsPage extends BasePage {
     public List<WebElement> colorOfMobilePhones(){return $$(COLOR_OF_THE_PHONE);}
     public WebElement buyButton(){return $(BUY_BUTTON);}
     public List<WebElement> deleteItemsFromCart(){return $$(DELETE_ITEMS_FROM_CART);}
-
-
 }
