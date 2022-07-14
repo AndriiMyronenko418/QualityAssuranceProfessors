@@ -19,7 +19,6 @@ public class TestCount extends TestInit {
         FoxtrotMonitorPageElements foxtrotMonitorPageElements = new FoxtrotMonitorPageElements(driver);
 
         openUrl("https://www.foxtrot.com.ua/uk");
-
         foxtrotHomePageHelper.moveToPС();
         catalogView.monitor().click();
         foxtrotMonitorPageElements.filterBtnSamsung().click();
