@@ -15,6 +15,7 @@ public class HomePageAmazon extends BasePage {
     private static final String PET_SUPPLIES = "//a[@data-menu-id='21']";
     private static final String DOGS_PET_SUPPLIES = "//a[text()= 'Dogs']";
     private static final String SIGN_IN_BUTTON = "//span[@id='nav-link-accountList-nav-line-1']";
+    private static final String TODAYS_DEALS = "//a[@href='/gp/goldbox?ref_=nav_cs_gb']";
 
     public WebElement getAllMenuButton() {
         return $(ALL_MENU_BUTTON);
@@ -34,5 +35,9 @@ public class HomePageAmazon extends BasePage {
 
     public WebElement getSignInButton() {
         return $(SIGN_IN_BUTTON);
+    }
+
+    public WebElement getTodaysDealsButton() {
+        return $(TODAYS_DEALS);
     }
 }
