@@ -75,4 +75,3 @@ public class TestInit {
     public void goBack(){
         driver.navigate().back();
     }
-}
