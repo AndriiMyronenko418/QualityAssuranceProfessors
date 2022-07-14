@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 public class ChoseNewLocationEpicentr extends TestInit {
 
     @Test
-
     public void choseNewLocation(){
 
         ItemsInsideTheWebElement choseNewlocation = new ItemsInsideTheWebElement(driver);
