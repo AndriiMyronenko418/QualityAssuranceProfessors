@@ -1,4 +1,4 @@
-package IraKaminska.PagesRozetka;
+package IraKaminska.IraKaminskaPages;
 
 import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;
@@ -20,6 +20,10 @@ public class BeautyHealthPageRozetka extends BasePage {
 
     public WebElement getChanelPerfumesButton() {
         return $(CHANEL_PERFUMES_BUTTON);
+    }
+
+    public boolean checkURLChanelPerfumesButton() {
+        return driver.getCurrentUrl().contains("producer=chanel");
     }
 
     public WebElement checkWomenChanelPerfumes() {
