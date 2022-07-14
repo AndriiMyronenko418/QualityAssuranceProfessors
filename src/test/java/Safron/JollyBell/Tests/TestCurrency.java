@@ -23,7 +23,6 @@ public class TestCurrency extends TestInit {
         JollyHeaderViewHelper jollyHeaderViewHelper = new JollyHeaderViewHelper(driver);
 
         openUrl("https://jolybell.com/");
-
         jollyHeaderViewHelper.headerBtns().get(1).click();
         if (!(jollyHeaderViewHelper.currencySwitcher(currency).isSelected())) {
             jollyHeaderViewHelper.currencySwitcher().click();
