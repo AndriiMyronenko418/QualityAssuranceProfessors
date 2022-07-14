@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class CatalogViewElements extends BasePage {
+
     public CatalogViewElements(WebDriver driver) {
         super(driver);
     }
