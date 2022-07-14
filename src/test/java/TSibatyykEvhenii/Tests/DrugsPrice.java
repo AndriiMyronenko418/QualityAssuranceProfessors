@@ -11,6 +11,7 @@ public class DrugsPrice extends TestInit {
 
     @Test
     public void checkPriceInAlteya(){
+
         AlteyaMAinPage alteyaMAinPage = new AlteyaMAinPage(driver);
         AlteyaPharmacy alteyaPharmacy = new AlteyaPharmacy(driver);
         DentistPage dentistPage = new DentistPage(driver);
