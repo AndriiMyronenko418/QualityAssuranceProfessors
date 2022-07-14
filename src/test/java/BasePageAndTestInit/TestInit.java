@@ -71,4 +71,8 @@ public class TestInit {
     public void after() {
         driver.quit();
     }
+
+    public void goBack(){
+        driver.navigate().back();
+    }
 }
