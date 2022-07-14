@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 
 public class Genshin extends BasePage {
     public Genshin(WebDriver driver) {
-
         super(driver);
     }
 
@@ -38,32 +37,28 @@ public class Genshin extends BasePage {
         return $("//div[@class='character__cv__name']//p[contains(text(),'ISHIDA Akira')]");
     }
 
-
     public WebElement informationOpen() {
         return $("//*[contains(text(),'Информация')]");
     }
-
 
     public WebElement mangaOpen() {
         return $("//a[contains(@href,'/ru/manga')]");
     }
 
-
     public WebElement choosenMangaOpen() {
         return $("//li[@class='chapters__item']//a[contains(@href,'/ru/manga/detail/727?mute=1')]");
     }
-
 
     public WebElement newsOpen() {
         return $("//div[@class='header__navbar']//a[contains(@href,'/ru/news')]");
     }
 
     public WebElement newsChoosenOpen() {
-        return $("//a[contains(@href,'/ru/news/detail/21939')][@class='news__title ellipsis']");
+        return $("//a[@href='/ru/news/detail/22286']");
     }
 
     public WebElement titleChosenNews() {
-        return $("//h3[@class='recommend__title'][contains(text(),'Превью костюма в Genshin Impact: Ночной силуэт')]");
+        return $("//div[@class='article__title']");
     }
 
     public WebElement openTaivatWorld() {

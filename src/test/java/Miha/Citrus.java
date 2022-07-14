@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 public class Citrus extends BasePage {
 
     public Citrus(WebDriver driver) {
-
         super(driver);
     }
+
 
     public WebElement phoneCategoryOpen() {
         return $("//div[contains(text(),'Смартфоны')]");
