@@ -18,7 +18,6 @@ public class EldoradoWebElementsPage extends BasePage {
     private static final String CART_ITEMS_NUMBER = "//div[@class='counter counter-cart active']";
     private static final String DELETE_ITEMS_FROM_CART = "//*[name()='svg']";
 
-
     public WebElement searchingField(){return $(SEARCH_FIELD);}
     public WebElement mobilePhones(){return  $(MOBILE_PHONES);}
     public WebElement brovaryCity(){return $(BROVARY_CITY);}
