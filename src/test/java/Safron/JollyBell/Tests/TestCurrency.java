@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class TestCurrency extends TestInit {
 
-    @DataProvider(name = "currencies")
+    @DataProvider(name = "currency")
     public Object[][] dpMethod() {
         return new Object[][]{
                 {"USD"},
@@ -17,7 +17,7 @@ public class TestCurrency extends TestInit {
                 {"UAH"}};
     }
 
-    @Test(dataProvider = "currencies")
+    @Test(dataProvider = "currency")
     public void testCurrency(String currency) {
 
         JollyHeaderViewHelper jollyHeaderViewHelper = new JollyHeaderViewHelper(driver);
