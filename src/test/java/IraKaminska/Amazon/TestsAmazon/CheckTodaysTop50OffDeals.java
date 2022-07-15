@@ -10,7 +10,6 @@ public class CheckTodaysTop50OffDeals extends TestInit {
 
     @Test
     public void checkTodaysTop50OffDeals() {
-
         HomePageAmazon homePageAmazon = new HomePageAmazon(driver);
         TodaysDealsPageAmazon todaysdealsPageAmazon = new TodaysDealsPageAmazon(driver);
 
