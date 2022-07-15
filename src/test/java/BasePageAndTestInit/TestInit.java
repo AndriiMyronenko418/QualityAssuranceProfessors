@@ -10,6 +10,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import java.util.ArrayList;
+
 public class TestInit {
 
     //type name of the browser you're using in this variable (chrome or firefox)
@@ -39,6 +41,11 @@ public class TestInit {
     public void scroll(int pixels) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0," + pixels + ")", "");
+    }
+
+    public void switchToTab(int tabNumber) {
+        ArrayList<String> tab = new ArrayList<String>(driver.getWindowHandles());
+        driver.switchTo().window(tab.get(tabNumber - 1));
     }
 
     @BeforeMethod
@@ -75,7 +82,9 @@ public class TestInit {
     public void goBack() {
         driver.navigate().back();
     }
-      public void switchToNextTab(){
+
+    public void switchToNextTab() {
         driver.getWindowHandles().forEach(tab -> driver.switchTo().window(tab));
     }
 }
+
