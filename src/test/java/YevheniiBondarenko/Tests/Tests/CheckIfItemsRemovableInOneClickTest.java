@@ -7,8 +7,8 @@ import org.testng.annotations.Test;
 public class CheckIfItemsRemovableInOneClickTest extends TestInit {
 
     @Test
-
     public void checkIfItemsARemovable(){
+
         HomePageWebElements homePageWebElements = new HomePageWebElements(driver);
 
         openUrl("https://www.danceshopper.com/Default");                           //open Dance Shopper web-product

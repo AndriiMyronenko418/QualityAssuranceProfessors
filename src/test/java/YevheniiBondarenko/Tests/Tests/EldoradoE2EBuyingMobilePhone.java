@@ -11,6 +11,7 @@ public class EldoradoE2EBuyingMobilePhone extends TestInit {
 
     @Test
     public void eldoradoE2EAddAndRemoveFromCart(){
+
         EldoradoWebElementsPage eldoradoWebElementsPage = new EldoradoWebElementsPage(driver);
         Actions act = new Actions(driver);
 
