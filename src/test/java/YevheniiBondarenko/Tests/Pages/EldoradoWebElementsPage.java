@@ -3,6 +3,7 @@ package YevheniiBondarenko.Tests.Pages;
 import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
 import java.util.List;
 
 public class EldoradoWebElementsPage extends BasePage {
@@ -18,16 +19,6 @@ public class EldoradoWebElementsPage extends BasePage {
     private static final String BUY_BUTTON = "(//div[contains(@class,'buy-button-placeholder')]/div)[2]";
     private static final String CART_ITEMS_NUMBER = "//div[@class='counter counter-cart active']";
     private static final String DELETE_ITEMS_FROM_CART = "//*[name()='svg']";
-
-    public WebElement searchingField(){return $(SEARCH_FIELD);}
-    public WebElement mobilePhones(){return  $(MOBILE_PHONES);}
-    public WebElement brovaryCity(){return $(BROVARY_CITY);}
-    public WebElement cartItemsNumber(){return $(CART_ITEMS_NUMBER);}
-    public List<WebElement> listOfMobilePhones(){return $$(LIST_OF_MOBILE_PHONES);}
-    public List<WebElement> colorOfMobilePhones(){return $$(COLOR_OF_THE_PHONE);}
-    public WebElement buyButton(){return $(BUY_BUTTON);}
-    public List<WebElement> deleteItemsFromCart(){return $$(DELETE_ITEMS_FROM_CART);}
-}
 
     public WebElement searchingField() {
         return $(SEARCH_FIELD);
