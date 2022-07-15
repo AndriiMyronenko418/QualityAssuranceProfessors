@@ -82,4 +82,9 @@ public class TestInit {
     public void goBack() {
         driver.navigate().back();
     }
+
+    public void switchToNextTab() {
+        driver.getWindowHandles().forEach(tab -> driver.switchTo().window(tab));
+    }
 }
+

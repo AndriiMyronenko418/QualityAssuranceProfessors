@@ -6,8 +6,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Muji1Registration extends TestInit {
+
     @Test
     public void mujiRegistration(){
+
         MujiPageWebElement mujiPageWebElement = new MujiPageWebElement(driver);
 
         openUrl("https://www.muji.com/");

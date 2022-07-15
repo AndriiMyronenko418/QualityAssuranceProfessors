@@ -6,6 +6,7 @@
             <class name="VolodymyrHrytsiuk.Tests.CrowellProfessionals" />
             <class name="VolodymyrHrytsiuk.Tests.CrowellUkraineCrisis" />
             <class name="VolodymyrHrytsiuk.Tests.CrowellExperiencePractise" />
+            <class name="VolodymyrHrytsiuk.Tests.CrowellLocationsHP" />
         </classes>
     </test>
 </suite>
