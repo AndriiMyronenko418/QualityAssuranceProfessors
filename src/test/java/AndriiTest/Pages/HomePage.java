@@ -18,6 +18,7 @@ public class HomePage extends BasePage {
     private static final String DROPDOWN_WINDOW_OPTION = "//ul[@id='topnav-dropdown-1342722']//a[contains(@href,'%s')]";
     private static final String FLAG_BTN = "//a/span[contains(@class,'country')]";
     private static final String FAVOURITES_BTN = "//a[@id='btn_wishlist']";
+    private static final String HELP_BTN = "//a[@title='Get Help']";
     private static final String TRACK_MY_ORDER_BTN = "//a[@title='Track my order']";
     private static final String SIGN_IN_BTN = "//a[@id='btn-myaccount']";
     private static final String SIGN_IN_CREATE_AN_ACCOUNT = "//a[@id='loyaltyEnrollmentLink']";
@@ -48,6 +49,10 @@ public class HomePage extends BasePage {
 
     public WebElement getFavourites() {
         return $(FAVOURITES_BTN);
+    }
+
+    public WebElement getHelpBtn() {
+        return $(HELP_BTN);
     }
 
     public WebElement getTrackMyOrder() {

@@ -13,14 +13,14 @@ public class CrowellUkraineCrisis extends TestInit {
 
         openUrl("https://www.crowell.com/");
         homePageCrw.ukrCrisisCenter().click();
-        driver.getWindowHandles().forEach(tab -> driver.switchTo().window(tab));
+        switchToNextTab();
         homePageCrw.ukrCrisisInsights().click();
-        driver.navigate().back();
+        goBack();
         homePageCrw.ukrCrisisWebinars().click();
-        driver.navigate().back();
+        goBack();
         homePageCrw.acceptAllCookiesButton().click();
         homePageCrw.ukrCrisisPressCoverage().click();
-        driver.navigate().back();
+        goBack();
         homePageCrw.ukrExternalResourses().click();
 
         Assert.assertTrue(homePageCrw.ofacRecentActions().isDisplayed());

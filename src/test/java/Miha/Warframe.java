@@ -56,7 +56,6 @@ public class Warframe extends BasePage {
         return $("//a[@href='https://www.warframe.com/ru/game#keyart']");
     }
 
-
     public WebElement garudaFrameClick() {
         return $("//a[@href='https://www.warframe.com/ru/game/warframes/garuda-prime']//div[@class='slide-content container']");
     }

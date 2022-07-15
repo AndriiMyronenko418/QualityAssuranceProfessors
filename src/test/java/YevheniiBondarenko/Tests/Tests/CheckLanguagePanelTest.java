@@ -9,6 +9,7 @@ public class CheckLanguagePanelTest extends TestInit {
 
     @Test
     public void checkIfTheCurrencyWillChangeAfterALanguageChange() {
+
         HomePageWebElements homePageWebElements = new HomePageWebElements(driver);
 
         openUrl("https://www.danceshopper.com/Default");

@@ -9,8 +9,8 @@ import org.testng.annotations.Test;
 public class BuyingChopsticksOnMujiE2E extends TestInit {
 
     @Test
-
     public void buyingChopstickOnMujiE2E(){
+
         MujiPageWebElement mujiPageWebElement = new MujiPageWebElement(driver);
         Actions actions = new Actions(driver);
 

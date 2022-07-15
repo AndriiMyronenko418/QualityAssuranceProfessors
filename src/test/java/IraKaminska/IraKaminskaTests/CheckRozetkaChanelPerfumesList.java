@@ -1,8 +1,8 @@
-package IraKaminska.TestsRozetka;
+package IraKaminska.IraKaminskaTests;
 
 import BasePageAndTestInit.TestInit;
-import IraKaminska.PagesRozetka.BeautyHealthPageRozetka;
-import IraKaminska.PagesRozetka.HomePageRozetka;
+import IraKaminska.IraKaminskaPages.BeautyHealthPageRozetka;
+import IraKaminska.IraKaminskaPages.HomePageRozetka;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

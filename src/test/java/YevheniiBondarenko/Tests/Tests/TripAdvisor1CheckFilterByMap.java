@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 public class TripAdvisor1CheckFilterByMap extends TestInit {
 
     @Test
-
     public void tripAdvisorCheckFilterByMap(){
+
         TripAdvisorWebElement tripAdvisorWebElement = new TripAdvisorWebElement(driver);
         Actions action = new Actions(driver);
 
