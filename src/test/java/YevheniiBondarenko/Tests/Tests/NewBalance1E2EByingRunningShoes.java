@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class NewBalance1E2EByingRunningShoes extends TestInit {
+
     @Test
     public void newBalanceE2EByingShoes(){
 

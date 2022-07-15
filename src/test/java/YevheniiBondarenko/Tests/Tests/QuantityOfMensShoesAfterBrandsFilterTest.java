@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 public class QuantityOfMensShoesAfterBrandsFilterTest extends TestInit {
 
     @Test
-
     public void quantityOfShoesAfterBrandsFilter() {
+
         HomePageWebElements homePageWebElements = new HomePageWebElements(driver);
 
         openUrl("https://www.danceshopper.com/Default");

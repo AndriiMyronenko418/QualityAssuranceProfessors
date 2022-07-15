@@ -10,6 +10,7 @@ public class DJITest1E2EbuyingCamera extends TestInit {
 
     @Test
     public void djiTestOne(){
+
         DJIWebElements djiWebElement = new DJIWebElements(driver);
         Actions action = new Actions(driver);
 

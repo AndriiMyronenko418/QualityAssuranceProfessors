@@ -11,6 +11,7 @@ public class DJITest2LogInLogOut extends TestInit {
 
     @Test
     public void djiTest2LogInLogOut() {
+
         DJIWebElements djiWebElement = new DJIWebElements(driver);
         Actions action = new Actions(driver);
 
