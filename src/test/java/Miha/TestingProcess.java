@@ -304,4 +304,65 @@ public class TestingProcess extends TestInit {
 
         Assert.assertTrue(sinoptik.checkChosenWeatherCity().getText().contains("Одессе"));
     }
+
+    @Test
+    public void blizzardTestChoseSubcribeAndCheckChosenNameGameForSubcribe() {
+        Blizzard blizzard = new Blizzard(driver);
+
+        openUrl("https://www.blizzard.com/ru-ru/");
+        blizzard.gameClickPage().click();
+        blizzard.wowOpen().click();
+        blizzard.buyPodpiska().click();
+        blizzard.choseBuySubscribeOnOneMonth().click();
+
+        Assert.assertTrue(blizzard.checkNameGameOnSubcribe().getText().contains("World"));
+    }
+
+    @Test
+    public void blizzardPageOverwatchAndHeroWithCheckNameChosenHero() {
+        Blizzard blizzard = new Blizzard(driver);
+
+        openUrl("https://www.blizzard.com/ru-ru/");
+        blizzard.gameClickPage().click();
+        blizzard.openPageOverwatch().click();
+        blizzard.pageWithListHeroes().click();
+        scroll(1000);
+        sleep(2);//Need more time for chose object
+        Assert.assertTrue(blizzard.heroName().getText().contains("Сомбра"));
+        blizzard.choseHeroSombra().click();
+        blizzard.firstAbility().click();
+        scroll(900);
+        blizzard.storyCharacter().click();
+        scroll(1900);
+    }
+
+    @Test
+    public void blizzardHotsPageWithCheckChosenNameMap() {
+        Blizzard blizzard = new Blizzard(driver);
+
+        openUrl("https://www.blizzard.com/ru-ru/");
+        blizzard.gameClickPage().click();
+        blizzard.hotsGamePage().click();
+        blizzard.gameHotsPage().click();
+        blizzard.mapsGameOpen().click();
+        blizzard.mapsGardenChose().click();
+
+        Assert.assertTrue(blizzard.nameCheckMap().getText().contains("Сад"));
+    }
+
+    @Test
+    public void blizzardDiabloCheckListRankAndVerifyNamePlayer() {
+        Blizzard blizzard = new Blizzard(driver);
+
+        openUrl("https://www.blizzard.com/ru-ru/");
+        blizzard.gameClickPage().click();
+        blizzard.openDiablo().click();
+        blizzard.rankList().click();
+        blizzard.selectRankClass().click();
+        blizzard.choseDhClass().click();
+        blizzard.playerTopChose().click();
+        blizzard.choseAnotherHeroPlayer().click();
+
+        Assert.assertTrue(blizzard.checkNamePlayer().getText().contains("GABON"));
+    }
 }
