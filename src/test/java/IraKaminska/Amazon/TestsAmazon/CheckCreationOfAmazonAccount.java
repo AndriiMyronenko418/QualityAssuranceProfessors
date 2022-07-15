@@ -11,6 +11,7 @@ public class CheckCreationOfAmazonAccount extends TestInit {
 
     @Test
     public void checkCreationOfAmazonAccount() {
+    
         HomePageAmazon homePageAmazon = new HomePageAmazon(driver);
         SignInAmazonPage signInAmazonPage = new SignInAmazonPage(driver);
         CreateAccountPageAmazon createAccountPageAmazon = new CreateAccountPageAmazon(driver);
