@@ -10,6 +10,7 @@ public class CheckProcessOrderAmazon extends TestInit {
 
     @Test
     public void checkProcessOrderAmazon() {
+    
         HomePageAmazon homePageAmazon = new HomePageAmazon(driver);
         DogPageAmazon dogPageAmazon = new DogPageAmazon(driver);
 
