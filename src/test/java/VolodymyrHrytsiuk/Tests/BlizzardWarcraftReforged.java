@@ -9,7 +9,6 @@ public class BlizzardWarcraftReforged extends TestInit {
 
     @Test
     public void battleNetShop() {
-    
         BlizzardHomePage blizzHomePage = new BlizzardHomePage(driver);
 
         openUrl("https://eu.shop.battle.net/en-gb");
