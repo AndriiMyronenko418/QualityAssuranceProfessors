@@ -19,10 +19,10 @@ public class CheckCreationOfAmazonAccount extends TestInit {
         openUrl("https://www.amazon.com/");
         homePageAmazon.getSignInButton().click();
         signInAmazonPage.getCreateAmazonAccountButton().click();
-        createAccountPageAmazon.getSignUpInput("firstAndLastName").sendKeys(createAccountPageAmazon.FIRST_AND_LAST_NAME);
-        createAccountPageAmazon.getMobileNumberOrEmail().sendKeys(createAccountPageAmazon.MOBILE_NUMBER_OR_EMAIL);
-        createAccountPageAmazon.getPasswordInput().sendKeys(createAccountPageAmazon.PASSWORD);
-        createAccountPageAmazon.getReenterPassword().sendKeys(createAccountPageAmazon.REENTER_PASSWORD);
+        createAccountPageAmazon.getSignUpInput("firstAndLastName").sendKeys(CreateAccountPageAmazon.FIRST_AND_LAST_NAME);
+        createAccountPageAmazon.getMobileNumberOrEmail().sendKeys(CreateAccountPageAmazon.MOBILE_NUMBER_OR_EMAIL);
+        createAccountPageAmazon.getPasswordInput().sendKeys(CreateAccountPageAmazon.PASSWORD);
+        createAccountPageAmazon.getReenterPassword().sendKeys(CreateAccountPageAmazon.REENTER_PASSWORD);
         createAccountPageAmazon.getContinueButton().click();
 
         Assert.assertTrue(createAccountPageAmazon.checkNewPazzlePage().getText().contains("Solve this puzzle"));
