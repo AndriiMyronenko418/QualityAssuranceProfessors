@@ -19,6 +19,5 @@ public class Citrus extends BasePage {
 
     public void assertForCitrus(){
         Assert.assertTrue(nameOfElement().getText().contains("Apple MacBook Air M1 Chip 13 7GPU 16/256GB Gold (Z12A0008Q) Custom"));
-
     }
 }
