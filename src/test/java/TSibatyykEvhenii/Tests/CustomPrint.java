@@ -26,6 +26,7 @@ public class CustomPrint extends TestInit {
         customPrintMainPages.menCatalog().click();
         customPrintMainPages.favouriteTiShertsBtn();
         sleep(2);                                 //need to wait button reload
+        
         assertCoPr.assertFavouriteBtn();
     }
 }
