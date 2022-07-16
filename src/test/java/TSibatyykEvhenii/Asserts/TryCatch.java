@@ -13,6 +13,10 @@ public class TryCatch extends BasePage {
         super(driver);
     }
 
+    private void languageUkrainian(){
+        System.out.println("Language allready Ukrainian");
+    }
+
     public void tryCatchMethod() {
         Epicentr epicentr = new Epicentr(driver);
         EpicentrkMainPage emp = new EpicentrkMainPage(driver);
@@ -20,7 +24,7 @@ public class TryCatch extends BasePage {
             epicentr.assertMethodForEpicentr();
         } catch (Exception e) {
             emp.changeLanguageBtn().click();
-            System.out.println("Language was piggy-dog");
+        languageUkrainian();
         }
     }
 
@@ -30,7 +34,7 @@ public class TryCatch extends BasePage {
         try {
             rozetkaMainPage.ukrLanguage().click();
         } catch (Exception e) {
-            System.out.println("Language already Ukraine");
+            languageUkrainian();
         }
     }
 
@@ -39,7 +43,7 @@ public class TryCatch extends BasePage {
         try {
             ukrLanguage().click();
         } catch (Exception e) {
-            System.out.println("Language already Ukraine");
+            languageUkrainian();
         }
     }
 
@@ -47,7 +51,7 @@ public class TryCatch extends BasePage {
         try {
             ukrLanguageEldorado().click();
         } catch (Exception e) {
-            System.out.println("Language allready Ukrainian");
+            languageUkrainian();
         }
     }
 
@@ -55,7 +59,7 @@ public class TryCatch extends BasePage {
         try {
             ukrLanuageInternetionalTest().click();
         } catch (Exception e) {
-            System.out.println("Language allready Ukrainian");
+            languageUkrainian();
         }
     }
 
@@ -79,6 +83,16 @@ public class TryCatch extends BasePage {
         }
     }
 
+    public void tryToChangeLanguage(){
+        try{
+            clickToUkrainian().click();
+        }catch(Exception e){
+            languageUkrainian();
+        }
+    }
+
+
+    private static final String UKRAINIAN_LANGUAGE2 = "//a[text()='УКР']";
     private static final String UKR_LANGUAGE_BTN = "(//span[contains(@data-eventlabel,'uk')])[1]";
     private static final String UKRAINIAN_LANGUAGE = "//a[contains(@href,'/uk/')]";
     private static final String CHOOSE_UKRAINE = "//option[contains(@value,'UA')]";
@@ -97,5 +111,9 @@ public class TryCatch extends BasePage {
 
     public WebElement chooseUkraine(){
         return $(CHOOSE_UKRAINE);
+    }
+
+    public WebElement clickToUkrainian(){
+        return $(UKRAINIAN_LANGUAGE2);
     }
 }
