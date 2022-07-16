@@ -91,7 +91,6 @@ public class TryCatch extends BasePage {
         }
     }
 
-
     private static final String UKRAINIAN_LANGUAGE2 = "//a[text()='УКР']";
     private static final String UKR_LANGUAGE_BTN = "(//span[contains(@data-eventlabel,'uk')])[1]";
     private static final String UKRAINIAN_LANGUAGE = "//a[contains(@href,'/uk/')]";
