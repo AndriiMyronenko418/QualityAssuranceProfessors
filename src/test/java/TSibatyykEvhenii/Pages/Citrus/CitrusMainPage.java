@@ -36,5 +36,4 @@ public class CitrusMainPage extends BasePage {
     public void getAppleFiltre(){
         driver.get("https://www.ctrs.com.ua/ru/noutbuki-i-ultrabuki/brand-apple/");
     }
-
 }
