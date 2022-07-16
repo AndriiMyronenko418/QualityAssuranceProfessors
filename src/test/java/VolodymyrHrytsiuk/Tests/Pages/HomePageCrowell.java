@@ -59,6 +59,38 @@ public class HomePageCrowell extends BasePage {
     private static final String LOCATION_SHANGHAI_BTN = "//a[contains(@href,'Shanghai')and contains(@class,'caps')]";
     private static final String LOCATION_WASHINGTON_DC_BTN = "//a[contains(@href,'Washington-DC')and contains(@class,'caps')]";
     private static final String LOCATION_SINGAPORE_BTN = "//a[contains(@href,'Singapore')and contains(@class,'caps')]";
+    //lawyers
+    private static final String SEARCH_A_BTN = "//div[@id='professionals_lookup']/ul/li[1]/a";
+    private static final String KATIE_ABER_PROFILE = "//a[contains(@href,'Katie-Aber')]";
+    private static final String ROY_ABERNATHY_PROFILE = "//a[contains(@href,'Roy-Abernathy')]";
+    private static final String DEIRDRE_LONG_ABSOLONNE_PROFILE = "//a[contains(@href,'Deirdre-Long-Absolonne')]";
+    private static final String RANDA_ADRA_PROFILE = "//a[contains(@href,'Randa-Adra')]";
+    private static final String TIFFANY_AGUIAR_PROFILE = "//a[contains(@href,'Tiffany-Aguiar')]";
+    private static final String DIANE_AGUIRRE_DOMINGUEZ_PROFILE = "//a[contains(@href,'Diane-Aguirre-Dominguez')]";
+    private static final String CONNOR_AHEARN_PROFILE = "//a[contains(@href,'Connor-Ahearn')]";
+    private static final String VASSILIS_AKRITIDIS_PROFILE = "//a[contains(@href,'Vassilis-Akritidis')]";
+    private static final String SEIF_AL_DAAJEH_PROFILE = "//a[contains(@href,'Seif-Al-Daajeh')]";
+    private static final String ZAINAB_AL_SADOONI_PROFILE = "//a[contains(@href,'Zainab-Al-Sadooni')]";
+    private static final String EMILY_ALBAN_PROFILE = "//a[contains(@href,'Emily-Alban')]";
+    private static final String TERRY_ALBERTSON_PROFILE = "//a[contains(@href,'Terry-Albertson')]";
+    private static final String JOSELLE_ALBRACHT_PROFILE = "//a[contains(@href,'Joselle-Albracht')]";
+    private static final String PATRICIA_ALEXANDER_PROFILE = "//a[contains(@href,'Patricia-Alexander')]";
+    private static final String MONIQUE_ALMY_PROFILE = "//a[contains(@href,'Monique-Almy')]";
+    private static final String JILLIAN_AMBROSE_PROFILE = "//a[contains(@href,'Jillian-Ambrose')]";
+    private static final String WILLIAM_ANDERSON_PROFILE = "//a[contains(@href,'William-Anderson')]";
+    private static final String OLIVER_ANTOINE_PROFILE = "//a[contains(@href,'Olivier-Antoine')]";
+    private static final String JOHN_ANWESEN_PROFILE = "//a[contains(@href,'John-Anwesen')]";
+    private static final String LAURA_OFFENBACHER_ARADI_PROFILE = "//a[contains(@href,'Laura-Offenbacher-Aradi')]";
+    private static final String DEBORAH_ARBABI_PROFILE = "//a[contains(@href,'Deborah-Arbabi')]";
+    private static final String KARLA_ARIAS_PROFILE = "//a[contains(@href,'Karla-Arias')]";
+    private static final String LAUREN_ARONSON_PROFILE = "//a[contains(@href,'Lauren-Aronson')]";
+    private static final String JUAN_ARTEAGA_PROFILE = "//a[contains(@href,'Juan-Arteaga')]";
+    private static final String KAINOA_ASUEGA_PROFILE = "//a[contains(@href,'Kainoa-Asuega')]";
+    private static final String STEFANIE_ATCHINSON_PROFILE = "//a[contains(@href,'Stefanie-Atchinson')]";
+    private static final String MICHAEL_ATKINSON_PROFILE = "//a[contains(@href,'Michael-Atkinson')]";
+    private static final String NIMROD_HAIM_PROFILE = "//a[contains(@href,'Nimrod-Aviad')]";
+    private static final String ANDREW_AVSEC_PROFILE = "//a[contains(@href,'Andrew-Avsec')]";
+
 
     public WebElement selectProfessionalsTitle() {
         return $(PROFESSIONALS_TITLE_BTN);
@@ -239,5 +271,125 @@ public class HomePageCrowell extends BasePage {
 
     public WebElement getLocationSingapore() {
         return $(LOCATION_SINGAPORE_BTN);
+    }
+
+    public WebElement findProfessionalsLaterA() {
+        return $(SEARCH_A_BTN);
+    }
+
+    public List<WebElement> lawyerKatieAber() {
+        return $$(KATIE_ABER_PROFILE);
+    }
+
+    public List<WebElement> lawyerRoyAbernathy() {
+        return $$(ROY_ABERNATHY_PROFILE);
+    }
+
+    public List<WebElement> lawyerDeirdreLongAbsolonne() {
+        return $$(DEIRDRE_LONG_ABSOLONNE_PROFILE);
+    }
+
+    public List<WebElement> lawyerRandaAdra() {
+        return $$(RANDA_ADRA_PROFILE);
+    }
+
+    public List<WebElement> lawyerTiffanyAguiar() {
+        return $$(TIFFANY_AGUIAR_PROFILE);
+    }
+
+    public List<WebElement> lawyerDianeAguirreDominguez() {
+        return $$(DIANE_AGUIRRE_DOMINGUEZ_PROFILE);
+    }
+
+    public List<WebElement> lawyerConnorAhearn() {
+        return $$(CONNOR_AHEARN_PROFILE);
+    }
+
+    public List<WebElement> lawyerVassilisAkritidis() {
+        return $$(VASSILIS_AKRITIDIS_PROFILE);
+    }
+
+    public List<WebElement> lawyerSeifAlDaajeh() {
+        return $$(SEIF_AL_DAAJEH_PROFILE);
+    }
+
+    public List<WebElement> lawyerZainabAlSadooni() {
+        return $$(ZAINAB_AL_SADOONI_PROFILE);
+    }
+
+    public List<WebElement> lawyerEmilyAlban() {
+        return $$(EMILY_ALBAN_PROFILE);
+    }
+
+    public List<WebElement> lawyerTerryLAlbertson() {
+        return $$(TERRY_ALBERTSON_PROFILE);
+    }
+
+    public List<WebElement> lawyerJoselleAlbracht() {
+        return $$(JOSELLE_ALBRACHT_PROFILE);
+    }
+
+    public List<WebElement> lawyerPatriciaMAlexander() {
+        return $$(PATRICIA_ALEXANDER_PROFILE);
+    }
+
+    public List<WebElement> lawyerMoniqueDAlmy() {
+        return $$(MONIQUE_ALMY_PROFILE);
+    }
+
+    public List<WebElement> lawyerJillianAmbrose() {
+        return $$(JILLIAN_AMBROSE_PROFILE);
+    }
+
+    public List<WebElement> lawyerWilliamLAnderson() {
+        return $$(WILLIAM_ANDERSON_PROFILE);
+    }
+
+    public List<WebElement> lawyerOlivierNAntoine() {
+        return $$(OLIVER_ANTOINE_PROFILE);
+    }
+
+    public List<WebElement> lawyerJohnAnwesen() {
+        return $$(JOHN_ANWESEN_PROFILE);
+    }
+
+    public List<WebElement> lawyerLauraOffenbacherAradi() {
+        return $$(LAURA_OFFENBACHER_ARADI_PROFILE);
+    }
+
+    public List<WebElement> lawyerDeborahEArbabi() {
+        return $$(DEBORAH_ARBABI_PROFILE);
+    }
+
+    public List<WebElement> lawyerKarlaArias() {
+        return $$(KARLA_ARIAS_PROFILE);
+    }
+
+    public List<WebElement> lawyerLaurenAronson() {
+        return $$(LAUREN_ARONSON_PROFILE);
+    }
+
+    public List<WebElement> lawyerJuanArteaga() {
+        return $$(JUAN_ARTEAGA_PROFILE);
+    }
+
+    public List<WebElement> lawyerKainoaAsuega() {
+        return $$(KAINOA_ASUEGA_PROFILE);
+    }
+
+    public List<WebElement> lawyerStefanieAtchinson() {
+        return $$(STEFANIE_ATCHINSON_PROFILE);
+    }
+
+    public List<WebElement> lawyerMichaelAtkinson() {
+        return $$(MICHAEL_ATKINSON_PROFILE);
+    }
+
+    public List<WebElement> lawyerNimrodHaimAviad() {
+        return $$(NIMROD_HAIM_PROFILE);
+    }
+
+    public List<WebElement> lawyerAndrewAvsec() {
+        return $$(ANDREW_AVSEC_PROFILE);
     }
 }
