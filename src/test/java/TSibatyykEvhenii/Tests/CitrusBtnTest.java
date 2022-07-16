@@ -10,6 +10,7 @@ public class CitrusBtnTest extends TestInit {
 
     @Test
     public void testCitrus(){
+    
         CitrusMainPage citrusMainPage = new CitrusMainPage(driver);
         TryCatch tryCatch = new TryCatch(driver);
         Citrus citrus = new Citrus(driver);
@@ -22,9 +23,5 @@ public class CitrusBtnTest extends TestInit {
         sleep(3);                                          //need time for filter restoring
         citrusMainPage.takeElementAfterFiltered().get(0).click();
         citrus.assertForCitrus();
-
-
-
-
     }
 }
