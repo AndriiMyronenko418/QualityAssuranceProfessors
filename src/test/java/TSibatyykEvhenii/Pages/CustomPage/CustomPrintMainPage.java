@@ -63,7 +63,6 @@ public class CustomPrintMainPage extends BasePage {
         return $(COOL_TISHERTS);
     }
 
-
     public void favouriteTiShertsBtn() {
         favouriteBtn().get(0).click();
         favouriteBtn().get(1).click();
