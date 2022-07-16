@@ -18,6 +18,7 @@ public class HomePageAmazon extends BasePage {
     private static final String TODAYS_DEALS = "//a[@href='/gp/goldbox?ref_=nav_cs_gb']";
     private static final String BEAUTY_AND_PERSONAL_CARE_BUTTON = "//div[text()= 'Beauty and personal care']";
     private static final String FRAGRANCE_BUTTON = "//a[text()= 'Fragrance']";
+    private static final String SHOP_NOW_BY_CATEGORY_BUTTON = "//a[@href='/b?node=17938598011']";
 
     public WebElement getAllMenuButton() {
         return $(ALL_MENU_BUTTON);
@@ -49,5 +50,9 @@ public class HomePageAmazon extends BasePage {
 
     public WebElement getFragranceButton() {
         return $(FRAGRANCE_BUTTON);
+    }
+
+    public WebElement getShopNowByCategoryButton() {
+        return $(SHOP_NOW_BY_CATEGORY_BUTTON);
     }
 }
