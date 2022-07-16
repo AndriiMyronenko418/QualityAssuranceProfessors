@@ -1,6 +1,7 @@
 package TSibatyykEvhenii.Asserts;
 
 import BasePageAndTestInit.BasePage;
+import TSibatyykEvhenii.Pages.CustomPage.CustomPrintMainPage;
 import TSibatyykEvhenii.Pages.Epicentr.EpicentrkMainPage;
 import TSibatyykEvhenii.Pages.Rozetka.RozetkaMainPage;
 import org.openqa.selenium.WebDriver;
@@ -63,6 +64,18 @@ public class TryCatch extends BasePage {
             chooseUkraine().click();
         }catch(Exception e){
             System.out.println("Country allready Ukraine");
+        }
+    }
+
+    public void customPrintTryCatch(){
+
+        CcustomPrintAssert ccustomPrintAssert = new CcustomPrintAssert(driver);
+        CustomPrintMainPage customPrintMainPage = new CustomPrintMainPage(driver);
+
+        try{
+            ccustomPrintAssert.assertCustoPrint();
+        }catch(Exception e){
+            customPrintMainPage.changeLanguage();
         }
     }
 
