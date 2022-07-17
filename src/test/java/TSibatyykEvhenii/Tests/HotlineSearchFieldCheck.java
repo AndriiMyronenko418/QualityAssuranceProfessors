@@ -12,6 +12,7 @@ public class HotlineSearchFieldCheck extends TestInit {
 
     @Test
     public void checkSearchField() {
+    
         HotlineSite hotlineSite = new HotlineSite(driver);
         TryCatch tryCatch = new TryCatch(driver);
         ElementPage elementPage = new ElementPage(driver);
@@ -20,6 +21,7 @@ public class HotlineSearchFieldCheck extends TestInit {
         tryCatch.hotlineLanguage();
         hotlineSite.searchField().sendKeys("Sony PlayStation 5 Digital Edition 825GB" + Keys.ENTER);
         hotlineSite.searchResult().click();
+        
         Assert.assertTrue(elementPage.titleOfElement().getText().contains("Стаціонарна ігрова приставка Sony PlayStation 5 Digital Edition 825GB"));
         System.out.println("Assert acepted, searchField works right");
     }
