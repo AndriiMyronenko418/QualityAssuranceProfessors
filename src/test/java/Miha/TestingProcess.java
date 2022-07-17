@@ -79,13 +79,17 @@ public class TestingProcess extends TestInit {
         genshin.monshtatClick().click();
 
         Assert.assertTrue(genshin.nameCityWarify().getText().contains("Мондштадт"));
-
         genshin.openInfomationAboutCity().click();
+
+        Assert.assertTrue(genshin.checkNameLake().getText().contains("Сидровое"));
+        Assert.assertTrue(genshin.textWithInformationAboutFalcon().getText().contains("Сокола"));
         genshin.closeInformationAboutCity().click();
         genshin.liueClick().click();
         genshin.openInfomationAboutCity().click();
 
         Assert.assertTrue(genshin.nameLiUeCityWarify().getText().contains("Ли"));
+        Assert.assertTrue(genshin.checkTitlePortLiUe().getText().contains("Порт"));
+        Assert.assertTrue(genshin.mountainLiUe().getText().contains("Горы Тяньхэн"));
         genshin.closeInformationAboutCity().click();
     }
 
