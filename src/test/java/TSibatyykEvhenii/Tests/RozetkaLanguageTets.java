@@ -14,5 +14,4 @@ public class RozetkaLanguageTets extends TestInit{
         openUrl("https://rozetka.com.ua/");
         tryCatch.RozetkaLanguageCheck();
     }
-
 }
