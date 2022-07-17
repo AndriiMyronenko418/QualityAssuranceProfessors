@@ -23,6 +23,8 @@ public class HotlineSite extends BasePage {
     private static final String TO_REVEAL_ALL_BRAND = "//div[@class='sidebar-filter__bottom-button']";
     private static final String TO_REVEAL_ALL_STORES = "//div[@class='sidebar-filter__search-button']";
     private static final String CHOSEN_BTN = "//div[contains(@class,'active')]/b";
+    private static final String SEARCH_FIELD = "//input[contains(@type,'text')]";
+    private static final String SEARCHING_RESULT_FOR_PLAYSTATION = "(//a[contains(@class,'m_b-5')])[1]";
 
 
     public void goToHotline() {
@@ -67,5 +69,13 @@ public class HotlineSite extends BasePage {
 
     public WebElement chosenElementBtn() {
         return $(CHOSEN_BTN);
+    }
+
+    public WebElement searchField(){
+        return $(SEARCH_FIELD);
+    }
+
+    public WebElement searchResult(){
+        return $(SEARCHING_RESULT_FOR_PLAYSTATION);
     }
 }
