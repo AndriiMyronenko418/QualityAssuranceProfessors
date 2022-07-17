@@ -39,7 +39,6 @@ public class TryCatch extends BasePage {
     }
     public void RozetkaLanguageCheck() {
         RozetkaMainPage rozetkaMainPage = new RozetkaMainPage(driver);
-
         try {
             rozetkaMainPage.ukrLanguage().click();
         } catch (Exception e) {
