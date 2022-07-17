@@ -1,4 +1,6 @@
 package TSibatyykEvhenii.Tests;
 
-public class ClassToTest {
+import BasePageAndTestInit.TestInit;
+
+public class ClassToTest extends TestInit {
 }
