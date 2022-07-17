@@ -36,6 +36,14 @@ public class TryCatch extends BasePage {
         } catch (Exception e) {
             languageUkrainian();
         }
+    }public void RozetkaLanguageCheck() {
+        RozetkaMainPage rozetkaMainPage = new RozetkaMainPage(driver);
+
+        try {
+            rozetkaMainPage.ukrLanguage().click();
+        } catch (Exception e) {
+            System.out.println("Site use the Ukrainian language, as a general");
+        }
     }
 
     public void hotlineLanguage() {
