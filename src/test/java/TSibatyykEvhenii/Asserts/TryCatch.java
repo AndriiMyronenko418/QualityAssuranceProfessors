@@ -36,7 +36,8 @@ public class TryCatch extends BasePage {
         } catch (Exception e) {
             languageUkrainian();
         }
-    }public void RozetkaLanguageCheck() {
+    }
+    public void RozetkaLanguageCheck() {
         RozetkaMainPage rozetkaMainPage = new RozetkaMainPage(driver);
 
         try {
