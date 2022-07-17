@@ -17,7 +17,6 @@ public class ClassToTest extends TestInit {
 
         PelmeniPage pelmeniPage = new PelmeniPage(driver);
 
-
         openUrl("https://novus.zakaz.ua/ru/products/04820171998793/pelmeni-laska-400g/");
         pelmeniPage.addTocart().click();
         pelmeniPage.goToCart().click();
