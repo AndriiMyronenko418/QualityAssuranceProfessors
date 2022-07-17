@@ -22,6 +22,7 @@ public class HomePageAmazon extends BasePage {
     private static final String CUSTOMER_SERVICE = "//a[@class='hmenu-item' and text()= 'Customer Service']";
     private static final String REGISTRY_BUTTON = "//a[text()= 'Registry']";
     private static final String DELIVER_DONT_CHANGE = "//input[@class='a-button-input']";
+    private static final String GIFT_CARDS = "//a[text()= 'Gift Cards']";
 
     public WebElement getAllMenuButton() {
         return $(ALL_MENU_BUTTON);
@@ -71,5 +72,9 @@ public class HomePageAmazon extends BasePage {
         if ($$(DELIVER_DONT_CHANGE).size() > 0) {
             $$(DELIVER_DONT_CHANGE).get(0).click();
         }
+    }
+
+    public WebElement getGiftCardsButton() {
+        return $(GIFT_CARDS);
     }
 }
