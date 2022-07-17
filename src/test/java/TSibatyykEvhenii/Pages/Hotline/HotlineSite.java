@@ -26,7 +26,6 @@ public class HotlineSite extends BasePage {
     private static final String SEARCH_FIELD = "//input[contains(@type,'text')]";
     private static final String SEARCHING_RESULT_FOR_PLAYSTATION = "(//a[contains(@class,'m_b-5')])[1]";
 
-
     public void goToHotline() {
         driver.get(HOTLINE_ADDRESS);
     }
