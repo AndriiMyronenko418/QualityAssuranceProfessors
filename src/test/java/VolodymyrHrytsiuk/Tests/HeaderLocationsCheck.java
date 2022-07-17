@@ -9,6 +9,7 @@ public class HeaderLocationsCheck extends TestInit {
 
     @Test
     public void locationBrusselsCheck() {
+    
         HomePageCrowell homePageCrw = new HomePageCrowell(driver);
 
         openUrl("https://www.crowell.com/");
@@ -20,6 +21,7 @@ public class HeaderLocationsCheck extends TestInit {
 
     @Test
     public void locationChicagoCheck() {
+    
         HomePageCrowell homePageCrw = new HomePageCrowell(driver);
 
         openUrl("https://www.crowell.com/");
@@ -31,6 +33,7 @@ public class HeaderLocationsCheck extends TestInit {
 
     @Test
     public void locatioDenverCheck() {
+    
         HomePageCrowell homePageCrw = new HomePageCrowell(driver);
 
         openUrl("https://www.crowell.com/");
@@ -42,6 +45,7 @@ public class HeaderLocationsCheck extends TestInit {
 
     @Test
     public void locatioDohaCheck() {
+    
         HomePageCrowell homePageCrw = new HomePageCrowell(driver);
 
         openUrl("https://www.crowell.com/");
@@ -53,6 +57,7 @@ public class HeaderLocationsCheck extends TestInit {
 
     @Test
     public void locationIndianapolisCheck() {
+    
         HomePageCrowell homePageCrw = new HomePageCrowell(driver);
 
         openUrl("https://www.crowell.com/");
@@ -64,6 +69,7 @@ public class HeaderLocationsCheck extends TestInit {
 
     @Test
     public void locationLondonCheck() {
+    
         HomePageCrowell homePageCrw = new HomePageCrowell(driver);
 
         openUrl("https://www.crowell.com/");
@@ -75,6 +81,7 @@ public class HeaderLocationsCheck extends TestInit {
 
     @Test
     public void locationLosAngelesCheck() {
+    
         HomePageCrowell homePageCrw = new HomePageCrowell(driver);
 
         openUrl("https://www.crowell.com/");
@@ -86,6 +93,7 @@ public class HeaderLocationsCheck extends TestInit {
 
     @Test
     public void locationNewYorkCheck() {
+    
         HomePageCrowell homePageCrw = new HomePageCrowell(driver);
 
         openUrl("https://www.crowell.com/");
@@ -97,6 +105,7 @@ public class HeaderLocationsCheck extends TestInit {
 
     @Test
     public void locationOrangeCountyCheck() {
+    
         HomePageCrowell homePageCrw = new HomePageCrowell(driver);
 
         openUrl("https://www.crowell.com/");
@@ -108,6 +117,7 @@ public class HeaderLocationsCheck extends TestInit {
 
     @Test
     public void locationSanFranciskoCheck() {
+    
         HomePageCrowell homePageCrw = new HomePageCrowell(driver);
 
         openUrl("https://www.crowell.com/");
@@ -119,6 +129,7 @@ public class HeaderLocationsCheck extends TestInit {
 
     @Test
     public void locationShanghaiCheck() {
+    
         HomePageCrowell homePageCrw = new HomePageCrowell(driver);
 
         openUrl("https://www.crowell.com/");
@@ -130,6 +141,7 @@ public class HeaderLocationsCheck extends TestInit {
 
     @Test
     public void locationWashingtonDCCheck() {
+    
         HomePageCrowell homePageCrw = new HomePageCrowell(driver);
 
         openUrl("https://www.crowell.com/");
