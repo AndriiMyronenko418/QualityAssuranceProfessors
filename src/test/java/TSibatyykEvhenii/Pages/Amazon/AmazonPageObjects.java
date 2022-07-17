@@ -36,7 +36,6 @@ public class AmazonPageObjects extends BasePage {
 
     public WebElement toWhiteGamepadBtn(){return $(WHITE_GAMEPAD);}
 
-
     public List<WebElement> buyOptionBtn(){return $$(BUY_OPTION);}
 
     public WebElement titleOfElement(){
