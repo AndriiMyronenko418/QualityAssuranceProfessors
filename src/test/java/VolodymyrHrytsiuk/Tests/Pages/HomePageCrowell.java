@@ -95,7 +95,6 @@ public class HomePageCrowell extends BasePage {
     private static final String GOVERNMENT_EXP_USA_LIST = "//span[@class='govtexp-expand']";
     private static final String BRUSSELS_MAIN_PRACTICE_AREAS = "//a[contains(@href,'Brussels-Practice')]";
 
-
     public WebElement selectProfessionalsTitle() {
         return $(PROFESSIONALS_TITLE_BTN);
     }
