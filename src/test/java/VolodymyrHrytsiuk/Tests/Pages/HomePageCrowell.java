@@ -91,6 +91,10 @@ public class HomePageCrowell extends BasePage {
     private static final String NIMROD_HAIM_PROFILE = "//a[contains(@href,'Nimrod-Aviad')]";
     private static final String ANDREW_AVSEC_PROFILE = "//a[contains(@href,'Andrew-Avsec')]";
 
+    private static final String GOVERNMENT_EXPERIENCE_BTN = "//ul[@id='search_form']/li/div[6]/a";
+    private static final String GOVERNMENT_EXP_USA_LIST = "//span[@class='govtexp-expand']";
+    private static final String BRUSSELS_MAIN_PRACTICE_AREAS = "//a[contains(@href,'Brussels-Practice')]";
+
 
     public WebElement selectProfessionalsTitle() {
         return $(PROFESSIONALS_TITLE_BTN);
@@ -391,5 +395,21 @@ public class HomePageCrowell extends BasePage {
 
     public List<WebElement> lawyerAndrewAvsec() {
         return $$(ANDREW_AVSEC_PROFILE);
+    }
+
+    public WebElement getGovernmentExperience() {
+        return $(GOVERNMENT_EXPERIENCE_BTN);
+    }
+
+    public void moveToButtonProfessionals() {
+        moveCursor($(PROFESSIONALS_TITLE_BTN));
+    }
+
+    public List<WebElement> getGovExpUsaList() {
+        return $$(GOVERNMENT_EXP_USA_LIST);
+    }
+
+    public List<WebElement> getBrusselMainPractiseAreas() {
+        return $$(BRUSSELS_MAIN_PRACTICE_AREAS);
     }
 }
