@@ -7,6 +7,8 @@
             <class name="VolodymyrHrytsiuk.Tests.CrowellUkraineCrisis" />
             <class name="VolodymyrHrytsiuk.Tests.CrowellExperiencePractise" />
             <class name="VolodymyrHrytsiuk.Tests.CrowellLocationsHP" />
+            <class name="VolodymyrHrytsiuk.Tests.BlizzardWarcraftReforged" />
+            <class name="VolodymyrHrytsiuk.Tests.CrowellLawyersCheck" />
         </classes>
     </test>
 </suite>

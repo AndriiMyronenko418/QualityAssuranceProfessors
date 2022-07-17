@@ -44,7 +44,7 @@ public class TestInit {
     }
 
     public void switchToTab(int tabNumber) {
-        ArrayList<String> tab = new ArrayList<String>(driver.getWindowHandles());
+        ArrayList<String> tab = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tab.get(tabNumber - 1));
     }
 
