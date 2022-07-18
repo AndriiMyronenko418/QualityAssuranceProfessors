@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 
 public class FoxtrotPrice extends TestInit {
 
-
     @Test
     public void testPrice() {
 
