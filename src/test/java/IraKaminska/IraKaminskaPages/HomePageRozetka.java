@@ -1,12 +1,8 @@
 package IraKaminska.IraKaminskaPages;
 
 import BasePageAndTestInit.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.w3c.dom.html.HTMLInputElement;
-
-import java.util.ArrayList;
 
 public class HomePageRozetka extends BasePage {
 
