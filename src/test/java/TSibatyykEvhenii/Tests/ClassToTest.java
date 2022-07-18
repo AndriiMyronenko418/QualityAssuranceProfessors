@@ -25,6 +25,7 @@ public class ClassToTest extends TestInit {
         pelmeniPage.storeChooseBtn().click();
         pelmeniPage.storeChose().sendKeys(Keys.ENTER);
         sleep(4);                                               //wait to load result
+        
         Assert.assertEquals("сожалению", "сожалению");
     }
 }
