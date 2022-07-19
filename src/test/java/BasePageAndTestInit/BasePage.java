@@ -33,6 +33,18 @@ public class BasePage {
         return driver.findElements(By.xpath(locator));
     }
 
+    public WebElement getElementByVisibility(String locator) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(BASIC_TIME));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+        return driver.findElement(By.xpath(locator));
+    }
+
+    public List<WebElement> getElementsByVisibility(String locator) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(BASIC_TIME));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+        return driver.findElements(By.xpath(locator));
+    }
+
     public WebElement moveTo(String locator) {
         Actions actions = new Actions(driver);
         actions.moveToElement($(locator)).perform();
