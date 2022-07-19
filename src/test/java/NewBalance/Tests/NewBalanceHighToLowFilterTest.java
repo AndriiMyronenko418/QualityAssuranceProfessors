@@ -3,9 +3,10 @@ package NewBalance.Tests;
 import BasePageAndTestInit.TestInit;
 import NewBalance.Pages.NewBalanceHeaderViewHelper;
 import NewBalance.Pages.NewBalanceManShoesPageHelper;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class NewBalancePriceFilterTest extends TestInit {
+public class NewBalanceHighToLowFilterTest extends TestInit {
 
     @Test
     public void testPriceFilter() {
@@ -17,6 +18,12 @@ public class NewBalancePriceFilterTest extends TestInit {
 
         newBalanceHeaderViewHelper.moveToManCatalogBtn();
         newBalanceHeaderViewHelper.manAllShoesBtn().click();
-        newBalanceManShoesPageHelper.moveSlider();
+        newBalanceManShoesPageHelper.shoesForRun().click();
+        newBalanceManShoesPageHelper.crossCountry().click();
+        newBalanceManShoesPageHelper.setShoesPriceSortJavaHigh();
+        newBalanceManShoesPageHelper.sortHighLow().click();
+        newBalanceManShoesPageHelper.setShoesPrice();
+
+        Assert.assertEquals(newBalanceManShoesPageHelper.getShoesPriceSortJavaHigh(), newBalanceManShoesPageHelper.getShoesPrice());
     }
 }
