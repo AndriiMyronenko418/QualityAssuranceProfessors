@@ -15,7 +15,6 @@ public class NewBalanceHighToLowFilterTest extends TestInit {
         NewBalanceManShoesPageHelper newBalanceManShoesPageHelper = new NewBalanceManShoesPageHelper(driver);
 
         openUrl("https://newbalance.ua/");
-
         newBalanceHeaderViewHelper.moveToManCatalogBtn();
         newBalanceHeaderViewHelper.manAllShoesBtn().click();
         newBalanceManShoesPageHelper.shoesForRun().click();
