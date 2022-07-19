@@ -1,4 +1,4 @@
-package Sprint2.TestPage;
+package Amazon.Pages;
 
 public class TestUserForAmazon {
 

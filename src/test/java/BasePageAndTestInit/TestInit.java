@@ -87,4 +87,3 @@ public class TestInit {
         driver.getWindowHandles().forEach(tab -> driver.switchTo().window(tab));
     }
 }
-

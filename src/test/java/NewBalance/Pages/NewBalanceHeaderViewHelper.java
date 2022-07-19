@@ -1,4 +1,4 @@
-package Sprint2.NewBalance.Pages;
+package NewBalance.Pages;
 
 import org.openqa.selenium.WebDriver;
 
