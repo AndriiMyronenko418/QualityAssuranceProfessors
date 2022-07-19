@@ -27,4 +27,14 @@ public class FoxtrotSearchResultPageHelper extends FoxtrotSearchResultPageElemen
         waitUntilTitleContainsText(filterName);
         count = productCountMessage().getText().substring(0, 2);
     }
+
+    private String price;
+
+    public String getPrice() {
+        return this.price;
+    }
+
+    public void getPriceText() {
+        price = price().getText();
+    }
 }
