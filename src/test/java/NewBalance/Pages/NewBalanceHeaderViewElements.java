@@ -1,4 +1,4 @@
-package Sprint2.NewBalance.Pages;
+package NewBalance.Pages;
 
 import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.ElementClickInterceptedException;
