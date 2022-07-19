@@ -199,6 +199,7 @@ public class TestingProcess extends TestInit {
 
     @Test
     public void minecraftTestProcessChooseProductForBuyAndCheckChosenPlatform() {
+        
         Minecraft minecraft = new Minecraft(driver);
 
         openUrl("https://www.minecraft.net/ru-ru");
@@ -213,6 +214,7 @@ public class TestingProcess extends TestInit {
 
     @Test
     public void minecraftTestBuyAndPriceDungeonGame() {
+        
         Minecraft minecraft = new Minecraft(driver);
 
         openUrl("https://www.minecraft.net/ru-ru");
@@ -232,6 +234,7 @@ public class TestingProcess extends TestInit {
 
     @Test
     public void minecraftWatchTrailerLegendsAndCheckNamePage() {
+        
         Minecraft minecraft = new Minecraft(driver);
 
         openUrl("https://www.minecraft.net/ru-ru");
@@ -245,6 +248,7 @@ public class TestingProcess extends TestInit {
 
     @Test
     public void minecraftEducationRegisterProcessAndCheckDownloaderOnWindows() {
+        
         Minecraft minecraft = new Minecraft(driver);
 
         openUrl("https://www.minecraft.net/ru-ru");
@@ -279,6 +283,7 @@ public class TestingProcess extends TestInit {
 
     @Test
     public void leagueChoseChampionWithRankAndCheckThisRank() {
+        
         League league = new League(driver);
 
         openUrl("https://u.gg");
@@ -294,6 +299,7 @@ public class TestingProcess extends TestInit {
 
     @Test
     public void sinoptikChoseCityWeatherAndCheckCityChose() {
+        
         Sinoptik sinoptik = new Sinoptik(driver);
 
         openUrl("https://ua.sinoptik.ua/погода-київ");
@@ -303,5 +309,70 @@ public class TestingProcess extends TestInit {
         sinoptik.enterSearch().click();
 
         Assert.assertTrue(sinoptik.checkChosenWeatherCity().getText().contains("Одессе"));
+    }
+
+    @Test
+    public void blizzardTestChoseSubcribeAndCheckChosenNameGameForSubcribe() {
+        
+        Blizzard blizzard = new Blizzard(driver);
+
+        openUrl("https://www.blizzard.com/ru-ru/");
+        blizzard.gameClickPage().click();
+        blizzard.wowOpen().click();
+        blizzard.buyPodpiska().click();
+        blizzard.choseBuySubscribeOnOneMonth().click();
+
+        Assert.assertTrue(blizzard.checkNameGameOnSubcribe().getText().contains("World"));
+    }
+
+    @Test
+    public void blizzardPageOverwatchAndHeroWithCheckNameChosenHero() {
+        
+        Blizzard blizzard = new Blizzard(driver);
+
+        openUrl("https://www.blizzard.com/ru-ru/");
+        blizzard.gameClickPage().click();
+        blizzard.openPageOverwatch().click();
+        blizzard.pageWithListHeroes().click();
+        scroll(1000);
+        sleep(2);//Need more time for chose object
+        Assert.assertTrue(blizzard.heroName().getText().contains("Сомбра"));
+        blizzard.choseHeroSombra().click();
+        blizzard.firstAbility().click();
+        scroll(900);
+        blizzard.storyCharacter().click();
+        scroll(1900);
+    }
+
+    @Test
+    public void blizzardHotsPageWithCheckChosenNameMap() {
+        
+        Blizzard blizzard = new Blizzard(driver);
+
+        openUrl("https://www.blizzard.com/ru-ru/");
+        blizzard.gameClickPage().click();
+        blizzard.hotsGamePage().click();
+        blizzard.gameHotsPage().click();
+        blizzard.mapsGameOpen().click();
+        blizzard.mapsGardenChose().click();
+
+        Assert.assertTrue(blizzard.nameCheckMap().getText().contains("Сад"));
+    }
+
+    @Test
+    public void blizzardDiabloCheckListRankAndVerifyNamePlayer() {
+        
+        Blizzard blizzard = new Blizzard(driver);
+
+        openUrl("https://www.blizzard.com/ru-ru/");
+        blizzard.gameClickPage().click();
+        blizzard.openDiablo().click();
+        blizzard.rankList().click();
+        blizzard.selectRankClass().click();
+        blizzard.choseDhClass().click();
+        blizzard.playerTopChose().click();
+        blizzard.choseAnotherHeroPlayer().click();
+
+        Assert.assertTrue(blizzard.checkNamePlayer().getText().contains("GABON"));
     }
 }
