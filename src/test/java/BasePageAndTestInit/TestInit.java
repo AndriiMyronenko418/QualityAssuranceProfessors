@@ -74,7 +74,7 @@ public class TestInit {
         }
     }
 
-    //@AfterMethod
+    @AfterMethod
     public void after() {
         driver.quit();
     }

@@ -21,7 +21,7 @@ public class NewBalanceHighToLowFilterTest extends TestInit {
         newBalanceManShoesPageHelper.shoesForRun().click();
         newBalanceManShoesPageHelper.crossCountry().click();
         newBalanceManShoesPageHelper.setShoesPriceSortJavaHigh();
-        newBalanceManShoesPageHelper.sortHighLow().click();
+        newBalanceManShoesPageHelper.sort("дорогі").click();
         newBalanceManShoesPageHelper.setShoesPrice();
 
         Assert.assertEquals(newBalanceManShoesPageHelper.getShoesPriceSortJavaHigh(), newBalanceManShoesPageHelper.getShoesPrice());
