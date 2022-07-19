@@ -199,6 +199,7 @@ public class TestingProcess extends TestInit {
 
     @Test
     public void minecraftTestProcessChooseProductForBuyAndCheckChosenPlatform() {
+        
         Minecraft minecraft = new Minecraft(driver);
 
         openUrl("https://www.minecraft.net/ru-ru");
@@ -213,6 +214,7 @@ public class TestingProcess extends TestInit {
 
     @Test
     public void minecraftTestBuyAndPriceDungeonGame() {
+        
         Minecraft minecraft = new Minecraft(driver);
 
         openUrl("https://www.minecraft.net/ru-ru");
@@ -232,6 +234,7 @@ public class TestingProcess extends TestInit {
 
     @Test
     public void minecraftWatchTrailerLegendsAndCheckNamePage() {
+        
         Minecraft minecraft = new Minecraft(driver);
 
         openUrl("https://www.minecraft.net/ru-ru");
@@ -245,6 +248,7 @@ public class TestingProcess extends TestInit {
 
     @Test
     public void minecraftEducationRegisterProcessAndCheckDownloaderOnWindows() {
+        
         Minecraft minecraft = new Minecraft(driver);
 
         openUrl("https://www.minecraft.net/ru-ru");
@@ -279,6 +283,7 @@ public class TestingProcess extends TestInit {
 
     @Test
     public void leagueChoseChampionWithRankAndCheckThisRank() {
+        
         League league = new League(driver);
 
         openUrl("https://u.gg");
@@ -294,6 +299,7 @@ public class TestingProcess extends TestInit {
 
     @Test
     public void sinoptikChoseCityWeatherAndCheckCityChose() {
+        
         Sinoptik sinoptik = new Sinoptik(driver);
 
         openUrl("https://ua.sinoptik.ua/погода-київ");
@@ -307,6 +313,7 @@ public class TestingProcess extends TestInit {
 
     @Test
     public void blizzardTestChoseSubcribeAndCheckChosenNameGameForSubcribe() {
+        
         Blizzard blizzard = new Blizzard(driver);
 
         openUrl("https://www.blizzard.com/ru-ru/");
@@ -320,6 +327,7 @@ public class TestingProcess extends TestInit {
 
     @Test
     public void blizzardPageOverwatchAndHeroWithCheckNameChosenHero() {
+        
         Blizzard blizzard = new Blizzard(driver);
 
         openUrl("https://www.blizzard.com/ru-ru/");
@@ -338,6 +346,7 @@ public class TestingProcess extends TestInit {
 
     @Test
     public void blizzardHotsPageWithCheckChosenNameMap() {
+        
         Blizzard blizzard = new Blizzard(driver);
 
         openUrl("https://www.blizzard.com/ru-ru/");
@@ -352,6 +361,7 @@ public class TestingProcess extends TestInit {
 
     @Test
     public void blizzardDiabloCheckListRankAndVerifyNamePlayer() {
+        
         Blizzard blizzard = new Blizzard(driver);
 
         openUrl("https://www.blizzard.com/ru-ru/");
