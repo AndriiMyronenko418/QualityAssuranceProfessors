@@ -18,6 +18,8 @@ public class NewBalanceHeaderViewElements extends BasePage {
     private static final String SEARCH_FIELD = "//input[@name='s']";
     private static final String SEARCH_BTN = "//label//button[@type='submit']";
     private static final String CART = "//a[contains(@class,'cart')]";
+    private static final String WOMAN_ITEMS = "//a[@class='nav__menu-link js-menu-item'][contains(text(),'Жінкам')]";
+    private static final String WOMAN_SHOES = "(//a[@class='nav__heading'][contains(text(),'Взуття')])[2]";
 
     public WebElement manCatalogBtn() {
         return $(MAN_CATALOG_BTN);
@@ -46,6 +48,10 @@ public class NewBalanceHeaderViewElements extends BasePage {
     public WebElement cart() {
         return $(CART);
     }
+
+    public WebElement woman(){return $(WOMAN_ITEMS);}
+
+    public WebElement womanShoes(){return $(WOMAN_SHOES);}
 
     public void cartClick() {
         try {
