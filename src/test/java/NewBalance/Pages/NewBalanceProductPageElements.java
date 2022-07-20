@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class NewBalanceProductPageElements extends BasePage {
+
     public NewBalanceProductPageElements(WebDriver driver) {
         super(driver);
     }
