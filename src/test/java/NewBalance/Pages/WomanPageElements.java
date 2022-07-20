@@ -30,5 +30,4 @@ public class WomanPageElements extends BasePage {
     public WebElement getFavourite() {
         return $(LIST_OF_SHOES);
     }
-
 }
