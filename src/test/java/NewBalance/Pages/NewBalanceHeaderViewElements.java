@@ -20,6 +20,7 @@ public class NewBalanceHeaderViewElements extends BasePage {
     private static final String CART = "//a[contains(@class,'cart')]";
     private static final String WOMAN_ITEMS = "//a[@class='nav__menu-link js-menu-item'][contains(text(),'%s')]";
     private static final String WOMAN_SHOES = "//a[@class='nav__heading'][contains(@href,'%s')]";
+    private static final String CATALOG = "//a[contains(text(),'%s')]";
 
     public WebElement manCatalogBtn() {
         return $(MAN_CATALOG_BTN);
@@ -53,11 +54,5 @@ public class NewBalanceHeaderViewElements extends BasePage {
 
     public WebElement getDropDownOption(String option){return $(String.format(WOMAN_SHOES,option));}
 
-    public void cartClick() {
-        try {
-            cart().click();
-        } catch (ElementClickInterceptedException e) {
-            e.printStackTrace();
-        }
-    }
+    public WebElement catalogBtn(String catalogName){return $(String.format(CATALOG,catalogName));}
 }
