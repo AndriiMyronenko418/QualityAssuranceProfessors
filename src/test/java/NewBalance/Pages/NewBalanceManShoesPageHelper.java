@@ -41,4 +41,42 @@ public class NewBalanceManShoesPageHelper extends NewBalanceManShoesPageElements
     public ArrayList<String> getShoesPrice() {
         return this.shoesPrice;
     }
+
+    private ArrayList<Integer> shoesDiscountPrice;
+
+    public void setShoesDiscountPrice() {
+        ArrayList<String> size = new ArrayList<>();
+        for (WebElement element : priceOldOrDiscount("discount")) {
+            String[] s = element.getText().split(" ");
+            size.add(s[0] + s[1]);
+        }
+        ArrayList<Integer> prices = new ArrayList<>();
+        for (String s:size) {
+            prices.add(Integer.parseInt(s));
+        }
+        shoesDiscountPrice = prices;
+    }
+
+    public ArrayList<Integer> getShoesDiscountPrice() {
+        return this.shoesDiscountPrice;
+    }
+
+    private ArrayList<Integer> shoesPriceInt;
+
+    public void setShoesPriceInt() {
+        ArrayList<String> size = new ArrayList<>();
+        for (WebElement element : shoesPrice()) {
+            String[] s = element.getText().split(" ");
+            size.add(s[0] + s[1]);
+        }
+        ArrayList<Integer> prices = new ArrayList<>();
+        for (String s:size) {
+            prices.add(Integer.parseInt(s));
+        }
+        shoesPriceInt = prices;
+    }
+
+    public ArrayList<Integer> getShoesPriceInt() {
+        return this.shoesPriceInt;
+    }
 }
