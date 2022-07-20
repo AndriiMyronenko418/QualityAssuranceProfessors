@@ -3,6 +3,7 @@ package NewBalance.Pages;
 import org.openqa.selenium.WebDriver;
 
 public class NewBalanceKidsPageHelper extends NewBalanceKidsPageElements{
+
     public NewBalanceKidsPageHelper(WebDriver driver) {
         super(driver);
     }
