@@ -7,9 +7,11 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public class NewBalanceLogInAndRegistrationPage extends BasePage {
+
     public NewBalanceLogInAndRegistrationPage(WebDriver driver) {
         super(driver);
     }
+    
     private static final String REGISTRATION_BTN = "//a[text()='Зареєструватись']";
     private static final String EMAIL_FIELD = "//input[@id='signupform-email']";
     private static final String PHONE_NUMBER_FIELD = "//input[@id='signupform-phone']";
@@ -26,36 +28,47 @@ public class NewBalanceLogInAndRegistrationPage extends BasePage {
     public WebElement getRegistrationBtn(){
         return $(REGISTRATION_BTN);
     }
+    
     public WebElement regEmailField() {
         return $(EMAIL_FIELD);
     }
+    
     public WebElement regPhoneNumberField(){
         return $(PHONE_NUMBER_FIELD);
     }
+    
     public WebElement regPasswordField(){
         return $(PASSWORD_FIELD);
     }
+    
     public WebElement regPasswordConfirmField(){
         return $(PASSWORD_CONFIRM_FIELD);
     }
+    
     public WebElement regTickWantReceiveMessages(){
         return $(WANT_RECEIVE_MESSAGES_TICK);
     }
+    
     public WebElement regTickWantReceiveRecommendations(){
         return $(WANT_RECEIVE_RECOMMENDATIONS_TICK);
     }
+    
     public WebElement confirmRegistration(){
         return $(CONFIRM_REGISTRATION_BTN);
     }
+    
     public WebElement invalidEmailMessege(){
         return $(INVALID_EMAIL_MESSAGE);
     }
+    
     public WebElement fillInTheField(){
         return $(FILL_THE_FIELD_MESSAGE);
     }
+    
     public WebElement shortPasswordMessage(){
         return $(SHORT_PASSWORD);
     }
+    
     public WebElement passwordsNotSameMessage(){
         return $ (PASSWORDS_NOT_SAME);
     }
