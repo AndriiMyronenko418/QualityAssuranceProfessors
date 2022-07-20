@@ -10,23 +10,18 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
-    private static final String DELIVER_DONT_CHANGE_BUTTON = "//input[@class='a-button-input']";
+    private static final String DELIVERY_DONT_CHANGE_BUTTON = "//input[@class='a-button-input']";
     private static final String ALL_MENU_BUTTON = "//span[@class='hm-icon-label']";
     private static final String ARTS_AND_CRAFTS_DEPARTMENT = "//div[text()= 'Arts & Crafts']";
     private static final String PAINTING_DRAWING_ART_SUPPLIES = "//a[text()= 'Painting, Drawing & Art Supplies']";
     private static final String HEADER_SPECIAL_SECTIONS = "//a[@class='nav-a  '][contains(text(),'%s')]";
     private static final String TODAYS_DEALS_OPTIONS = "//span[@class='nav-a-content'][contains(text(),'%s')]";
-    private static final String DELIVERY_DONT_CHANGE_BTN = "//*[@class='a-button-inner']/*[@class='a-button-input']";
     private static final String A_ID_OPTION = "//a[contains(@id,'%s')]";
 
-    public void getDeliverDontChangeButton() {
-        if ($$(DELIVER_DONT_CHANGE_BUTTON).size() > 0) {
-            $$(DELIVER_DONT_CHANGE_BUTTON).get(0).click();
+    public void getDeliveryDontChangeButton() {
+        if ($$(DELIVERY_DONT_CHANGE_BUTTON).size() > 0) {
+            $$(DELIVERY_DONT_CHANGE_BUTTON).get(0).click();
         }
-    }
-
-    public WebElement getDeliveryDontChangeBtn() {
-        return $(DELIVERY_DONT_CHANGE_BTN);
     }
 
     public WebElement getAllMenuButton() {
@@ -49,7 +44,7 @@ public class HomePage extends BasePage {
         return $(String.format(TODAYS_DEALS_OPTIONS, option));
     }
 
-    public WebElement aIdOption(String option){
+    public WebElement aIdOption(String option) {
         return $(String.format(A_ID_OPTION, option));
     }
 }
