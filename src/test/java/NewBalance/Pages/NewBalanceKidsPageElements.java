@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public class NewBalanceKidsPageElements extends BasePage {
+
     public NewBalanceKidsPageElements(WebDriver driver) {
         super(driver);
     }
