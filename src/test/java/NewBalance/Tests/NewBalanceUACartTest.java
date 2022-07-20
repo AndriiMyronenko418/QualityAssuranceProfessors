@@ -9,6 +9,7 @@ public class NewBalanceUACartTest extends TestInit {
 
     @Test
     public void newBalanceUACartTest(){
+    
         NewBalanceHeaderViewElements headerElements = new NewBalanceHeaderViewElements(driver);
         NewBalanceHeaderViewHelper helper = new NewBalanceHeaderViewHelper(driver);
         WomanPageElements womanShoes = new WomanPageElements(driver);
