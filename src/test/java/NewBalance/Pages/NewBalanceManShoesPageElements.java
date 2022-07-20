@@ -18,6 +18,7 @@ public class NewBalanceManShoesPageElements extends BasePage {
     private static final String SLIDER = "//*[@id='sl-range']/div/div[2]/div";
     private static final String SHOES_PRICE = "//span[@class='prices__price ']";
     private static final String SORT = "//a[contains(text(),'%s')]";
+    private static final String PRODUCT_PRICE_OLD_OR_DISCOUNT = "//span[@class='prices__price prices__price_%s']";
 
     public WebElement minPrice() {
         return $(MIN_PRICE);
@@ -49,5 +50,9 @@ public class NewBalanceManShoesPageElements extends BasePage {
 
     public WebElement sort(String typeOfSort) {
         return $(String.format((SORT), typeOfSort.toLowerCase()));
+    }
+
+    public List<WebElement> priceOldOrDiscount(String kindOfPrice) {
+        return $$(String.format((PRODUCT_PRICE_OLD_OR_DISCOUNT), kindOfPrice.toLowerCase()));
     }
 }
