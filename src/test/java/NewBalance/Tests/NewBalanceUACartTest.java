@@ -1,11 +1,11 @@
-package NewBalance.Pages.Tests;
+package NewBalance.Tests;
 
 import BasePageAndTestInit.TestInit;
 import org.testng.annotations.Test;
 
 public class NewBalanceUACartTest extends TestInit {
     @Test
-    public void newBalanceUACartTest(){
+    public void newBalanceUACartTest() {
 
     }
 }
