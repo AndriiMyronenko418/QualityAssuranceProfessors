@@ -26,6 +26,7 @@ public class HomePage extends BasePage {
 
     public WebElement getTodaysDealsOption(String option) {
         return $(String.format(TODAYS_DEALS_OPTIONS, option));
+    }
 
 
     public WebElement aIdOption(String option){
