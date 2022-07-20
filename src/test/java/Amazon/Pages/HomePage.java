@@ -32,4 +32,25 @@ public class HomePage extends BasePage {
     public WebElement getPaintingDrawingAndArtSuppliesBtn() {
         return $(PAINTING_DRAWING_ART_SUPPLIES);
     }
+
+    private static final String HEADER_SPECIAL_SECTIONS = "//a[@class='nav-a  '][contains(text(),'%s')]";
+    private static final String TODAYS_DEALS_OPTIONS = "//span[@class='nav-a-content'][contains(text(),'%s')]";
+    private static final String DELIVERY_DONT_CHANGE_BTN = "//*[@class='a-button-inner']/*[@class='a-button-input']";
+    private static final String A_ID_OPTION = "//a[contains(@id,'%s')]";
+
+    public WebElement getDeliveryDontChangeBtn() {
+        return $(DELIVERY_DONT_CHANGE_BTN);
+    }
+
+    public WebElement getHeaderSpecialSections(String option) {
+        return $(String.format(HEADER_SPECIAL_SECTIONS, option));
+    }
+
+    public WebElement getTodaysDealsOption(String option) {
+        return $(String.format(TODAYS_DEALS_OPTIONS, option));
+    }
+
+    public WebElement aIdOption(String option){
+        return $(String.format(A_ID_OPTION, option));
+    }
 }
