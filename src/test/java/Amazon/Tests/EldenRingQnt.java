@@ -22,16 +22,16 @@ public class EldenRingQnt extends TestInit {
         HomePage homePage = new HomePage(driver);
 
         openUrl("https://www.amazon.com/");
-        tryCatchAmazon.tryCatchAllMenuBtn();
-        homePage.seeAllBtn().get(0).click();
-        homePage.videoGame().click();
-        homePage.videoGameS().click();
-        amazonVideoGamesSection.videoGameSection("Xbox Series X & S").click();
-        amazonVideoGamesSection.videoGameSection("Games").click();
-        registrationPage.inputIdOption("twotabsearchtextbox").sendKeys("Elden Ring - Standard - Xbox [Digital Code]" + Keys.ENTER);
-        amazonVideoGamesSection.videoGameSection("Elden Ring - Standard - Xbox [Digital Code]").click();
-        amazonVideoGamesSection.videoGameSection("Qty:").click();
-        homePage.aIdOption("quantity_1").click();
+        tryCatchAmazon.tryCatchAllMenuBtn();                                          //on menu button "All" and check thet load right site version
+        homePage.seeAllBtn().get(0).click();                                          //click on "See All"
+        homePage.videoGame().click();                                                 //click on videogame
+        homePage.videoGameS().click();                                                //click on next section VideoGames
+        amazonVideoGamesSection.videoGameSection("Xbox Series X & S").click(); //click on xbox series x section
+        amazonVideoGamesSection.videoGameSection("Games").click();             //click on "Games" button
+        registrationPage.inputIdOption("twotabsearchtextbox").sendKeys("Elden Ring - Standard - Xbox [Digital Code]" + Keys.ENTER);//use search field
+        amazonVideoGamesSection.videoGameSection("Elden Ring - Standard - Xbox [Digital Code]").click();//choose first element
+        amazonVideoGamesSection.videoGameSection("Qty:").click();              //Quantity button click
+        homePage.aIdOption("quantity_1").click();                                     //Choose quantity - 2
         registrationPage.inputIdOption("add-to-cart-button").click();
         homePage.aText("Go to Cart").click();
         
