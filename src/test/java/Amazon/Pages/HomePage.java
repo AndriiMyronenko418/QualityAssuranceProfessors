@@ -10,7 +10,6 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
-    private static final String DELIVER_DONT_CHANGE_BUTTON = "//input[@class='a-button-input']";
     private static final String ALL_MENU_BUTTON = "//a[@id='nav-hamburger-menu']";
     private static final String ARTS_AND_CRAFTS_DEPARTMENT = "//div[text()= 'Arts & Crafts']";
     private static final String PAINTING_DRAWING_ART_SUPPLIES = "//a[text()= 'Painting, Drawing & Art Supplies']";
@@ -22,12 +21,10 @@ public class HomePage extends BasePage {
     private static final String DONE_CHOOSE_LOCATION = "//button[@name='glowDoneButton']";
 
     private static final String DELIVERY_DONT_CHANGE_BUTTON = "//input[@class='a-button-input']";
-    private static final String ALL_MENU_BUTTON = "//span[@class='hm-icon-label']";
-    private static final String ARTS_AND_CRAFTS_DEPARTMENT = "//div[text()= 'Arts & Crafts']";
-    private static final String PAINTING_DRAWING_ART_SUPPLIES = "//a[text()= 'Painting, Drawing & Art Supplies']";
     private static final String HEADER_SPECIAL_SECTIONS = "//a[@class='nav-a  '][contains(text(),'%s')]";
     private static final String TODAYS_DEALS_OPTIONS = "//span[@class='nav-a-content'][contains(text(),'%s')]";
     private static final String A_ID_OPTION = "//a[contains(@id,'%s')]";
+    private static final String GIFT_CARDS_BUTTON = "//a[text()= 'Gift Cards']";
 
     public void getDeliveryDontChangeButton() {
         if ($$(DELIVERY_DONT_CHANGE_BUTTON).size() > 0) {
@@ -81,5 +78,9 @@ public class HomePage extends BasePage {
 
     public WebElement getDoneOfChooseYourLocationButton() {
         return $(DONE_CHOOSE_LOCATION);
+    }
+
+    public WebElement getGiftCardsButton() {
+        return $(GIFT_CARDS_BUTTON);
     }
 }
