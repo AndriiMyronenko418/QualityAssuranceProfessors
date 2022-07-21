@@ -16,8 +16,7 @@ public class CheckCurrencyChange extends TestInit {
                 {" - Chilean Peso", "CLP"},
                 {" - Colombian Peso", "COP"},
                 {"KRW", "KRW"},
-                {"TWD", "TWD"},
-        };
+                {"TWD", "TWD"}};
     }
 
     @Test(dataProvider = "currencyCheck")
