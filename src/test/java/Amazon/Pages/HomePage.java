@@ -4,6 +4,8 @@ import BasePageAndTestInit.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class HomePage extends BasePage {
 
     public HomePage(WebDriver driver) {
@@ -18,6 +20,11 @@ public class HomePage extends BasePage {
     private static final String TODAYS_DEALS_OPTIONS = "//span[@class='nav-a-content'][contains(text(),'%s')]";
     private static final String DELIVERY_DONT_CHANGE_BTN = "//*[@class='a-button-inner']/*[@class='a-button-input']";
     private static final String A_ID_OPTION = "//a[contains(@id,'%s')]";
+    private static final String SEE_ALL_BTN = "//a[contains(@class,'hmenu-compressed-btn')]";
+    private static final String VIDEO_GAME_SECTION = "//a[contains(@data-menu-id,'26')]";
+    private static final String VIDEO_GAMES = "(//a[text()='Video Games'])[2]";
+    private static final String TEXT = "//*[contains(text(),'%s')]";
+
 
     public void getDeliverDontChangeButton() {
         if ($$(DELIVER_DONT_CHANGE_BUTTON).size() > 0) {
@@ -51,5 +58,20 @@ public class HomePage extends BasePage {
 
     public WebElement aIdOption(String option){
         return $(String.format(A_ID_OPTION, option));
+    }
+    public List<WebElement> seeAllBtn(){
+        return $$(SEE_ALL_BTN);
+    }
+
+    public WebElement videoGame(){
+        return $(VIDEO_GAME_SECTION);
+    }
+
+    public WebElement videoGameS(){
+        return $(VIDEO_GAMES);
+    }
+
+    public WebElement aText(String option){
+        return $(String.format(TEXT, option));
     }
 }
