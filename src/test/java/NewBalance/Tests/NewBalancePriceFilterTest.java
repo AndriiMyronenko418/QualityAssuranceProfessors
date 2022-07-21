@@ -31,6 +31,8 @@ public class NewBalancePriceFilterTest extends TestInit {
         }
 
         newBalanceManShoesPageHelper.sort("дорогі").click();
+        newBalanceManShoesPageHelper.setShoesPriceInt();
+        newBalanceManShoesPageHelper.setShoesDiscountPrice();
 
         for (Integer n : newBalanceManShoesPageHelper.getShoesDiscountPrice()) {
             Assert.assertTrue(n <= 7000 && n >= 2000);
