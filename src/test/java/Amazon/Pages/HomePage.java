@@ -23,9 +23,6 @@ public class HomePage extends BasePage {
     private static final String CANADA_DELIVER = "//a[@id='GLUXCountryList_45']";
     private static final String DONE_CHOOSE_LOCATION = "//button[@name='glowDoneButton']";
     private static final String DELIVERY_DONT_CHANGE_BUTTON = "//input[@class='a-button-input']";
-    private static final String ALL_MENU_BUTTON = "//span[@class='hm-icon-label']";
-    private static final String ARTS_AND_CRAFTS_DEPARTMENT = "//div[text()= 'Arts & Crafts']";
-    private static final String PAINTING_DRAWING_ART_SUPPLIES = "//a[text()= 'Painting, Drawing & Art Supplies']";
     private static final String HEADER_SPECIAL_SECTIONS = "//a[@class='nav-a  '][contains(text(),'%s')]";
     private static final String TODAYS_DEALS_OPTIONS = "//span[@class='nav-a-content'][contains(text(),'%s')]";
     private static final String A_ID_OPTION = "//a[contains(@id,'%s')]";
