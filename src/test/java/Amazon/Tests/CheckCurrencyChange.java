@@ -17,7 +17,6 @@ public class CheckCurrencyChange extends TestInit {
                 {" - Colombian Peso", "COP"},
                 {"KRW", "KRW"},
                 {"TWD", "TWD"},
-
         };
     }
 
