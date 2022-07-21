@@ -26,7 +26,6 @@ public class CheckCurrencyChange extends TestInit {
         EldenRingPage eldenRingPage = new EldenRingPage(driver);
         HomePage homePage = new HomePage(driver);
 
-
         openUrl("https://www.amazon.com/");
         homePage.aIdOption("icp-nav-flyout").click();
         amazonLanguagesPage.currencyBtn().click();
@@ -35,6 +34,7 @@ public class CheckCurrencyChange extends TestInit {
         eldenRingPage.acceptChanges().click();
         sleep(4);
         eldenRingPage.gameUrl();
+        
         Assert.assertTrue(eldenRingPage.currencyValue(value).getText().contains(value));
         System.out.println("Assert accepted, value confirmed");
     }
