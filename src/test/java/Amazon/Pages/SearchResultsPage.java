@@ -26,6 +26,7 @@ public class SearchResultsPage extends BasePage {
         return $$(PRODUCT_NAME);
     }
 
+    //method is not used because of the bug
     public List<WebElement> getProductBrand() {
         return getElementsByVisibility(PRODUCT_BRAND);
     }
