@@ -19,7 +19,7 @@ public class OutletAmazonBrandsFilterTest extends TestInit {
         SearchResultsPage searchResultsPage = new SearchResultsPage(driver);
 
         openUrl("https://www.amazon.com/");
-        homePage.getDeliveryDontChangeBtn().click();
+        homePage.getDeliveryDontChangeButton();
         homePage.getHeaderSpecialSections("Deals").click();
         homePage.getTodaysDealsOption("Outlet").click();
         outletPage.getTopCategoryBtn("AMAZON BRANDS").click();
