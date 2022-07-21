@@ -35,7 +35,6 @@ public class HomePage extends BasePage {
     private static final String TEXT = "//*[contains(text(),'%s')]";
     private static final String Pets_Page = "//div[@class='a-cardui-body']//a[@href='/s?k=pet+supplies&s=date-desc-rank&crid=3IF5TSVMY5YRB&qid=1632868254&sprefix=pet+sup%2Caps%2C268&ref=sr_st_date-desc-rank']";
 
-
     public void getDeliveryDontChangeButton() {
         if ($$(DELIVERY_DONT_CHANGE_BUTTON).size() > 0) {
             $$(DELIVERY_DONT_CHANGE_BUTTON).get(0).click();
