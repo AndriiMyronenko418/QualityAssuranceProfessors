@@ -18,8 +18,9 @@ public class NewBalanceHeaderViewElements extends BasePage {
     private static final String SEARCH_FIELD = "//input[@name='s']";
     private static final String SEARCH_BTN = "//label//button[@type='submit']";
     private static final String CART = "//a[contains(@class,'cart')]";
-    private static final String WOMAN_ITEMS = "//a[@class='nav__menu-link js-menu-item'][contains(text(),'Жінкам')]";
-    private static final String WOMAN_SHOES = "(//a[@class='nav__heading'][contains(text(),'Взуття')])[2]";
+    private static final String WOMAN_ITEMS = "//a[@class='nav__menu-link js-menu-item'][contains(text(),'%s')]";
+    private static final String WOMAN_SHOES = "//a[@class='nav__heading'][contains(@href,'%s')]";
+    private static final String CATALOG = "//a[contains(text(),'%s')]";
 
     public WebElement manCatalogBtn() {
         return $(MAN_CATALOG_BTN);
@@ -49,15 +50,9 @@ public class NewBalanceHeaderViewElements extends BasePage {
         return $(CART);
     }
 
-    public WebElement woman(){return $(WOMAN_ITEMS);}
+    public WebElement getHeaderOption(String option){return $(String.format(WOMAN_ITEMS,option));}
 
-    public WebElement womanShoes(){return $(WOMAN_SHOES);}
+    public WebElement getDropDownOption(String option){return $(String.format(WOMAN_SHOES,option));}
 
-    public void cartClick() {
-        try {
-            cart().click();
-        } catch (ElementClickInterceptedException e) {
-            e.printStackTrace();
-        }
-    }
+    public WebElement catalogBtn(String catalogName){return $(String.format(CATALOG,catalogName));}
 }
