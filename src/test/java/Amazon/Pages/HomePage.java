@@ -18,6 +18,7 @@ public class HomePage extends BasePage {
     private static final String TODAYS_DEALS_OPTIONS = "//span[@class='nav-a-content'][contains(text(),'%s')]";
     private static final String DELIVERY_DONT_CHANGE_BTN = "//*[@class='a-button-inner']/*[@class='a-button-input']";
     private static final String A_ID_OPTION = "//a[contains(@id,'%s')]";
+    private static final String Pets_Page = "//div[@class='a-cardui-body']//a[@href='/s?k=pet+supplies&s=date-desc-rank&crid=3IF5TSVMY5YRB&qid=1632868254&sprefix=pet+sup%2Caps%2C268&ref=sr_st_date-desc-rank']";
 
     public void getDeliverDontChangeButton() {
         if ($$(DELIVER_DONT_CHANGE_BUTTON).size() > 0) {
@@ -49,7 +50,11 @@ public class HomePage extends BasePage {
         return $(String.format(TODAYS_DEALS_OPTIONS, option));
     }
 
-    public WebElement aIdOption(String option){
+    public WebElement aIdOption(String option) {
         return $(String.format(A_ID_OPTION, option));
+    }
+
+    public WebElement getPetButton(){
+        return $(Pets_Page);
     }
 }
