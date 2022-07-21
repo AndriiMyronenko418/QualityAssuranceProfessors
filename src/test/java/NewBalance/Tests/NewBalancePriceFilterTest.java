@@ -21,6 +21,17 @@ public class NewBalancePriceFilterTest extends TestInit {
         newBalanceManShoesPageHelper.enterMaxPrice("7000");
         newBalanceManShoesPageHelper.setShoesPriceInt();
         newBalanceManShoesPageHelper.setShoesDiscountPrice();
+        newBalanceManShoesPageHelper.sort("дешеві").click();
+
+        for (Integer n : newBalanceManShoesPageHelper.getShoesDiscountPrice()) {
+            Assert.assertTrue(n <= 7000 && n >= 2000);
+        }
+        for (Integer n : newBalanceManShoesPageHelper.getShoesPriceInt()) {
+            Assert.assertTrue(n <= 7000 && n >= 2000);
+        }
+
+        newBalanceManShoesPageHelper.sort("дорогі").click();
+
         for (Integer n : newBalanceManShoesPageHelper.getShoesDiscountPrice()) {
             Assert.assertTrue(n <= 7000 && n >= 2000);
         }
