@@ -10,6 +10,7 @@ public class AmazonPet extends TestInit {
 
     @Test
     public void amazonPetFilter() {
+    
         AmazonPetPage amazonPetPage = new AmazonPetPage(driver);
         HomePage homePage = new HomePage(driver);
 
