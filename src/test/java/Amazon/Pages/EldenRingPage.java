@@ -30,6 +30,7 @@ public class EldenRingPage extends BasePage {
     public WebElement spanId(String option){
         return $(String.format(TOTAL_ITEMS, option));
     }
+    
     public WebElement currencyValue(String option){
         return $(String.format(CURRENCY_ON_THE_PAGE, option));
     }
