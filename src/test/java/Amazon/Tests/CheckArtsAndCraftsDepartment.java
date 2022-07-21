@@ -15,7 +15,7 @@ public class CheckArtsAndCraftsDepartment extends TestInit {
         PaintingDrawingArtSuppliesPage paintingDrawingArtSuppliesPage = new PaintingDrawingArtSuppliesPage(driver);
 
         openUrl("https://www.amazon.com");
-        homePage.getDeliverDontChangeButton();
+        homePage.getDeliveryDontChangeButton();
         homePage.getAllMenuButton().click();
         homePage.getArtsAndCraftsDepartmentButton().click();
         homePage.getPaintingDrawingAndArtSuppliesBtn().click();
