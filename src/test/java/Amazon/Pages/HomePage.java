@@ -28,6 +28,7 @@ public class HomePage extends BasePage {
     private static final String HEADER_SPECIAL_SECTIONS = "//a[@class='nav-a  '][contains(text(),'%s')]";
     private static final String TODAYS_DEALS_OPTIONS = "//span[@class='nav-a-content'][contains(text(),'%s')]";
     private static final String A_ID_OPTION = "//a[contains(@id,'%s')]";
+    private static final String Pets_Page = "//div[@class='a-cardui-body']//a[@href='/s?k=pet+supplies&s=date-desc-rank&crid=3IF5TSVMY5YRB&qid=1632868254&sprefix=pet+sup%2Caps%2C268&ref=sr_st_date-desc-rank']";
 
     public void getDeliveryDontChangeButton() {
         if ($$(DELIVERY_DONT_CHANGE_BUTTON).size() > 0) {
@@ -59,6 +60,10 @@ public class HomePage extends BasePage {
         return $(String.format(A_ID_OPTION, option));
     }
 
+
+    public WebElement getPetButton(){
+        return $(Pets_Page);
+
     public WebElement getComputersDepartmentButton() {
         return $(COMPUTERS_DEPARTMENT);
     }
@@ -81,5 +86,6 @@ public class HomePage extends BasePage {
 
     public WebElement getDoneOfChooseYourLocationButton() {
         return $(DONE_CHOOSE_LOCATION);
+
     }
 }
