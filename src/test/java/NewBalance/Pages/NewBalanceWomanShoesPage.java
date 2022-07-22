@@ -19,7 +19,7 @@ public class NewBalanceWomanShoesPage extends BasePage {
         return $$(WOMEN_SHOE_PRICES);
     }
 
-    public WebElement getShoes(String sexOrAge, String clothes, String functionality) {
+    public WebElement getProduct(String sexOrAge, String clothes, String functionality) {
         return $(String.format(SHOES_STR_OPT, sexOrAge, clothes, functionality));
     }
 }
