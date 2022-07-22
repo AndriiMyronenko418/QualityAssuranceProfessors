@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public class NewBalanceManPageElements extends BasePage {
+
     public NewBalanceManPageElements(WebDriver driver) {
         super(driver);
     }
