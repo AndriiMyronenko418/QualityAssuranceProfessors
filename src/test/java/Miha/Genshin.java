@@ -109,4 +109,20 @@ public class Genshin extends BasePage {
     public WebElement historyOpenInazuma() {
         return $("//img[@data-to='/town/inazuma']");
     }
+
+    public WebElement checkNameLake() {
+        return $("//h1[contains(text(),'Сидровое озеро')]");
+    }
+
+    public WebElement textWithInformationAboutFalcon() {
+        return $("//p[contains(text(),'Сокола')]");
+    }
+
+    public WebElement checkTitlePortLiUe() {
+        return $("//h1[contains(text(),'Порт')]");
+    }
+
+    public WebElement mountainLiUe() {
+        return $("//h1[contains(text(),'Горы')]");
+    }
 }
