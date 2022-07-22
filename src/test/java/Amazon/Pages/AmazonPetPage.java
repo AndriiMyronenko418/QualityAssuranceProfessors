@@ -13,10 +13,6 @@ public class AmazonPetPage extends BasePage {
         return $("//div[@id='brandsRefinements']//span[@class='a-expander-prompt']");
     }
 
-    public WebElement choseFilterBrand(String option) {
-        return $(String.format("//li[contains(@id,'%s')]//div[@class='a-checkbox a-checkbox-fancy s-navigation-checkbox aok-float-left']", option));
-    }
-
     public WebElement filterBrandName(String option) {
         return $(String.format("//li[contains(@id,'%s')]", option));
     }
@@ -27,5 +23,17 @@ public class AmazonPetPage extends BasePage {
 
     public WebElement brandNameChosenItems() {
         return $("//tr[@class='a-spacing-small po-brand']//span[@class='a-size-base']");
+    }
+
+    public WebElement clickChosenProduct() {
+        return $("//div[@data-asin='B0B755G6KP']");
+    }
+
+    public WebElement priceProductMainPage() {
+        return $("//div[@data-asin='B0B755G6KP']//span[@class='a-price-whole']");
+    }
+
+    public WebElement priceOnChosenProductPage() {
+        return $("//div[@class='a-section a-spacing-none aok-align-center']//span[@class='a-price-whole']");
     }
 }
