@@ -14,7 +14,7 @@ public class NewBalanceTestCategoryFilter extends TestInit {
     public Object[][] dpMethod() {
         return new Object[][]{
                 {"vzutta", "dla-bigu", "dla-asfaltnogo-pokritta", "Взуття", "Для бігу", "Для асфальтного покриття"},
-                {"odag", "kurtki-ta-zileti", "kurtki", "Одяг", "Куртки та желети", "Куртки"},
+                {"odag", "kurtki-ta-zileti", "kurtki", "Одяг", "Куртки та жилети", "Куртки"},
                 {"aksesuari", "golovni-ubori", "kepki", "Аксесуари", "Головні убори", "Кепки"}};
     }
 
@@ -35,7 +35,7 @@ public class NewBalanceTestCategoryFilter extends TestInit {
         Assert.assertTrue(newBalanceManPageElements.label().get(1).getText().contains(subcategoryName));
         Assert.assertTrue(newBalanceManPageElements.label().get(2).getText().contains(subSubcategoryName));
         for (WebElement element : newBalanceManPageElements.brand()) {
-            Assert.assertTrue(element.getText().contains(subSubcategoryName));
+            Assert.assertTrue(element.getText().contains(subSubcategoryName.toUpperCase()));
         }
     }
 }

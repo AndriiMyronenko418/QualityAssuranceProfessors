@@ -11,9 +11,9 @@ public class NewBalanceManPageElements extends BasePage {
         super(driver);
     }
 
-    private static final String CATEGORY_FILTER = "//li[contains(@class,'nav-m')]//a[@href='/store/man/%s']";
-    private static final String SUBCATEGORY_FILTER = "//li[contains(@class,'nav-m')]//a[@href='/store/man/%s/%s']";
-    private static final String SUB_SUBCATEGORY_FILTER = "//li[contains(@class,'nav-m')]//a[@href='/store/man/%s/%s/%s']";
+    private static final String CATEGORY_FILTER = "//li[contains(@class,'list')]//a[@href='/store/man/%s']";
+    private static final String SUBCATEGORY_FILTER = "//li[contains(@class,'list')]//a[@href='/store/man/%s/%s']";
+    private static final String SUB_SUBCATEGORY_FILTER = "//li[contains(@class,'list')]//a[@href='/store/man/%s/%s/%s']";
     private static final String LABEL = "//div[@class='select-label__item']";
     private static final String BRAND = "//div[@class='products__brand']";
 
@@ -26,7 +26,7 @@ public class NewBalanceManPageElements extends BasePage {
     }
 
     public WebElement subSubcategory(String category, String subcategory, String subSubcategory){
-        return $(String.format(SUB_SUBCATEGORY_FILTER, category, subcategory, subcategory));
+        return $(String.format(SUB_SUBCATEGORY_FILTER, category, subcategory, subSubcategory));
     }
 
     public List<WebElement> label(){
