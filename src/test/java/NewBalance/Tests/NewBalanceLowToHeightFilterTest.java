@@ -23,7 +23,7 @@ public class NewBalanceLowToHeightFilterTest extends TestInit {
 
         openUrl("https://newbalance.ua/");
         helper.moveCursor(hp.getHeaderOption("Жінкам"));
-        wShoesPage.getShoes("women", "vzutta", "dla-bigu").click();
+        wShoesPage.getProduct("women", "vzutta", "dla-bigu").click();
         hpElements.sort("дешеві").click();
 
         List<Integer> prices = wShoesPage.shoePrices().stream()
