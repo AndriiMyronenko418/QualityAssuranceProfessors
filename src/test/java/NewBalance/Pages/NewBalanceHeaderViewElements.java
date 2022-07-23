@@ -20,6 +20,7 @@ public class NewBalanceHeaderViewElements extends BasePage {
     private static final String WOMAN_ITEMS = "//a[@class='nav__menu-link js-menu-item'][contains(text(),'%s')]";
     private static final String WOMAN_SHOES = "//a[@class='nav__heading'][contains(@href,'%s')]";
     private static final String CATALOG = "//a[contains(text(),'%s')]";
+    private static final String NO_RESULTS_SEARCH = "//h2[@class='no-result__title']";
 
     public WebElement manCatalogBtn() {
         return $(MAN_CATALOG_BTN);
@@ -59,5 +60,8 @@ public class NewBalanceHeaderViewElements extends BasePage {
 
     public WebElement catalogBtn(String catalogName) {
         return $(String.format(CATALOG, catalogName));
+    }
+    public WebElement noResultTitle(){
+        return $(NO_RESULTS_SEARCH);
     }
 }
