@@ -61,6 +61,7 @@ public class NewBalanceHeaderViewElements extends BasePage {
     public WebElement catalogBtn(String catalogName) {
         return $(String.format(CATALOG, catalogName));
     }
+    
     public WebElement noResultTitle(){
         return $(NO_RESULTS_SEARCH);
     }
