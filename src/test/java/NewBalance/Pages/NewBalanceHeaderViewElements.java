@@ -1,7 +1,6 @@
 package NewBalance.Pages;
 
 import BasePageAndTestInit.BasePage;
-import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -50,9 +49,15 @@ public class NewBalanceHeaderViewElements extends BasePage {
         return $(CART);
     }
 
-    public WebElement getHeaderOption(String option){return $(String.format(WOMAN_ITEMS,option));}
+    public WebElement getHeaderOption(String option) {
+        return $(String.format(WOMAN_ITEMS, option));
+    }
 
-    public WebElement getDropDownOption(String option){return $(String.format(WOMAN_SHOES,option));}
+    public WebElement getDropDownOption(String option) {
+        return $(String.format(WOMAN_SHOES, option));
+    }
 
-    public WebElement catalogBtn(String catalogName){return $(String.format(CATALOG,catalogName));}
+    public WebElement catalogBtn(String catalogName) {
+        return $(String.format(CATALOG, catalogName));
+    }
 }
