@@ -4,6 +4,7 @@ import Amazon.Pages.AmazonPetPage;
 import Amazon.Pages.FilterSection;
 import Amazon.Pages.HomePage;
 import BasePageAndTestInit.TestInit;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -42,5 +43,28 @@ public class AmazonPet extends TestInit {
         amazonPetPage.clickChosenProduct().click();
 
         Assert.assertEquals(priceProduct, amazonPetPage.priceOnChosenProductPage().getText());
+    }
+
+    @Test
+    public void amazonPetCart() {
+        AmazonPetPage amazonPetPage = new AmazonPetPage(driver);
+        HomePage homePage = new HomePage(driver);
+
+        openUrl("https://www.amazon.com");
+        homePage.getPetButton().click();
+        amazonPetPage.getSeeMoreButtonFilters().click();
+        amazonPetPage.getChosenButtonItems("11").click();
+        String nameFirstProduct = amazonPetPage.nameOnChosenProductPage().getText();
+        amazonPetPage.getAddOnCartProduct().click();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.history.go(-1)");
+        js.executeScript("window.history.go(-1)");
+        amazonPetPage.getChosenButtonItems("15").click();
+        String nameSecondProduct = amazonPetPage.nameOnChosenProductPage().getText();
+        amazonPetPage.getAddOnCartProduct().click();
+        amazonPetPage.getOpenButtonCart().click();
+
+        Assert.assertEquals(nameSecondProduct, amazonPetPage.verifyNameCartProducts("1").getText());
+        Assert.assertEquals(nameFirstProduct, amazonPetPage.verifyNameCartProducts("2").getText());
     }
 }
