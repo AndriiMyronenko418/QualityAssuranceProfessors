@@ -31,6 +31,8 @@ public class HomePage extends BasePage {
     private static final String VIDEO_GAMES = "(//a[text()='Video Games'])[2]";
     private static final String TEXT = "//*[contains(text(),'%s')]";
     private static final String Pets_Page = "//div[@class='a-cardui-body']//a[@href='/s?k=pet+supplies&s=date-desc-rank&crid=3IF5TSVMY5YRB&qid=1632868254&sprefix=pet+sup%2Caps%2C268&ref=sr_st_date-desc-rank']";
+    private static final String SIGN_IN = "//input[contains(@id,'%s')]";
+    private static final String NOT_NOW_ADD_MOBILE_NUMBER = "//a[@id='ap-account-fixup-phone-skip-link']";
 
     public void getDeliveryDontChangeButton() {
         if ($$(DELIVERY_DONT_CHANGE_BUTTON).size() > 0) {
@@ -108,5 +110,13 @@ public class HomePage extends BasePage {
 
     public WebElement getGiftCardsButton() {
         return $(GIFT_CARDS_BUTTON);
+    }
+
+    public WebElement getSignInButton(String option) {
+        return $(String.format(SIGN_IN, option));
+    }
+
+    public WebElement getNotNowAddMobileNumberButton() {
+        return $(NOT_NOW_ADD_MOBILE_NUMBER);
     }
 }
